@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 16
+  controlID: 95
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 17
+  controlID: 96
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 18
+  controlID: 97
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -314,22 +314,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/SonyExamples/PS4/Input+
+    - Assets/SonyExamples/PS4/Input+/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/SonyExamples/PS4/Input+
+  - Assets/SonyExamples/PS4/Input+/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\K1917661\Downloads\PS4
+  m_LastProjectPath: C:\Users\K1917661\Documents\Github\PS4-Game\PS4 Tutorial
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0c6e0000
-    m_LastClickedID: 28172
-    m_ExpandedIDs: 00000000186d00000c6e00000e6e0000166e000000ca9a3b
+    m_SelectedIDs: 22590000
+    m_LastClickedID: 22818
+    m_ExpandedIDs: 000000008e57000096570000105900001259000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -357,7 +357,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000008e570000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -481,7 +481,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 66f8feffa6f8feffb4f8feffe001ffff9c02ffffda02fffff603ffffe004ffff1e05ffff3a06ffff2607ffff6407ffff8008ffff220affff600affff7c0bffff5e0cffff9c0cffffb80dffffae0effffec0effffee0effff7a0fffffb80fffffba0ffffffe10ffff3c11ffff5812ffff7a1cffffb81cffffd41dffff9e1fffffdc1ffffff820ffff3e23ffff7c23ffff7e23ffff4025ffff7e25ffff8025ffff1e26ffff5c26ffff7827ffff582affff962affffb22bffffbc2cfffffa2cffff162effffa836ffffe636ffff0238ffff2239ffff6039ffff7c3affffa83cffff1e3dffff5e3dffff803effff6e3fffffae3fffffd240ffff5243ffff9243ffffb644ffffa045ffffe045ffff0847ffff3648ffff7648ffff9e49ffffb44afffff44affff1c4cffff3c56ffff6a57ffffa857ffffc458ffff385bffff765bffff925cffff2e5fffff6c5fffff8c60ffffee61ffffd462ffff1463ffff1e63ffff9c6cffff866dffffc46dffffe06effffc66fffff0470ffff2071ffff0a72ffff4872ffff6473ffff4674ffff8474ffffa075ffff1278ffff5078ffff5278ffff8679ffffc479ffffc679ffff387cffff767cffff787cffff707fffffae7fffffb07fffff6281ffffa081ffffa281ffffc886ffff0687ffff0887ffff1c88ffff5a88ffff5c88ffff7294ffffb094ffffb294ffff309fffff6e9fffff88a0ffff84a5ffffc2a5ffffc6a5ffff5eadffff08b5ffff48b5ffff70b6ffffa2bffffff4c7ffff32c8ffff36c8ffff60c9ffffa0c9ffffbecaffff26ceffff64ceffff80cfffffe4d7ffff22d8ffff2ad8ffff9edbffffdedbffffe2dbffff32dfffff72dfffff8ee0ffff92ebffff4cfbffffd8d0000042d400000ce9010064ed01005cee010054f00100daf10100
+      m_ExpandedIDs: 1240ffff5040ffff6c41ffff4e42ffff8c42ffffa843ffffc044fffffe44ffff1a46ffff664bffffa44bffffc04cffffaa4dffffe84dffff044fffffd250ffff1051ffff2c52ffff8a55ffffc855ffffe456ffff005affff3e5affff5a5bffff5e5cffff9c5cffff9e5cffffbc5dfffffa5dfffffc5dffff5a5fffff985fffffb460ffffbe61fffffc61ffff1863ffff1a64ffff5864ffff7465ffffc466ffff0267ffff1e68ffff1469ffff5269ffff6e6affff4e6bffff8c6bffffa86cffffbc6dfffffa6dffff166ffffff86fffff3670ffff5271ffff3c72ffff7a72ffff9673ffff2c76ffff6a76ffff8677ffff9a78ffffd878fffff479ffff107bffff4e7bffff6a7cffff5c7dffff9a7dffffb67effffa07fffffde7ffffffa80ffffe481ffff2282ffff3e83ffff2e84ffff6c84ffff8885ffff6e86ffffac86ffffc887ffffc888ffff0689ffff228affff988bffffd68bfffff28cffff1c8effff5a8effff7a8fffff4491ffff8291ffff8491ffff2a95ffff6895ffff6a95ffff2a9affff689affff849bffff969cffffd49cfffff09dfffff29effff309fffff4ca0ffff4aa1ffff88a1ffffa4a2ffffb2a3fffff0a3ffff0ca5ffff16a6ffff54a6ffff70a7ffff74a8ffffb2a8ffffcea9ffffcaaaffff08abffff24acffff06adffff44adffff60aeffff62afffffa0afffffbcb0ffffb0b2ffffeeb2ffff0eb4ffffd6b6ffff14b7ffff30b8ffff1eb9ffff5cb9ffff62b9ffffecb9ffff72baffffb2baffffdabbffff08c5ffff34c6ffff72c6ffff8ec7ffff70c8ffffaec8ffffcac9ffff54cbffff92cbffffaeccffff9ccdffffdacdfffff6ceffffc2d0ffff00d1ffff1cd2ffff1ed3ffff5cd3ffff78d4ffff7ed5ffffbcd5ffffd8d6ffffc8d7ffff06d8ffff22d9ffff14daffff52daffff54daffff5adcffff98dcffffb4ddffffa0deffffdedefffffadfffff9ee1ffffdce1fffff8e2ffffb4e4fffff2e4ffff0ee6ffffc8e7ffff06e8ffff08e8ffff9ee9ffffdce9fffff8eaffffc6f0ffff0cf1ffffe6faffffea580000e05900000e5c0000265d0000565f000064880000768900002a940000e6b1000016b3000048b40000a8b60000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -541,9 +541,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.06507, y: 1.5104717, z: -0.067335285}
+    m_Target: {x: 3.5333488, y: -1.743249, z: 14.643746}
     speed: 2
-    m_Value: {x: 7.06507, y: 1.5104717, z: -0.067335285}
+    m_Value: {x: 3.5333488, y: -1.743249, z: 14.643746}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -590,13 +590,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.1270302, y: -0.81566054, z: 0.19572057, w: -0.52940154}
+    m_Target: {x: -0.083893396, y: -0.014042131, z: 0.0011923766, w: -0.9963855}
     speed: 2
-    m_Value: {x: -0.12702948, y: -0.81565595, z: 0.19571947, w: -0.52939856}
+    m_Value: {x: -0.083892524, y: -0.014041985, z: 0.0011923643, w: -0.9963752}
   m_Size:
-    m_Target: 5.59792
+    m_Target: 9.764182
     speed: 2
-    m_Value: 5.59792
+    m_Value: 9.764182
   m_Ortho:
     m_Target: 0
     speed: 2

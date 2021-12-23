@@ -44,15 +44,19 @@ extern void GamePad__ctor_mE00EC380A7EA2E3703CAA64E5C58D7CBD4FA5A30 (void);
 extern void PS4GamePad__ctor_mD33C90EB172B295F9845FA89E230230537426EE0 (void);
 // 0x00000010 System.Void PlayerMovement::Start()
 extern void PlayerMovement_Start_mB585552228B1908E44D3A69496598FB485F608B6 (void);
-// 0x00000011 System.Void PlayerMovement::FixedUpdate()
-extern void PlayerMovement_FixedUpdate_m774280268A537B6ED9D9171CEAE67E9A0C3A9499 (void);
-// 0x00000012 System.Void PlayerMovement::Update()
+// 0x00000011 System.Void PlayerMovement::Update()
 extern void PlayerMovement_Update_mC3491BD6CDFF1FA543B16969144C939B2298052F (void);
+// 0x00000012 System.Void PlayerMovement::FixedUpdate()
+extern void PlayerMovement_FixedUpdate_m774280268A537B6ED9D9171CEAE67E9A0C3A9499 (void);
 // 0x00000013 System.Void PlayerMovement::OnTriggerEnter(UnityEngine.Collider)
 extern void PlayerMovement_OnTriggerEnter_m3843EE5DA10397BDD598BD071D90B7F53873A9AD (void);
-// 0x00000014 System.Void PlayerMovement::.ctor()
+// 0x00000014 System.Void PlayerMovement::RevertRigidbody()
+extern void PlayerMovement_RevertRigidbody_mFE3B30F4CCDF2FC57C3A7B09CAC7CDEBC09976C7 (void);
+// 0x00000015 System.Boolean PlayerMovement::isGrounded()
+extern void PlayerMovement_isGrounded_mC7C2A7A4F8DAD7D28EBB8D9B76AC5B4B7A108B32 (void);
+// 0x00000016 System.Void PlayerMovement::.ctor()
 extern void PlayerMovement__ctor_mBF9F632DD9929DD6FF092A968649A4406BFE397F (void);
-static Il2CppMethodPointer s_methodPointers[20] = 
+static Il2CppMethodPointer s_methodPointers[22] = 
 {
 	GamePad_Start_m7B1D62492E5EA4828A4CB0EDB98F8ECCC847E731,
 	GamePad_Update_m70C9E1E06D31ADDCF2D933F4E60496818EBCFE60,
@@ -70,33 +74,37 @@ static Il2CppMethodPointer s_methodPointers[20] =
 	GamePad__ctor_mE00EC380A7EA2E3703CAA64E5C58D7CBD4FA5A30,
 	PS4GamePad__ctor_mD33C90EB172B295F9845FA89E230230537426EE0,
 	PlayerMovement_Start_mB585552228B1908E44D3A69496598FB485F608B6,
-	PlayerMovement_FixedUpdate_m774280268A537B6ED9D9171CEAE67E9A0C3A9499,
 	PlayerMovement_Update_mC3491BD6CDFF1FA543B16969144C939B2298052F,
+	PlayerMovement_FixedUpdate_m774280268A537B6ED9D9171CEAE67E9A0C3A9499,
 	PlayerMovement_OnTriggerEnter_m3843EE5DA10397BDD598BD071D90B7F53873A9AD,
+	PlayerMovement_RevertRigidbody_mFE3B30F4CCDF2FC57C3A7B09CAC7CDEBC09976C7,
+	PlayerMovement_isGrounded_mC7C2A7A4F8DAD7D28EBB8D9B76AC5B4B7A108B32,
 	PlayerMovement__ctor_mBF9F632DD9929DD6FF092A968649A4406BFE397F,
 };
-static const int32_t s_InvokerIndices[20] = 
+static const int32_t s_InvokerIndices[22] = 
 {
-	956,
-	956,
+	957,
+	957,
 	820,
-	956,
+	957,
 	174,
-	956,
-	956,
-	956,
-	956,
-	956,
-	956,
-	1569,
-	956,
-	956,
-	956,
-	956,
-	956,
-	956,
+	957,
+	957,
+	957,
+	957,
+	957,
+	957,
+	1573,
+	957,
+	957,
+	957,
+	957,
+	957,
+	957,
 	807,
-	956,
+	957,
+	951,
+	957,
 };
 extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationAssemblyU2DCSharp;
 extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
@@ -104,7 +112,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	20,
+	22,
 	s_methodPointers,
 	0,
 	NULL,
