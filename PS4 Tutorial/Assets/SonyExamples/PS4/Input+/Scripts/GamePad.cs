@@ -62,7 +62,7 @@ public class GamePad : MonoBehaviour
 	{
 		// Stick ID is the player ID + 1
 		m_StickId = playerId + 1;
-
+		Debug.Log("Game Pad Name "+ gamePad);
 		ToggleGamePad(false);
 	}
 

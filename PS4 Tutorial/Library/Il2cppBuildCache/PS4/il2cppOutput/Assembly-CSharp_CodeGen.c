@@ -54,9 +54,11 @@ extern void PlayerMovement_OnTriggerEnter_m3843EE5DA10397BDD598BD071D90B7F53873A
 extern void PlayerMovement_RevertRigidbody_mFE3B30F4CCDF2FC57C3A7B09CAC7CDEBC09976C7 (void);
 // 0x00000015 System.Boolean PlayerMovement::isGrounded()
 extern void PlayerMovement_isGrounded_mC7C2A7A4F8DAD7D28EBB8D9B76AC5B4B7A108B32 (void);
-// 0x00000016 System.Void PlayerMovement::.ctor()
+// 0x00000016 System.Void PlayerMovement::SetControllerColour(UnityEngine.Color)
+extern void PlayerMovement_SetControllerColour_m2F6F967D06BF5ADE352DF5386553C803DEE3C912 (void);
+// 0x00000017 System.Void PlayerMovement::.ctor()
 extern void PlayerMovement__ctor_mBF9F632DD9929DD6FF092A968649A4406BFE397F (void);
-static Il2CppMethodPointer s_methodPointers[22] = 
+static Il2CppMethodPointer s_methodPointers[23] = 
 {
 	GamePad_Start_m7B1D62492E5EA4828A4CB0EDB98F8ECCC847E731,
 	GamePad_Update_m70C9E1E06D31ADDCF2D933F4E60496818EBCFE60,
@@ -79,9 +81,10 @@ static Il2CppMethodPointer s_methodPointers[22] =
 	PlayerMovement_OnTriggerEnter_m3843EE5DA10397BDD598BD071D90B7F53873A9AD,
 	PlayerMovement_RevertRigidbody_mFE3B30F4CCDF2FC57C3A7B09CAC7CDEBC09976C7,
 	PlayerMovement_isGrounded_mC7C2A7A4F8DAD7D28EBB8D9B76AC5B4B7A108B32,
+	PlayerMovement_SetControllerColour_m2F6F967D06BF5ADE352DF5386553C803DEE3C912,
 	PlayerMovement__ctor_mBF9F632DD9929DD6FF092A968649A4406BFE397F,
 };
-static const int32_t s_InvokerIndices[22] = 
+static const int32_t s_InvokerIndices[23] = 
 {
 	957,
 	957,
@@ -104,6 +107,7 @@ static const int32_t s_InvokerIndices[22] =
 	807,
 	957,
 	951,
+	780,
 	957,
 };
 extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationAssemblyU2DCSharp;
@@ -112,7 +116,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	22,
+	23,
 	s_methodPointers,
 	0,
 	NULL,

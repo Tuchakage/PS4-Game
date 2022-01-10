@@ -2,40 +2,40 @@
 "instructions_readme": "1) Open Chrome, 2) go to chrome://tracing, 3) click Load, 4) navigate to this file.",
 "traceEvents":[
 { "cat":"", "pid":1, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"tundra" } }
-,{ "pid":1, "tid":0, "ts":490191659988, "dur":1783, "ph":"X", "name": "DriverCheckDagSignatures",  "args": { "durationMS":2, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490191661772, "dur":7848, "ph":"X", "name": "DriverInitData",  "args": { "durationMS":8, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490191669710, "dur":10, "ph":"X", "name": "Tundra",  "args": { "durationMS":0, "detail":"RemoveStaleOutputs" }}
-,{ "pid":1, "tid":0, "ts":490191669733, "dur":0, "ph":"X", "name": "Tundra",  "args": { "durationMS":0, "detail":"PrepareNodes" }}
-,{ "pid":1, "tid":0, "ts":490191669733, "dur":281, "ph":"X", "name": "Tundra",  "args": { "durationMS":0, "detail":"BuildQueueInit" }}
-,{ "pid":1, "tid":0, "ts":490205991519, "dur":17668, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":18, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490206009217, "dur":9, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490206009239, "dur":106, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490206009367, "dur":10, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490206009388, "dur":7, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490206009407, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490206009425, "dur":7, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490206009444, "dur":7, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490206009463, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "durationMS":0, "detail":"" }}
-,{ "pid":1, "tid":0, "ts":490206009471, "dur":6390, "ph":"X", "name": "Tundra",  "args": { "durationMS":6, "detail":"Write AllBuiltNodes" }}
-,{ "pid":1, "tid":1, "ts":490191670616, "dur":14320907, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":14321, "detail":"" }}
-,{ "pid":1, "tid":1, "ts":490205991523, "dur":17377, "ph":"X", "name": "Exiting",  "args": { "durationMS":17, "detail":"BuildLoop" }}
-,{ "pid":1, "tid":2, "ts":490191670852, "dur":14320670, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":14321, "detail":"" }}
-,{ "pid":1, "tid":2, "ts":490205991522, "dur":17355, "ph":"X", "name": "Exiting",  "args": { "durationMS":17, "detail":"BuildLoop" }}
-,{ "pid":1, "tid":3, "ts":490191671222, "dur":14320303, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":14320, "detail":"" }}
-,{ "pid":1, "tid":3, "ts":490205991525, "dur":17330, "ph":"X", "name": "Exiting",  "args": { "durationMS":17, "detail":"BuildLoop" }}
-,{ "pid":1, "tid":4, "ts":490191670596, "dur":302834, "ph":"X", "name": "CheckInputSignature",  "args": { "durationMS":303, "detail":"Il2Cpp C:/Users/K1917661/Documents/Github/PS4-Game/PS4 Tutorial/Library/Il2cppBuildCache/PS4/Native/Il2CppUserAssemblies.prx" }}
-,{ "pid":1, "tid":4, "ts":490191976948, "dur":14014508, "ph":"X", "name": "Il2Cpp",  "args": { "durationMS":14015, "detail":"C:/Users/K1917661/Documents/Github/PS4-Game/PS4 Tutorial/Library/Il2cppBuildCache/PS4/Native/Il2CppUserAssemblies.prx" }}
-,{ "pid":1, "tid":4, "ts":490205991457, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "durationMS":0, "detail":"all_tundra_nodes" }}
-,{ "pid":1, "tid":4, "ts":490205991461, "dur":72, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":0, "detail":"" }}
-,{ "pid":1, "tid":4, "ts":490205991532, "dur":17349, "ph":"X", "name": "Exiting",  "args": { "durationMS":17, "detail":"BuildLoop" }}
-,{ "pid":1, "tid":5, "ts":490191670734, "dur":14320785, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":14321, "detail":"" }}
-,{ "pid":1, "tid":5, "ts":490205991519, "dur":17385, "ph":"X", "name": "Exiting",  "args": { "durationMS":17, "detail":"BuildLoop" }}
-,{ "pid":1, "tid":6, "ts":490191671097, "dur":14320436, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":14320, "detail":"" }}
-,{ "pid":1, "tid":6, "ts":490205991533, "dur":17320, "ph":"X", "name": "Exiting",  "args": { "durationMS":17, "detail":"BuildLoop" }}
-,{ "pid":1, "tid":7, "ts":490191670973, "dur":14320544, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":14321, "detail":"" }}
-,{ "pid":1, "tid":7, "ts":490205991518, "dur":17352, "ph":"X", "name": "Exiting",  "args": { "durationMS":17, "detail":"BuildLoop" }}
-,{ "pid":1, "tid":8, "ts":490191671370, "dur":14320149, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":14320, "detail":"" }}
-,{ "pid":1, "tid":8, "ts":490205991521, "dur":17386, "ph":"X", "name": "Exiting",  "args": { "durationMS":17, "detail":"BuildLoop" }}
+,{ "pid":1, "tid":0, "ts":2151219327129, "dur":1721, "ph":"X", "name": "DriverCheckDagSignatures",  "args": { "durationMS":2, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151219328851, "dur":7325, "ph":"X", "name": "DriverInitData",  "args": { "durationMS":7, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151219336261, "dur":7, "ph":"X", "name": "Tundra",  "args": { "durationMS":0, "detail":"RemoveStaleOutputs" }}
+,{ "pid":1, "tid":0, "ts":2151219336274, "dur":1, "ph":"X", "name": "Tundra",  "args": { "durationMS":0, "detail":"PrepareNodes" }}
+,{ "pid":1, "tid":0, "ts":2151219336275, "dur":273, "ph":"X", "name": "Tundra",  "args": { "durationMS":0, "detail":"BuildQueueInit" }}
+,{ "pid":1, "tid":0, "ts":2151253922596, "dur":11251, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":11, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151253933970, "dur":38, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151253934022, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151253934035, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151253934048, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151253934061, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151253934073, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151253934090, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151253934104, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":1, "tid":0, "ts":2151253934110, "dur":5696, "ph":"X", "name": "Tundra",  "args": { "durationMS":6, "detail":"Write AllBuiltNodes" }}
+,{ "pid":1, "tid":1, "ts":2151219337799, "dur":34584795, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":34585, "detail":"" }}
+,{ "pid":1, "tid":1, "ts":2151253922595, "dur":11096, "ph":"X", "name": "Exiting",  "args": { "durationMS":11, "detail":"BuildLoop" }}
+,{ "pid":1, "tid":2, "ts":2151219338023, "dur":34584575, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":34585, "detail":"" }}
+,{ "pid":1, "tid":2, "ts":2151253922598, "dur":11111, "ph":"X", "name": "Exiting",  "args": { "durationMS":11, "detail":"BuildLoop" }}
+,{ "pid":1, "tid":3, "ts":2151219337751, "dur":34584850, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":34585, "detail":"" }}
+,{ "pid":1, "tid":3, "ts":2151253922601, "dur":11089, "ph":"X", "name": "Exiting",  "args": { "durationMS":11, "detail":"BuildLoop" }}
+,{ "pid":1, "tid":4, "ts":2151219337653, "dur":316993, "ph":"X", "name": "CheckInputSignature",  "args": { "durationMS":317, "detail":"Il2Cpp C:/Users/K1917661/Documents/PS4-Game/PS4 Tutorial/Library/Il2cppBuildCache/PS4/Native/Il2CppUserAssemblies.prx" }}
+,{ "pid":1, "tid":4, "ts":2151219658514, "dur":34264016, "ph":"X", "name": "Il2Cpp",  "args": { "durationMS":34264, "detail":"C:/Users/K1917661/Documents/PS4-Game/PS4 Tutorial/Library/Il2cppBuildCache/PS4/Native/Il2CppUserAssemblies.prx" }}
+,{ "pid":1, "tid":4, "ts":2151253922531, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "durationMS":0, "detail":"all_tundra_nodes" }}
+,{ "pid":1, "tid":4, "ts":2151253922535, "dur":71, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":0, "detail":"" }}
+,{ "pid":1, "tid":4, "ts":2151253922606, "dur":11081, "ph":"X", "name": "Exiting",  "args": { "durationMS":11, "detail":"BuildLoop" }}
+,{ "pid":1, "tid":5, "ts":2151219337900, "dur":34584697, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":34585, "detail":"" }}
+,{ "pid":1, "tid":5, "ts":2151253922597, "dur":11094, "ph":"X", "name": "Exiting",  "args": { "durationMS":11, "detail":"BuildLoop" }}
+,{ "pid":1, "tid":6, "ts":2151219338194, "dur":34584417, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":34584, "detail":"" }}
+,{ "pid":1, "tid":6, "ts":2151253922611, "dur":11075, "ph":"X", "name": "Exiting",  "args": { "durationMS":11, "detail":"BuildLoop" }}
+,{ "pid":1, "tid":7, "ts":2151219338108, "dur":34584499, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":34584, "detail":"" }}
+,{ "pid":1, "tid":7, "ts":2151253922607, "dur":11079, "ph":"X", "name": "Exiting",  "args": { "durationMS":11, "detail":"BuildLoop" }}
+,{ "pid":1, "tid":8, "ts":2151219338290, "dur":34584310, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "durationMS":34584, "detail":"" }}
+,{ "pid":1, "tid":8, "ts":2151253922603, "dur":11086, "ph":"X", "name": "Exiting",  "args": { "durationMS":11, "detail":"BuildLoop" }}
 
 ]
 }

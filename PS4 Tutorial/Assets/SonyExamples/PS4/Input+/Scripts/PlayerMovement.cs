@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public int playerId;
 	bool flickedonce; //Makes it so that you can only flick once
 
+	Color m_LightbarColour;
 	// Use this for initialization
 	void Start () 
 	{
@@ -27,7 +28,9 @@ public class PlayerMovement : MonoBehaviour
         PS4Input.PadResetOrientation(playerId);
 
 		Rb.transform.parent = null;
-    }
+
+
+	}
 
 	void Update()
 	{
@@ -41,11 +44,15 @@ public class PlayerMovement : MonoBehaviour
 			if (Input.GetKey(code2))
 			{
 				speedInput = 1* forwardAccel * 500;
+				//Set the Controller Colour To Yellow
+				SetControllerColour(Color.yellow);
+
 			}
 		}
 
 		//Player model will follow the Rigid Body Of The Sphere
 		transform.position = Rb.transform.position;
+
 	}
 
 	// Update is called once per frame
@@ -155,5 +162,18 @@ public class PlayerMovement : MonoBehaviour
 	private bool isGrounded() 
 	{
 		return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x, col.bounds.min.y, col.bounds.center.z), col.radius * 0.9f, groundLayer);
+	}
+
+	//Sets the Light Bar Colour To Controller
+	void SetControllerColour(Color controllerColour) 
+	{
+		//Sets the Colour
+		m_LightbarColour = controllerColour;
+
+		//Changes the Colour On Controller
+		PS4Input.PadSetLightBar(playerId,
+		Mathf.RoundToInt(m_LightbarColour.r * 255),
+		Mathf.RoundToInt(m_LightbarColour.g * 255),
+		Mathf.RoundToInt(m_LightbarColour.b * 255));
 	}
 }
