@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
     void RevertRigidbody()
     {
         Rb.mass = 70;
-        Rb.drag = 3;
+        Rb.drag = 1;
         Rb.angularDrag = 4;
         Rb.interpolation = RigidbodyInterpolation.None;
     }
@@ -96,25 +96,25 @@ public class PlayerMovement : MonoBehaviour
         if (gameObject.CompareTag($"Player 1"))
         {
             Gizmos.color = Color.red;
-            Gizmos.DrawSphere(transform.position, 1);
+            Gizmos.DrawSphere(transform.position, 0.6f);
         }
         else if (gameObject.CompareTag($"Player 2"))
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawSphere(transform.position, 1);
+            Gizmos.DrawSphere(transform.position, 0.6f);
         }
         else if (gameObject.CompareTag($"Player 3"))
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawSphere(transform.position, 1);
+            Gizmos.DrawSphere(transform.position, 0.6f);
         }
         else if (gameObject.CompareTag($"Player 4"))
         {
             Gizmos.color = Color.magenta;
-            Gizmos.DrawSphere(transform.position, 1);
+            Gizmos.DrawSphere(transform.position, 0.6f);
         }
 
         Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, 1.1f);
+        Gizmos.DrawWireSphere(transform.position, 0.75f);
     }
 }
