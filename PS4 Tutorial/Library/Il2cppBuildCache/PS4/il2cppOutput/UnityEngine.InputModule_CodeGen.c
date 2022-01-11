@@ -43,12 +43,12 @@ static const int32_t s_InvokerIndices[8] =
 {
 	506,
 	450,
-	1730,
-	1692,
-	1542,
+	1733,
+	1695,
+	1545,
+	1546,
 	1543,
-	1540,
-	1697,
+	1700,
 };
 extern const Il2CppDebuggerMetadataRegistration g_DebuggerMetadataRegistrationUnityEngine_InputModule;
 extern const CustomAttributesCacheGenerator g_UnityEngine_InputModule_AttributeGenerators[];

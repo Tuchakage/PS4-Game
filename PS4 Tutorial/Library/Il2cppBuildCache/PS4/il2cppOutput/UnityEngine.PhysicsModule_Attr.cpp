@@ -888,7 +888,7 @@ static void UnityEngine_PhysicsModule_CustomAttributesCacheGenerator(CustomAttri
 {
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[0];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x50\x53\x35\x56\x52\x4D\x6F\x64\x75\x6C\x65"), NULL);
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x49\x4D\x47\x55\x49\x4D\x6F\x64\x75\x6C\x65"), NULL);
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[1];
@@ -1377,7 +1377,7 @@ static void UnityEngine_PhysicsModule_CustomAttributesCacheGenerator(CustomAttri
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[122];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x2E\x32\x44\x2E\x53\x70\x72\x69\x74\x65\x2E\x45\x64\x69\x74\x6F\x72\x54\x65\x73\x74\x73"), NULL);
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x50\x53\x35\x56\x52\x4D\x6F\x64\x75\x6C\x65"), NULL);
 	}
 	{
 		UnityEngineModuleAssembly_t33CB058FDDDC458E384578147D6027BB1EC86CFF * tmp = (UnityEngineModuleAssembly_t33CB058FDDDC458E384578147D6027BB1EC86CFF *)cache->attributes[123];
@@ -1449,7 +1449,7 @@ static void UnityEngine_PhysicsModule_CustomAttributesCacheGenerator(CustomAttri
 	}
 	{
 		InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C * tmp = (InternalsVisibleToAttribute_t1D9772A02892BAC440952F880A43C257E6C3E68C *)cache->attributes[140];
-		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x45\x6E\x67\x69\x6E\x65\x2E\x49\x4D\x47\x55\x49\x4D\x6F\x64\x75\x6C\x65"), NULL);
+		InternalsVisibleToAttribute__ctor_m420071A75DCEEC72356490C64B4B0B9270DA32B9(tmp, il2cpp_codegen_string_new_wrapper("\x55\x6E\x69\x74\x79\x2E\x32\x44\x2E\x53\x70\x72\x69\x74\x65\x2E\x45\x64\x69\x74\x6F\x72\x54\x65\x73\x74\x73"), NULL);
 	}
 }
 static void ControllerColliderHit_t483E787AA2D92263EC1F899BCF1FFC3F2B96D550_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
@@ -1464,6 +1464,13 @@ static void Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_CustomAttributes
 	{
 		RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 * tmp = (RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 *)cache->attributes[0];
 		RequiredByNativeCodeAttribute__ctor_m97C095D1EE6AAB2894AE7E8B2F07D9B47CB8F8B5(tmp, NULL);
+	}
+}
+static void PhysicMaterial_tD3D9C84806E95BABF076A74331DF8D9A4B03E3C2_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
+{
+	{
+		NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C * tmp = (NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C *)cache->attributes[0];
+		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x4D\x6F\x64\x75\x6C\x65\x73\x2F\x50\x68\x79\x73\x69\x63\x73\x2F\x50\x68\x79\x73\x69\x63\x4D\x61\x74\x65\x72\x69\x61\x6C\x2E\x68"), NULL);
 	}
 }
 static void RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
@@ -1758,12 +1765,12 @@ static void PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678_CustomAttribu
 static void Physics_tED41E76FFDD034FA1B46162C3D283C36814DA0A4_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
-		StaticAccessorAttribute_t7A16FF0FA31E38510BBC8BCA5AE56C3E67D5A2BA * tmp = (StaticAccessorAttribute_t7A16FF0FA31E38510BBC8BCA5AE56C3E67D5A2BA *)cache->attributes[0];
-		StaticAccessorAttribute__ctor_m0C3215256AEFAEFDDCBCD2BA9AA579CDBB230706(tmp, il2cpp_codegen_string_new_wrapper("\x47\x65\x74\x50\x68\x79\x73\x69\x63\x73\x4D\x61\x6E\x61\x67\x65\x72\x28\x29"), 0LL, NULL);
+		NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C * tmp = (NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C *)cache->attributes[0];
+		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x4D\x6F\x64\x75\x6C\x65\x73\x2F\x50\x68\x79\x73\x69\x63\x73\x2F\x50\x68\x79\x73\x69\x63\x73\x4D\x61\x6E\x61\x67\x65\x72\x2E\x68"), NULL);
 	}
 	{
-		NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C * tmp = (NativeHeaderAttribute_t7F0E4B53790AA75CDB4C44E6D644267F8FE3066C *)cache->attributes[1];
-		NativeHeaderAttribute__ctor_m0E83F29C5939F185D6E90541591802EB2845FD76(tmp, il2cpp_codegen_string_new_wrapper("\x4D\x6F\x64\x75\x6C\x65\x73\x2F\x50\x68\x79\x73\x69\x63\x73\x2F\x50\x68\x79\x73\x69\x63\x73\x4D\x61\x6E\x61\x67\x65\x72\x2E\x68"), NULL);
+		StaticAccessorAttribute_t7A16FF0FA31E38510BBC8BCA5AE56C3E67D5A2BA * tmp = (StaticAccessorAttribute_t7A16FF0FA31E38510BBC8BCA5AE56C3E67D5A2BA *)cache->attributes[1];
+		StaticAccessorAttribute__ctor_m0C3215256AEFAEFDDCBCD2BA9AA579CDBB230706(tmp, il2cpp_codegen_string_new_wrapper("\x47\x65\x74\x50\x68\x79\x73\x69\x63\x73\x4D\x61\x6E\x61\x67\x65\x72\x28\x29"), 0LL, NULL);
 	}
 }
 static void Physics_tED41E76FFDD034FA1B46162C3D283C36814DA0A4_CustomAttributesCacheGenerator_Physics_Raycast_m9DE0EEA1CF8DEF7D06216225F19E2958D341F7BA____maxDistance2(CustomAttributesCache* cache)
@@ -1811,12 +1818,12 @@ static void Physics_tED41E76FFDD034FA1B46162C3D283C36814DA0A4_CustomAttributesCa
 static void Physics_tED41E76FFDD034FA1B46162C3D283C36814DA0A4_CustomAttributesCacheGenerator_Physics_Raycast_mCBD5F7D498C246713EDDBB446E97205DA206C49C(CustomAttributesCache* cache)
 {
 	{
-		ExcludeFromDocsAttribute_tF2E270E47DCFC0F0F22FA6D71B95FF71B08703B8 * tmp = (ExcludeFromDocsAttribute_tF2E270E47DCFC0F0F22FA6D71B95FF71B08703B8 *)cache->attributes[0];
-		ExcludeFromDocsAttribute__ctor_mFA14E76D8A30ED8CA3ADCDA83BE056E54753825D(tmp, NULL);
+		RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 * tmp = (RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 *)cache->attributes[0];
+		RequiredByNativeCodeAttribute__ctor_m97C095D1EE6AAB2894AE7E8B2F07D9B47CB8F8B5(tmp, NULL);
 	}
 	{
-		RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 * tmp = (RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 *)cache->attributes[1];
-		RequiredByNativeCodeAttribute__ctor_m97C095D1EE6AAB2894AE7E8B2F07D9B47CB8F8B5(tmp, NULL);
+		ExcludeFromDocsAttribute_tF2E270E47DCFC0F0F22FA6D71B95FF71B08703B8 * tmp = (ExcludeFromDocsAttribute_tF2E270E47DCFC0F0F22FA6D71B95FF71B08703B8 *)cache->attributes[1];
+		ExcludeFromDocsAttribute__ctor_mFA14E76D8A30ED8CA3ADCDA83BE056E54753825D(tmp, NULL);
 	}
 }
 static void Physics_tED41E76FFDD034FA1B46162C3D283C36814DA0A4_CustomAttributesCacheGenerator_Physics_Raycast_m18E12C65F127D1AA50D196623F04F81CB138FD12(CustomAttributesCache* cache)
@@ -1994,12 +2001,12 @@ static void Physics_tED41E76FFDD034FA1B46162C3D283C36814DA0A4_CustomAttributesCa
 static void Physics_tED41E76FFDD034FA1B46162C3D283C36814DA0A4_CustomAttributesCacheGenerator_Physics_RaycastAll_mA24B9B922C98C5D18397FAE55C04AEAFDD47F029(CustomAttributesCache* cache)
 {
 	{
-		ExcludeFromDocsAttribute_tF2E270E47DCFC0F0F22FA6D71B95FF71B08703B8 * tmp = (ExcludeFromDocsAttribute_tF2E270E47DCFC0F0F22FA6D71B95FF71B08703B8 *)cache->attributes[0];
-		ExcludeFromDocsAttribute__ctor_mFA14E76D8A30ED8CA3ADCDA83BE056E54753825D(tmp, NULL);
+		RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 * tmp = (RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 *)cache->attributes[0];
+		RequiredByNativeCodeAttribute__ctor_m97C095D1EE6AAB2894AE7E8B2F07D9B47CB8F8B5(tmp, NULL);
 	}
 	{
-		RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 * tmp = (RequiredByNativeCodeAttribute_t855401D3C2EF3B44F4F1C3EE2DCD361CFC358D20 *)cache->attributes[1];
-		RequiredByNativeCodeAttribute__ctor_m97C095D1EE6AAB2894AE7E8B2F07D9B47CB8F8B5(tmp, NULL);
+		ExcludeFromDocsAttribute_tF2E270E47DCFC0F0F22FA6D71B95FF71B08703B8 * tmp = (ExcludeFromDocsAttribute_tF2E270E47DCFC0F0F22FA6D71B95FF71B08703B8 *)cache->attributes[1];
+		ExcludeFromDocsAttribute__ctor_mFA14E76D8A30ED8CA3ADCDA83BE056E54753825D(tmp, NULL);
 	}
 }
 static void Physics_tED41E76FFDD034FA1B46162C3D283C36814DA0A4_CustomAttributesCacheGenerator_Physics_RaycastAll_m72947571EFB0EFB34E48340AA2EC0C8030D27C50(CustomAttributesCache* cache)
@@ -2144,10 +2151,11 @@ static void Physics_tED41E76FFDD034FA1B46162C3D283C36814DA0A4_CustomAttributesCa
 	}
 }
 IL2CPP_EXTERN_C const CustomAttributesCacheGenerator g_UnityEngine_PhysicsModule_AttributeGenerators[];
-const CustomAttributesCacheGenerator g_UnityEngine_PhysicsModule_AttributeGenerators[86] = 
+const CustomAttributesCacheGenerator g_UnityEngine_PhysicsModule_AttributeGenerators[87] = 
 {
 	ControllerColliderHit_t483E787AA2D92263EC1F899BCF1FFC3F2B96D550_CustomAttributesCacheGenerator,
 	Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_CustomAttributesCacheGenerator,
+	PhysicMaterial_tD3D9C84806E95BABF076A74331DF8D9A4B03E3C2_CustomAttributesCacheGenerator,
 	RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89_CustomAttributesCacheGenerator,
 	Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A_CustomAttributesCacheGenerator,
 	Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02_CustomAttributesCacheGenerator,

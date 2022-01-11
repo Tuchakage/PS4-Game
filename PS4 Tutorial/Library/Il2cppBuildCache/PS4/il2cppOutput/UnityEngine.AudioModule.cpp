@@ -1567,6 +1567,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AudioSource_PlayOnDualShock4_m238715B79A
 	bool icallRetVal = _il2cpp_icall_func(__this, ___userId0);
 	return icallRetVal;
 }
+// System.Boolean UnityEngine.AudioSource::PlayOnGamepad(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AudioSource_PlayOnGamepad_m8E2B96D190CB5F27EFEDDC9CB92300A15BA34D6C (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, int32_t ___slot0, const RuntimeMethod* method)
+{
+	typedef bool (*AudioSource_PlayOnGamepad_m8E2B96D190CB5F27EFEDDC9CB92300A15BA34D6C_ftn) (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B *, int32_t);
+	static AudioSource_PlayOnGamepad_m8E2B96D190CB5F27EFEDDC9CB92300A15BA34D6C_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (AudioSource_PlayOnGamepad_m8E2B96D190CB5F27EFEDDC9CB92300A15BA34D6C_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.AudioSource::PlayOnGamepad(System.Int32)");
+	bool icallRetVal = _il2cpp_icall_func(__this, ___slot0);
+	return icallRetVal;
+}
 // System.Void UnityEngine.AudioSource::Stop()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Stop_mADA564D223832A64F8CF3EFBDEB534C0D658810F (AudioSource_tC4BF65AF8CDCAA63724BB3CA59A7A29249269E6B * __this, const RuntimeMethod* method)
 {

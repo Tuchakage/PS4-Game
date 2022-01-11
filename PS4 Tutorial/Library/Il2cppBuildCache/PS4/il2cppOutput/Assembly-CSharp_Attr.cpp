@@ -18,6 +18,8 @@ struct CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34;
 struct CompilationRelaxationsAttribute_t661FDDC06629BDA607A42BD660944F039FE03AFF;
 // System.Diagnostics.DebuggableAttribute
 struct DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B;
+// UnityEngine.RangeAttribute
+struct RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5;
 // System.Runtime.CompilerServices.RuntimeCompatibilityAttribute
 struct RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80;
 // System.String
@@ -162,6 +164,15 @@ struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA_marshaled_com
 {
 };
 
+// UnityEngine.PropertyAttribute
+struct PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
+{
+public:
+
+public:
+};
+
+
 // System.Runtime.CompilerServices.RuntimeCompatibilityAttribute
 struct RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80  : public Attribute_t037CA9D9F3B742C063DB364D2EEBBF9FC5772C71
 {
@@ -193,6 +204,34 @@ public:
 	};
 
 public:
+};
+
+
+// UnityEngine.RangeAttribute
+struct RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5  : public PropertyAttribute_t4A352471DF625C56C811E27AC86B7E1CE6444052
+{
+public:
+	// System.Single UnityEngine.RangeAttribute::min
+	float ___min_0;
+	// System.Single UnityEngine.RangeAttribute::max
+	float ___max_1;
+
+public:
+	inline static int32_t get_offset_of_min_0() { return static_cast<int32_t>(offsetof(RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5, ___min_0)); }
+	inline float get_min_0() const { return ___min_0; }
+	inline float* get_address_of_min_0() { return &___min_0; }
+	inline void set_min_0(float value)
+	{
+		___min_0 = value;
+	}
+
+	inline static int32_t get_offset_of_max_1() { return static_cast<int32_t>(offsetof(RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5, ___max_1)); }
+	inline float get_max_1() const { return ___max_1; }
+	inline float* get_address_of_max_1() { return &___max_1; }
+	inline void set_max_1(float value)
+	{
+		___max_1 = value;
+	}
 };
 
 
@@ -245,6 +284,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeCompatibilityAttribute__ctor_m551
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RuntimeCompatibilityAttribute_set_WrapNonExceptionThrows_m8562196F90F3EBCEC23B5708EE0332842883C490_inline (RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80 * __this, bool ___value0, const RuntimeMethod* method);
 // System.Void System.Diagnostics.DebuggableAttribute::.ctor(System.Diagnostics.DebuggableAttribute/DebuggingModes)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550 (DebuggableAttribute_tA8054EBD0FC7511695D494B690B5771658E3191B * __this, int32_t ___modes0, const RuntimeMethod* method);
+// System.Void UnityEngine.RangeAttribute::.ctor(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RangeAttribute__ctor_mC74D39A9F20DD2A0D4174F05785ABE4F0DAEF000 (RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5 * __this, float ___min0, float ___max1, const RuntimeMethod* method);
 static void AssemblyU2DCSharp_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	{
@@ -261,9 +302,17 @@ static void AssemblyU2DCSharp_CustomAttributesCacheGenerator(CustomAttributesCac
 		DebuggableAttribute__ctor_m7FF445C8435494A4847123A668D889E692E55550(tmp, 263LL, NULL);
 	}
 }
-IL2CPP_EXTERN_C const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
-const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[1] = 
+static void CameraFollow_tC9B62E254DA1376073E7B793597F9D6CD2A82DF8_CustomAttributesCacheGenerator_SmoothFactor(CustomAttributesCache* cache)
 {
+	{
+		RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5 * tmp = (RangeAttribute_t14A6532D68168764C15E7CF1FDABCD99CB32D0C5 *)cache->attributes[0];
+		RangeAttribute__ctor_mC74D39A9F20DD2A0D4174F05785ABE4F0DAEF000(tmp, 0.00999999978f, 1.0f, NULL);
+	}
+}
+IL2CPP_EXTERN_C const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
+const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[2] = 
+{
+	CameraFollow_tC9B62E254DA1376073E7B793597F9D6CD2A82DF8_CustomAttributesCacheGenerator_SmoothFactor,
 	AssemblyU2DCSharp_CustomAttributesCacheGenerator,
 };
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RuntimeCompatibilityAttribute_set_WrapNonExceptionThrows_m8562196F90F3EBCEC23B5708EE0332842883C490_inline (RuntimeCompatibilityAttribute_tFF99AB2963098F9CBCD47A20D9FD3D51C17C1C80 * __this, bool ___value0, const RuntimeMethod* method)

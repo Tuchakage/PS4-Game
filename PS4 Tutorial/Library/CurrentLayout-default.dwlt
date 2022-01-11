@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 17
+  controlID: 61
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,7 +150,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 18
+  controlID: 72
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 19
+  controlID: 73
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -314,22 +314,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/SonyExamples/PS4/Input+/Scripts
+    - Assets/Sound
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/SonyExamples/PS4/Input+/Scripts
+  - Assets/Sound
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\K1917661\Documents\PS4-Game\PS4 Tutorial
+  m_LastProjectPath: D:\K1916419\PS4-Game\PS4 Tutorial
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7a530000
-    m_LastClickedID: 21370
-    m_ExpandedIDs: 000000007c52000086520000645300006853000000ca9a3b
+    m_SelectedIDs: 72ae0100
+    m_LastClickedID: 110194
+    m_ExpandedIDs: 00000000a8540000aa540000ac540000b854000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -357,7 +357,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007c520000
+    m_ExpandedIDs: 00000000a8540000aa540000ac540000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -401,7 +401,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -481,21 +481,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e09fffff1ea0ffff3aa1ffffaea2ffffeca2ffffeea2ffff40a4ffff7ea4ffff80a4ffff2aa6ffff68a6ffff84a7ffffb2a8fffff0a8ffff10aaffff6cacffffaaacffffc6adffff0cb1ffff4ab1ffff6ab2ffffc8b2ffff10b5ffff50b5ffff74b6ffff96c1ffffc2c2ffff00c3ffff06c3ffff6cc3ffffeac3ffff2ac4ffff38c4ffff7ecdffff42ceffff80ceffff86ceffffe6ceffff64d8ffff7ee1ffff76eaffff92f3ffff9cf4ffffdcf4ffffdef4ffff8ef5ffffcef5ffffd0f5ffff9cf6ffffdcf6ffffdef6ffff8af7ffffc8f7ffffcaf7ffff2ef8ffff46f8ffff62f9ffff52fbffff6cd600009ad70000
+      m_ExpandedIDs: 3623ffff7423ffff7623ffff4226ffff8026ffff9c27ffff082affff862affffb22bfffff22bffff1e2dffff5a36ffff2c3cffffba46ffffac47ffffea47ffff0649ffff4c4affff8a4affffa64bffff204dffff5e4dffff7a4effffce4fffff0c50ffff2851ffff2c52ffff6a52ffff8653ffff5e58ffff9c58ffffbc59ffff545affff105cffff4e5cffff585cffffbe66ffff7668ffffb468ffffb668ffffa46affffe26affff026cffffac6cffffa26dffffe06dffff0c6fffff1e79ffffb879ffff587affff3e7cffff7c7cffff987dffff867effffc47effffc67effff707fffffae7fffffb07fffffcc80ffffba81fffff881ffff0682ffff488bfffff08bffff2e8cffff4a8dffff1e8fffff5c8fffff7c90ffffec91ffff2a92ffff2c92ffff5296ffff9096ffffac97ffff009cffff3e9cffff409cffffe49fffff22a0ffff24a0ffff08aaffff46aaffff48aaffff4cacffff8aacffffa6adffff8caeffffcaaeffffe6affffff8b0ffff36b1ffff52b2ffff58b3ffff96b3ffffb2b4ffff9ab6ffffd8b6fffff4b7ffff48b9ffff86b9ffff88b9ffff18bbffff56bbffff58bbffff50c0ffff8ec0ffffaac1ffff92c6ffffd0c6ffffecc7ffffeac8ffff28c9ffff44caffff7cccffffbaccffffd6cdffffbccefffffaceffff16d0ffff34d7ffff72d7ffff90d8ffff42e7ffff80e7ffff82e7ffff7eedffffbcedffffdceeffffb8f0ffff1ef4ffff1ef5ffff5cf5ffff80f6ffff1cf7ffff54f7ffffcef8ffff10f9ffff32faffff54fbffffcc680000b26900002e6a0000c26e0000a06f0000b47400008a750000f6820000b88e000098940000b6bd0000f2c300002ac40000b0c40000c2c40000d0c4000094c90000ccc900003eca000050ca000054ca00006ed40000f6d40000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Plat1 (1)
+        m_OriginalName: Plat1 (1)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -23606
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -541,9 +541,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.355624, y: -4.686283, z: 30.197392}
+    m_Target: {x: 11.37102, y: 1.0703981, z: 139.99097}
     speed: 2
-    m_Value: {x: 3.355624, y: -4.686283, z: 30.197392}
+    m_Value: {x: 11.37102, y: 1.0703981, z: 139.99097}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -590,13 +590,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.09583402, y: -0.019998375, z: 0.0019357131, w: -0.99520683}
+    m_Target: {x: 0.02279924, y: 0.027301257, z: -0.00062496966, w: 0.9993779}
     speed: 2
-    m_Value: {x: -0.095832855, y: -0.019998131, z: 0.0019356896, w: -0.99519473}
+    m_Value: {x: 0.024298016, y: 0.027299993, z: -0.00066591543, w: 0.9993318}
   m_Size:
-    m_Target: 16.747028
+    m_Target: 5.2549553
     speed: 2
-    m_Value: 16.747028
+    m_Value: 5.5549555
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -679,7 +679,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
