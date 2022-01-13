@@ -9,6 +9,9 @@ TagManager:
   - Player 3
   - Player 4
   - Platform
+  - TrapB
+  - TrapA
+  - TrapC
   layers:
   - Default
   - TransparentFX
