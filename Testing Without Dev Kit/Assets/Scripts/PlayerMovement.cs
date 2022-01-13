@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float forwardAccel = 2f, speed, turnStrength = 180, jumpForce = 7;
+    public Transform enemyTarget;
+    public float forwardAccel = 2f, reverseAccel = 2, turnStrength = 180, jumpForce = 7;
     public SphereCollider col;
     public LayerMask groundLayer; //So we know what the Ground is (Objects With the ground layer)
     private float speedInput, turnInput;
@@ -34,6 +35,36 @@ public class PlayerMovement : MonoBehaviour
         {
             speedInput = 1 * forwardAccel * 500;
         }
+        else if (Input.GetKey(KeyCode.S)) 
+        {
+            speedInput = -1 * reverseAccel * 500;
+        }
+
+        if (Input.GetKeyDown(_jump) && isGrounded())
+        {
+            //Before launching Player into air change the Rigidbody values so that they can jump and fall down properly
+            Rb.mass = 1;
+            Rb.drag = 0;
+            Rb.angularDrag = 0.05f;
+            Rb.interpolation = RigidbodyInterpolation.Interpolate;
+            Rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            //maincamera.transform.localPosition = new Vector3(-0.00999999046f, 1.00999999f, -2.32999992f);
+        }
+        
+        //Homing Dash if the Player is in the air and there is a target
+        if (Input.GetKeyDown(KeyCode.K) && !isGrounded() && enemyTarget != null) 
+        {
+            //Find the Direction to the Enemy
+            Vector3 direction = enemyTarget.position - Rb.gameObject.transform.position;
+            //Launch the Player towards the Enemy
+            Rb.AddForce(direction * 50000f);
+
+        }
+        //If the player is on the ground then make sure you revert rigidbody
+        if (isGrounded())
+        {
+            RevertRigidbody();
+        }
         //Player model will follow the Rigid Body Of The Sphere
         transform.position = Rb.transform.position;
     }
@@ -46,33 +77,26 @@ public class PlayerMovement : MonoBehaviour
             //Move Rigid body Forward
             Rb.AddForce(transform.forward * speedInput);
         }
-
-        if (Input.GetKeyDown(_jump) && isGrounded()) 
+        else 
         {
-            //Before launching Player into air change the Rigidbody values so that they can jump and fall down properly
-            Rb.mass = 1;
-            Rb.drag = 0;
-            Rb.angularDrag = 0.05f;
-            Rb.interpolation = RigidbodyInterpolation.Interpolate;
-            Rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            //maincamera.transform.localPosition = new Vector3(-0.00999999046f, 1.00999999f, -2.32999992f);
-        }
-        //If the player is on the ground then make sure you revert rigidbody
-        if (isGrounded())
-        {
-            RevertRigidbody();
+            //Move Rigid body Backwards
+            Rb.AddForce(transform.forward * speedInput);
         }
 
-        if (Input.GetKey(_turnRight))
+
+
+        if (Input.GetKey(_turnRight) && isGrounded())
         {
             turnInput = 1;
             //Debug.Log(transform.rotation);
         }
-        else if (Input.GetKey(_turnLeft))//Titlting To The left
+        else if (Input.GetKey(_turnLeft) && isGrounded())//Titlting To The left
         {
             turnInput = -1;
             //Debug.Log(transform.rotation);
         }
+
+
 
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0, turnInput * turnStrength * Time.deltaTime, 0));
     }
