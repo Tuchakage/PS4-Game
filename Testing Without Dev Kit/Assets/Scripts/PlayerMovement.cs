@@ -50,9 +50,12 @@ public class PlayerMovement : MonoBehaviour
             Rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             //maincamera.transform.localPosition = new Vector3(-0.00999999046f, 1.00999999f, -2.32999992f);
         }
-        
-        //Homing Dash if the Player is in the air and there is a target
-        if (Input.GetKeyDown(KeyCode.K) && !isGrounded() && enemyTarget != null) 
+
+        // Distance between enemy and player
+        float distFromPlayer = Vector3.Distance(enemyTarget.position, Rb.gameObject.transform.position);
+
+        //Homing Dash if the Player is in the air, there is a target and the player is within 5m of the target.
+        if (Input.GetKeyDown(KeyCode.K) && !isGrounded() && enemyTarget != null && distFromPlayer <= 5f) 
         {
             //Find the Direction to the Enemy
             Vector3 direction = enemyTarget.position - Rb.gameObject.transform.position;
