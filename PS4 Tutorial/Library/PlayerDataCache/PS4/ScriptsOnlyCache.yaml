@@ -1,17 +1,26 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - CameraFollow
+    - ActivateTraps
     - PlayerMovement
     - Respawn
+    - RotatePlatform
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Map 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -32,7 +41,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -42,16 +55,22 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2614}
     - Class: 114
-      Script: {instanceID: 4874}
+      Script: {instanceID: 7052}
     - Class: 114
-      Script: {instanceID: 7036}
+      Script: {instanceID: 67228}
+    - Class: 114
+      Script: {instanceID: 67230}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -829,7 +848,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 45fd4be1b184725aa0bd6db58bcf0e18
+      Hash: d095cd0882cfcdef3dbc944cc0c26d1e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -863,7 +882,19 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 72cf0d7efae2ef924fc6ba637804f364
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ActivateTraps
+  - hash:
+      serializedVersion: 2
+      Hash: 3f7d3eac3468685ef18425a40cd5b891
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RotatePlatform
   platform: 31
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: D:/K1916419/Build
+  - Assets/Scenes/Map 1.unity
+  playerPath: D:/PS4 Build

@@ -9,6 +9,7 @@ public class Respawn : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Collided with "+ other.name);
         if (other.gameObject.CompareTag("Player 1"))
         {
             Debug.Log("Found");
@@ -16,17 +17,17 @@ public class Respawn : MonoBehaviour
             other.transform.rotation = new Quaternion(0, 0, 0, 1);
             //print("BOZO");
         }
-        if (other.gameObject.CompareTag("Player 2"))
+        else if (other.gameObject.CompareTag("Player 2"))
         {
             other.transform.position = _respawnPoints[1].position;
         }
-        if (other.gameObject.CompareTag("Player 3"))
-        {
-            other.transform.position = _respawnPoints[2].position;
-        }
-        if (other.gameObject.CompareTag("Player 4"))
-        {
-            other.transform.position = _respawnPoints[3].position;
-        }
+        //if (other.gameObject.CompareTag("Player 3"))
+        //{
+        //    other.transform.position = _respawnPoints[2].position;
+        //}
+        //if (other.gameObject.CompareTag("Player 4"))
+        //{
+        //    other.transform.position = _respawnPoints[3].position;
+        //}
     }
 }

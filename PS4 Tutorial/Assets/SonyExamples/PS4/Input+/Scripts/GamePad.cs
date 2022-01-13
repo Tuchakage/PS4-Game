@@ -65,7 +65,7 @@ public class GamePad : MonoBehaviour
 		Debug.Log("Game Pad Name "+ gamePad);
 		ToggleGamePad(false);
 	}
-
+	
 	void Update()
     {
 		if(PS4Input.PadIsConnected(playerId))
@@ -105,6 +105,7 @@ public class GamePad : MonoBehaviour
 
             // rebuild the username everyframe, in case it's changed due to PSN access
             gamePad.text.text = PS4Input.RefreshUsersDetails(playerId).userName + "\n(" + m_ConnectionType + ")";
+
 														
 		}
 		else if(m_HasSetupGamepad)

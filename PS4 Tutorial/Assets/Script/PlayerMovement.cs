@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour 
 {
-	public GameObject enemy;
+	public Transform enemyTarget;
 
 	public Rigidbody Rb;
 	public LayerMask groundLayer; //So we know what the Ground is (Objects With the ground layer)
 	public SphereCollider col;
-	public float forwardAccel = 2f, speed, turnStrength = 180, jumpForce = 7;
+	public float forwardAccel = 2f, reverseAccel, speed, turnStrength = 180, jumpForce = 7;
 	private float speedInput, turnInput;
 
 	private int score;
@@ -22,11 +22,13 @@ public class PlayerMovement : MonoBehaviour
     public int playerId;
 	int controllerId; //To show the different controllers
 	bool flickedonce; //Makes it so that you can only flick once
+	bool launched; // Checks if the Player has been launched
 
 	Color m_LightbarColour;
 	// Use this for initialization
 	void Start () 
 	{
+		launched = false;
 		score = 0;
         PS4Input.PadResetOrientation(playerId);
 		controllerId = playerId + 1;
@@ -46,12 +48,19 @@ public class PlayerMovement : MonoBehaviour
 		{
 			// When we press the X button then change the speed value 
 			KeyCode code2 = (KeyCode)Enum.Parse(typeof(KeyCode), "Joystick" + controllerId + "Button0", true);
+
+			// When we press the Circle button then change the speed value 
+			KeyCode code3 = (KeyCode)Enum.Parse(typeof(KeyCode), "Joystick" + controllerId + "Button1", true);
 			if (Input.GetKey(code2))
 			{
-				speedInput = 1* forwardAccel * speed;
+				speedInput = 1 * forwardAccel * speed;
 				//Set the Controller Colour To Yellow
 				SetControllerColour(ColourChangeDepsController(playerId));
 
+			}
+			else if (Input.GetKey(code3)) 
+			{
+				speedInput = -1 * reverseAccel * speed;
 			}
 
 			//Player model will follow the Rigid Body Of The Sphere
@@ -74,25 +83,28 @@ public class PlayerMovement : MonoBehaviour
 				//Move Rigid body Forward
 				Rb.AddForce(transform.forward * speedInput);
 			}
-
-			// Circle Button...
-			KeyCode code = (KeyCode)Enum.Parse(typeof(KeyCode), "Joystick"+controllerId+"Button1", true);
-			if (Input.GetKey(code)) 
+			else
 			{
+				//Move Rigid body Backwards
+				Rb.AddForce(transform.forward * speedInput);
+			}
+
+            // Option Key
+            KeyCode code = (KeyCode)Enum.Parse(typeof(KeyCode), "Joystick" + controllerId + "Button7", true);
+            if (Input.GetKey(code))
+            {
                 //Rb.transform.position = new Vector3(1.98430276f, 0.730000019f, 0.589999974f);
                 //Rb.transform.rotation = new Quaternion(0, 0, 0, 1);
 
                 PS4Input.PadResetOrientation(playerId);
-
-
             }
 
 
 
-			//Get The motion Sensors
-			Vector4 v = PS4Input.PadGetLastOrientation(playerId);
+            //Get The motion Sensors
+            Vector4 v = PS4Input.PadGetLastOrientation(playerId);
 			Vector4 checkForFlick = new Vector4(0.3f, 0, 0, 0);
-			Vector4 checkForTilt = new Vector4(0, 0, 0.5f, 0);
+			Vector4 checkForTilt = new Vector4(0, 0, 0.2f, 0);
 
 			//Jumping Controls
 			//When i flick the controller up it will reset the position of the Cube and the Controller hasnt been flicked yet
@@ -119,14 +131,28 @@ public class PlayerMovement : MonoBehaviour
 				flickedonce = false;
 			}
 
+			//Homing Dash if the Player is in the air and there is a target
+			if (v.x < -0.4f && !isGrounded() && enemyTarget != null && !launched)
+			{
+				//Debug.Log("works");
+				//Find the Direction to the Enemy
+				Vector3 direction = enemyTarget.position - Rb.gameObject.transform.position;
+				//Launch the Player towards the Enemy
+				Rb.AddForce(direction * 50000f);
+				launched = true;
+
+			}
 			//If the player is on the ground then make sure you revert rigidbody
 			if (isGrounded()) 
 			{
 				RevertRigidbody();
+				//Player has not been launched which means it can still be launched when in mid air
+				launched = false;
 			}
 
-			//Steering Controls
-			turnInput = -v.z;
+
+            //Steering Controls
+            turnInput = -v.z;
 
 			//Depending on how much the controller is turned 
 			if (turnInput < -0.1 || turnInput > 0.1 && isGrounded()) 

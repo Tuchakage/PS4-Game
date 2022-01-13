@@ -24,12 +24,22 @@ struct RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09;
 struct CharacterController_tCCF68621C784CCB3391E0C66FE134F6F93DD6C2E;
 // UnityEngine.Collider
 struct Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02;
+// UnityEngine.Collision
+struct Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0;
+// UnityEngine.Component
+struct Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684;
+// UnityEngine.GameObject
+struct GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319;
+// UnityEngine.Object
+struct Object_tF2F3778131EFF286AF62B7B013A170F95A91571A;
 // UnityEngine.Rigidbody
 struct Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A;
 // UnityEngine.SphereCollider
 struct SphereCollider_t51A338502EEE6FA563248E3C0BF38D333077DC3A;
 // System.String
 struct String_t;
+// UnityEngine.Transform
+struct Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1;
 // System.Void
 struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
 
@@ -37,10 +47,15 @@ IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnityEngine_CoreModule[];
 IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnityEngine_PhysicsModule[];
 IL2CPP_EXTERN_C RuntimeClass* Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral21ACE806CE655297BC379B3AD17E97F0A68B6AEC;
 IL2CPP_EXTERN_C const RuntimeMethod* Collider_get_bounds_mE341D29E1DA184ADD53A474D57D9082A3550EACB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Collision_get_collider_m0AC4446E6B9168A0FB19DA376559C812E43779F8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Collision_get_gameObject_m5682F872FD28419AA36F0651CE8B19825A21859D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Collision_get_rigidbody_m5CBE72072423B624F09E804ED99301E500D909D1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Collision_get_transform_m1026DF994801C6DBB9F3F5E325107FE278517C10_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PhysicsScene_Equals_m2645ABB96C598F197F734EB712494795928CBCEC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PhysicsScene_Equals_m8C948B86D105177D519A3608816CDC698C8686B8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PhysicsScene_GetHashCode_m5344CC6CCCB1CA6EBB149775EE028089DD74B8A2_RuntimeMethod_var;
@@ -93,6 +108,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* Rigidbody_AddForce_mDFB0D57C25682B826999B00
 IL2CPP_EXTERN_C const RuntimeMethod* Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Vector3_op_Division_mE5ACBFB168FED529587457A83BA98B7DB32E2A05_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Int32_tFDE5F8CD43D10453F6A2E0C77FE48C6CC7009046_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6_0_0_0_var;
@@ -100,6 +118,7 @@ IL2CPP_EXTERN_C const RuntimeType* RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 IL2CPP_EXTERN_C const RuntimeType* Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Single_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* String_t_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E_0_0_0_var;
 struct ContactPoint_tC179732A8E0014F5EFF5977ED1ADF12CF14A9017 ;
 
@@ -1140,6 +1159,15 @@ public:
 };
 
 
+// UnityEngine.GameObject
+struct GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
+{
+public:
+
+public:
+};
+
+
 // UnityEngine.PhysicMaterial
 struct PhysicMaterial_tD3D9C84806E95BABF076A74331DF8D9A4B03E3C2  : public Object_tF2F3778131EFF286AF62B7B013A170F95A91571A
 {
@@ -1160,6 +1188,15 @@ public:
 
 // UnityEngine.Rigidbody
 struct Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A  : public Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684
+{
+public:
+
+public:
+};
+
+
+// UnityEngine.Transform
+struct Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1  : public Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684
 {
 public:
 
@@ -1326,6 +1363,16 @@ public:
 
 // System.Void UnityEngine.Collider::get_bounds_Injected(UnityEngine.Bounds&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collider_get_bounds_Injected_m9BA8C3BC133BC241D571849C4F10F67A951CA962 (Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * __this, Bounds_t0F1F36D4F7AF49524B3C2A2259594412A3D3AE37 * ___ret0, const RuntimeMethod* method);
+// UnityEngine.Rigidbody UnityEngine.Collision::get_rigidbody()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * Collision_get_rigidbody_m5CBE72072423B624F09E804ED99301E500D909D1 (Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0 * __this, const RuntimeMethod* method);
+// System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90 (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___x0, Object_tF2F3778131EFF286AF62B7B013A170F95A91571A * ___y1, const RuntimeMethod* method);
+// UnityEngine.Collider UnityEngine.Collision::get_collider()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * Collision_get_collider_m0AC4446E6B9168A0FB19DA376559C812E43779F8 (Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0 * __this, const RuntimeMethod* method);
+// UnityEngine.Transform UnityEngine.Component::get_transform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method);
+// UnityEngine.GameObject UnityEngine.Component::get_gameObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Physics::get_defaultPhysicsScene_Injected(UnityEngine.PhysicsScene&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_get_defaultPhysicsScene_Injected_m0B71068269B3C8499A258BBCAEA7E3D9D020BADA (PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 * ___ret0, const RuntimeMethod* method);
 // UnityEngine.PhysicsScene UnityEngine.Physics::get_defaultPhysicsScene()
@@ -1493,6 +1540,211 @@ IL2CPP_EXTERN_C void Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_marshal
 IL2CPP_EXTERN_C void Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_marshal_com_cleanup(Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_marshaled_com& marshaled)
 {
 }
+// UnityEngine.Rigidbody UnityEngine.Collision::get_rigidbody()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * Collision_get_rigidbody_m5CBE72072423B624F09E804ED99301E500D909D1 (Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collision_get_rigidbody_m5CBE72072423B624F09E804ED99301E500D909D1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * V_0 = NULL;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Collision_get_rigidbody_m5CBE72072423B624F09E804ED99301E500D909D1_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 0));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 1));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 2));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 3));
+		Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * L_0 = __this->get_m_Rigidbody_2();
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 4));
+		Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * L_1 = V_0;
+		return L_1;
+	}
+}
+// UnityEngine.Collider UnityEngine.Collision::get_collider()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * Collision_get_collider_m0AC4446E6B9168A0FB19DA376559C812E43779F8 (Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collision_get_collider_m0AC4446E6B9168A0FB19DA376559C812E43779F8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * V_0 = NULL;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Collision_get_collider_m0AC4446E6B9168A0FB19DA376559C812E43779F8_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 5));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 6));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 7));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 8));
+		Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * L_0 = __this->get_m_Collider_3();
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 9));
+		Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * L_1 = V_0;
+		return L_1;
+	}
+}
+// UnityEngine.Transform UnityEngine.Collision::get_transform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * Collision_get_transform_m1026DF994801C6DBB9F3F5E325107FE278517C10 (Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collision_get_transform_m1026DF994801C6DBB9F3F5E325107FE278517C10_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * V_0 = NULL;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Collision_get_transform_m1026DF994801C6DBB9F3F5E325107FE278517C10_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 10));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 11));
+	Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * G_B3_0 = NULL;
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 12));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 13));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 15));
+		Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * L_0;
+		L_0 = Collision_get_rigidbody_m5CBE72072423B624F09E804ED99301E500D909D1(__this, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 15));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 16));
+		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 16));
+		if (L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 17));
+		Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * L_2;
+		L_2 = Collision_get_collider_m0AC4446E6B9168A0FB19DA376559C812E43779F8(__this, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 17));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 18));
+		NullCheck(L_2);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_3;
+		L_3 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_2, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 18));
+		G_B3_0 = L_3;
+		goto IL_0027;
+	}
+
+IL_001c:
+	{
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 19));
+		Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * L_4;
+		L_4 = Collision_get_rigidbody_m5CBE72072423B624F09E804ED99301E500D909D1(__this, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 19));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 20));
+		NullCheck(L_4);
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_5;
+		L_5 = Component_get_transform_mE8496EBC45BEB1BADB5F314960F1DF1C952FA11F(L_4, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 20));
+		G_B3_0 = L_5;
+	}
+
+IL_0027:
+	{
+		V_0 = G_B3_0;
+		goto IL_002a;
+	}
+
+IL_002a:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 14));
+		Transform_tA8193BB29D4D2C7EC04918F3ED1816345186C3F1 * L_6 = V_0;
+		return L_6;
+	}
+}
+// UnityEngine.GameObject UnityEngine.Collision::get_gameObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * Collision_get_gameObject_m5682F872FD28419AA36F0651CE8B19825A21859D (Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collision_get_gameObject_m5682F872FD28419AA36F0651CE8B19825A21859D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collision_tDC11F9B3834FD25DEB8C7DD1C51B635D240BBBF0_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * V_0 = NULL;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Collision_get_gameObject_m5682F872FD28419AA36F0651CE8B19825A21859D_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 21));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 22));
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * G_B3_0 = NULL;
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 23));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 24));
+		Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * L_0 = __this->get_m_Rigidbody_2();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 26));
+		IL2CPP_RUNTIME_CLASS_INIT(Object_tF2F3778131EFF286AF62B7B013A170F95A91571A_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mE1F187520BD83FB7D86A6D850710C4D42B864E90(L_0, (Object_tF2F3778131EFF286AF62B7B013A170F95A91571A *)NULL, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 26));
+		if (L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		Collider_t5E81E43C2ECA0209A7C4528E84A632712D192B02 * L_2 = __this->get_m_Collider_3();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 27));
+		NullCheck(L_2);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_3;
+		L_3 = Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B(L_2, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 27));
+		G_B3_0 = L_3;
+		goto IL_0027;
+	}
+
+IL_001c:
+	{
+		Rigidbody_t101F2E2F9F16E765A77429B2DE4527D2047A887A * L_4 = __this->get_m_Rigidbody_2();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 28));
+		NullCheck(L_4);
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_5;
+		L_5 = Component_get_gameObject_m55DC35B149AFB9157582755383BA954655FE0C5B(L_4, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 28));
+		G_B3_0 = L_5;
+	}
+
+IL_0027:
+	{
+		V_0 = G_B3_0;
+		goto IL_002a;
+	}
+
+IL_002a:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 25));
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_6 = V_0;
+		return L_6;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1606,32 +1858,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m9DE0EEA1CF8DEF7D0621622
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___maxDistance2), (&___layerMask3), (&___queryTriggerInteraction4));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_m9DE0EEA1CF8DEF7D06216225F19E2958D341F7BA_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 79));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 80));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 108));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 109));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 81));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 82));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 84));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 110));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 111));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 113));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 84));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 113));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
 		float L_3 = ___maxDistance2;
 		int32_t L_4 = ___layerMask3;
 		int32_t L_5 = ___queryTriggerInteraction4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 85));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 114));
 		bool L_6;
 		L_6 = PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6FEB098D815062BEF821187((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 85));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 114));
 		V_1 = L_6;
 		goto IL_0017;
 	}
 
 IL_0017:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 83));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 112));
 		bool L_7 = V_1;
 		return L_7;
 	}
@@ -1652,31 +1904,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m09F21E13465121A73F19C07
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___maxDistance2), (&___layerMask3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_m09F21E13465121A73F19C07FC5F5314CF15ACD15_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 86));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 87));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 115));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 116));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 88));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 89));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 91));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 117));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 118));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 120));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 91));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 120));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
 		float L_3 = ___maxDistance2;
 		int32_t L_4 = ___layerMask3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 92));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 121));
 		bool L_5;
 		L_5 = PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6FEB098D815062BEF821187((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, L_4, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 92));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 121));
 		V_1 = L_5;
 		goto IL_0016;
 	}
 
 IL_0016:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 90));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 119));
 		bool L_6 = V_1;
 		return L_6;
 	}
@@ -1697,30 +1949,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m284670765E1627E43B7B0F5
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___maxDistance2));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_m284670765E1627E43B7B0F5EC811A688EE595091_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 93));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 94));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 122));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 123));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 95));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 96));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 98));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 124));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 125));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 127));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 98));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 127));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
 		float L_3 = ___maxDistance2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 99));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 128));
 		bool L_4;
 		L_4 = PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6FEB098D815062BEF821187((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 99));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 128));
 		V_1 = L_4;
 		goto IL_0017;
 	}
 
 IL_0017:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 97));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 126));
 		bool L_5 = V_1;
 		return L_5;
 	}
@@ -1741,29 +1993,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_mDA2EB8C7692308A7178222D
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_mDA2EB8C7692308A7178222D31CBA4C7A1C7DC915_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 100));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 101));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 129));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 130));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 102));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 103));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 105));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 131));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 132));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 134));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 105));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 134));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 106));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 135));
 		bool L_3;
 		L_3 = PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6FEB098D815062BEF821187((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, (std::numeric_limits<float>::infinity()), ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 106));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 135));
 		V_1 = L_3;
 		goto IL_001b;
 	}
 
 IL_001b:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 104));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 133));
 		bool L_4 = V_1;
 		return L_4;
 	}
@@ -1784,15 +2036,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m2EA572B4613E1BD7DBAA299
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___hitInfo2), (&___maxDistance3), (&___layerMask4), (&___queryTriggerInteraction5));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_m2EA572B4613E1BD7DBAA299511CFD2DBA179A163_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 107));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 108));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 136));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 137));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 109));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 110));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 112));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 138));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 139));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 141));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 112));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 141));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
@@ -1800,17 +2052,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m2EA572B4613E1BD7DBAA299
 		float L_4 = ___maxDistance3;
 		int32_t L_5 = ___layerMask4;
 		int32_t L_6 = ___queryTriggerInteraction5;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 113));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 142));
 		bool L_7;
 		L_7 = PhysicsScene_Raycast_mFC0D59C4439EE9DA6E8AA5F6891915132D587208((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, (RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 *)L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 113));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 142));
 		V_1 = L_7;
 		goto IL_0019;
 	}
 
 IL_0019:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 111));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 140));
 		bool L_8 = V_1;
 		return L_8;
 	}
@@ -1831,32 +2083,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_mCBD5F7D498C246713EDDBB4
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___hitInfo2), (&___maxDistance3), (&___layerMask4));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_mCBD5F7D498C246713EDDBB446E97205DA206C49C_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 114));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 115));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 143));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 144));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 116));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 117));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 119));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 145));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 146));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 148));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 119));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 148));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
 		RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 * L_3 = ___hitInfo2;
 		float L_4 = ___maxDistance3;
 		int32_t L_5 = ___layerMask4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 120));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 149));
 		bool L_6;
 		L_6 = PhysicsScene_Raycast_mFC0D59C4439EE9DA6E8AA5F6891915132D587208((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, (RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 *)L_3, L_4, L_5, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 120));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 149));
 		V_1 = L_6;
 		goto IL_0018;
 	}
 
 IL_0018:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 118));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 147));
 		bool L_7 = V_1;
 		return L_7;
 	}
@@ -1877,31 +2129,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m18E12C65F127D1AA50D1966
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___hitInfo2), (&___maxDistance3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_m18E12C65F127D1AA50D196623F04F81CB138FD12_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 121));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 122));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 150));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 151));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 123));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 124));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 126));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 152));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 153));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 155));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 126));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 155));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
 		RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 * L_3 = ___hitInfo2;
 		float L_4 = ___maxDistance3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 127));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 156));
 		bool L_5;
 		L_5 = PhysicsScene_Raycast_mFC0D59C4439EE9DA6E8AA5F6891915132D587208((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, (RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 *)L_3, L_4, ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 127));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 156));
 		V_1 = L_5;
 		goto IL_0018;
 	}
 
 IL_0018:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 125));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 154));
 		bool L_6 = V_1;
 		return L_6;
 	}
@@ -1922,30 +2174,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_mE84D30EEFE59DA28DA17234
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___hitInfo2));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_mE84D30EEFE59DA28DA172342068F092A35B2BE4A_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 128));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 129));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 157));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 158));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 130));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 131));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 133));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 159));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 160));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 162));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 133));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 162));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
 		RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 * L_3 = ___hitInfo2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 134));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 163));
 		bool L_4;
 		L_4 = PhysicsScene_Raycast_mFC0D59C4439EE9DA6E8AA5F6891915132D587208((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, (RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 *)L_3, (std::numeric_limits<float>::infinity()), ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 134));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 163));
 		V_1 = L_4;
 		goto IL_001c;
 	}
 
 IL_001c:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 132));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 161));
 		bool L_5 = V_1;
 		return L_5;
 	}
@@ -1966,38 +2218,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m77560CCAA49DC821E51FDDD
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___maxDistance1), (&___layerMask2), (&___queryTriggerInteraction3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_m77560CCAA49DC821E51FDDD1570B921D7704646F_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 135));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 136));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 164));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 165));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 137));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 138));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 140));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 166));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 167));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 169));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 140));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 169));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 141));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 170));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 141));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 142));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 170));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 171));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 142));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 171));
 		float L_3 = ___maxDistance1;
 		int32_t L_4 = ___layerMask2;
 		int32_t L_5 = ___queryTriggerInteraction3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 143));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 172));
 		bool L_6;
 		L_6 = PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6FEB098D815062BEF821187((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 143));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 172));
 		V_1 = L_6;
 		goto IL_0022;
 	}
 
 IL_0022:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 139));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 168));
 		bool L_7 = V_1;
 		return L_7;
 	}
@@ -2018,37 +2270,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_mFDC4B8E7979495E3C22D0E3
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___maxDistance1), (&___layerMask2));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_mFDC4B8E7979495E3C22D0E3CEA4BCAB271EEC25A_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 144));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 145));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 173));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 174));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 146));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 147));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 149));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 175));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 176));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 178));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 149));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 178));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 150));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 179));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 150));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 151));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 179));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 180));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 151));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 180));
 		float L_3 = ___maxDistance1;
 		int32_t L_4 = ___layerMask2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 152));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 181));
 		bool L_5;
 		L_5 = PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6FEB098D815062BEF821187((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, L_4, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 152));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 181));
 		V_1 = L_5;
 		goto IL_0022;
 	}
 
 IL_0022:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 148));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 177));
 		bool L_6 = V_1;
 		return L_6;
 	}
@@ -2069,36 +2321,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_mD7A711D3A790AC505F7229A
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___maxDistance1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_mD7A711D3A790AC505F7229A4FFFA2E389008176B_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 153));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 154));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 182));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 183));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 155));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 156));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 158));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 184));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 185));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 187));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 158));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 187));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 159));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 188));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 159));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 160));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 188));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 189));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 160));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 189));
 		float L_3 = ___maxDistance1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 161));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 190));
 		bool L_4;
 		L_4 = PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6FEB098D815062BEF821187((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 161));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 190));
 		V_1 = L_4;
 		goto IL_0023;
 	}
 
 IL_0023:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 157));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 186));
 		bool L_5 = V_1;
 		return L_5;
 	}
@@ -2119,35 +2371,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m111AFC36A136A67BE477667
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_m111AFC36A136A67BE4776670E356E99A82010BFE_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 162));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 163));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 191));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 192));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 164));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 165));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 167));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 193));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 194));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 196));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 167));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 196));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 168));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 197));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 168));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 169));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 197));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 198));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 169));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 170));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 198));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 199));
 		bool L_3;
 		L_3 = PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6FEB098D815062BEF821187((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, (std::numeric_limits<float>::infinity()), ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 170));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 199));
 		V_1 = L_3;
 		goto IL_0027;
 	}
 
 IL_0027:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 166));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 195));
 		bool L_4 = V_1;
 		return L_4;
 	}
@@ -2168,39 +2420,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_mCA3F2DD1DC08199AAD8466B
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___hitInfo1), (&___maxDistance2), (&___layerMask3), (&___queryTriggerInteraction4));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_mCA3F2DD1DC08199AAD8466BB857318CD454AC774_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 171));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 172));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 200));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 201));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 173));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 174));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 176));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 202));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 203));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 205));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 176));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 205));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 177));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 206));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 177));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 178));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 206));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 207));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 178));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 207));
 		RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 * L_3 = ___hitInfo1;
 		float L_4 = ___maxDistance2;
 		int32_t L_5 = ___layerMask3;
 		int32_t L_6 = ___queryTriggerInteraction4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 179));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 208));
 		bool L_7;
 		L_7 = PhysicsScene_Raycast_mFC0D59C4439EE9DA6E8AA5F6891915132D587208((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, (RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 *)L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 179));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 208));
 		V_1 = L_7;
 		goto IL_0024;
 	}
 
 IL_0024:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 175));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 204));
 		bool L_8 = V_1;
 		return L_8;
 	}
@@ -2218,33 +2470,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m46E12070D6996F4C8C91D49
 	bool V_0 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___hitInfo1), (&___maxDistance2), (&___layerMask3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_m46E12070D6996F4C8C91D49ADC27C74AC1D6A3D8_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 180));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 181));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 209));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 210));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 182));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 183));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 185));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 211));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 212));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 214));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0;
 		L_0 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 185));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 186));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 214));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 215));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 186));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 215));
 		RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 * L_2 = ___hitInfo1;
 		float L_3 = ___maxDistance2;
 		int32_t L_4 = ___layerMask3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 187));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 216));
 		bool L_5;
 		L_5 = Physics_Raycast_m2EA572B4613E1BD7DBAA299511CFD2DBA179A163(L_0, L_1, (RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 *)L_2, L_3, L_4, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 187));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 216));
 		V_0 = L_5;
 		goto IL_001b;
 	}
 
 IL_001b:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 184));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 213));
 		bool L_6 = V_0;
 		return L_6;
 	}
@@ -2265,37 +2517,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_mA64F8C30681E3A6A8F2B7ED
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___hitInfo1), (&___maxDistance2));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_mA64F8C30681E3A6A8F2B7EDE592FE7BBC0D354F4_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 188));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 189));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 217));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 218));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 190));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 191));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 193));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 219));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 220));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 222));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 193));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 222));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 194));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 223));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 194));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 195));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 223));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 224));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 195));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 224));
 		RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 * L_3 = ___hitInfo1;
 		float L_4 = ___maxDistance2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 196));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 225));
 		bool L_5;
 		L_5 = PhysicsScene_Raycast_mFC0D59C4439EE9DA6E8AA5F6891915132D587208((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, (RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 *)L_3, L_4, ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 196));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 225));
 		V_1 = L_5;
 		goto IL_0024;
 	}
 
 IL_0024:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 192));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 221));
 		bool L_6 = V_1;
 		return L_6;
 	}
@@ -2316,36 +2568,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m80EC8EEDA0ABA8B01838BA9
 	bool V_1 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___hitInfo1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_Raycast_m80EC8EEDA0ABA8B01838BA9054834CD1A381916E_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 197));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 198));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 226));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 227));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 199));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 200));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 202));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 228));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 229));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 231));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 202));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 231));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 203));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 232));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 203));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 204));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 232));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 233));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 204));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 233));
 		RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 * L_3 = ___hitInfo1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 205));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 234));
 		bool L_4;
 		L_4 = PhysicsScene_Raycast_mFC0D59C4439EE9DA6E8AA5F6891915132D587208((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, (RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 *)L_3, (std::numeric_limits<float>::infinity()), ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 205));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 234));
 		V_1 = L_4;
 		goto IL_0028;
 	}
 
 IL_0028:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 201));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 230));
 		bool L_5 = V_1;
 		return L_5;
 	}
@@ -2395,20 +2647,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___maxDistance2), (&___layerMask3), (&___queryTriggerInteraction4));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_2), (&V_3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastAll_m5103E7C60CC66BAFA6534D1736138A92EB1EF2B8_RuntimeMethod_var, NULL, methodExecutionContextParameters, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 206));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 207));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 235));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 236));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 208));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 209));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 219));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 237));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 238));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 248));
 		float L_0;
 		L_0 = Vector3_get_magnitude_mDDD40612220D8104E77E993E18A101A69A944991((Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)(&___direction1), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 219));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 248));
 		V_0 = L_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 210));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 239));
 		float L_1 = V_0;
 		V_1 = (bool)((((float)L_1) > ((float)(1.40129846E-45f)))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 211));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 240));
 		bool L_2 = V_1;
 		if (!L_2)
 		{
@@ -2416,42 +2668,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 212));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 213));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 241));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 242));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3 = ___direction1;
 		float L_4 = V_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 220));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 249));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_5;
 		L_5 = Vector3_op_Division_mE5ACBFB168FED529587457A83BA98B7DB32E2A05_inline(L_3, L_4, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 220));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 249));
 		V_2 = L_5;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 214));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 243));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7 = V_2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 221));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 250));
 		Ray__ctor_m75B1F651FF47EE6B887105101B7DA61CBF41F83C((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&V_3), L_6, L_7, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 221));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 215));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 222));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 250));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 244));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 251));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_8;
 		L_8 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 222));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 251));
 		Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6  L_9 = V_3;
 		float L_10 = ___maxDistance2;
 		int32_t L_11 = ___layerMask3;
 		int32_t L_12 = ___queryTriggerInteraction4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 223));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 252));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_13;
 		L_13 = Physics_Internal_RaycastAll_m39EE7CF896F9D8BA58CC623F14E4DB0641480523(L_8, L_9, L_10, L_11, L_12, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 223));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 252));
 		V_4 = L_13;
 		goto IL_0045;
 	}
 
 IL_003a:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 216));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 217));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 245));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 246));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_14 = (RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09*)(RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09*)SZArrayNew(RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09_il2cpp_TypeInfo_var, (uint32_t)0);
 		V_4 = L_14;
 		goto IL_0045;
@@ -2459,7 +2711,7 @@ IL_003a:
 
 IL_0045:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 218));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 247));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_15 = V_4;
 		return L_15;
 	}
@@ -2477,26 +2729,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 	RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* V_0 = NULL;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___maxDistance2), (&___layerMask3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastAll_m2C977C8B022672F42B5E18F40B529C0A74B7E471_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 224));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 225));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 253));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 254));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 226));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 227));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 255));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 256));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___direction1;
 		float L_2 = ___maxDistance2;
 		int32_t L_3 = ___layerMask3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 229));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 258));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_4;
 		L_4 = Physics_RaycastAll_m5103E7C60CC66BAFA6534D1736138A92EB1EF2B8(L_0, L_1, L_2, L_3, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 229));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 258));
 		V_0 = L_4;
 		goto IL_000e;
 	}
 
 IL_000e:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 228));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 257));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_5 = V_0;
 		return L_5;
 	}
@@ -2514,25 +2766,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 	RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* V_0 = NULL;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___maxDistance2));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastAll_m2BBC8D2731B38EE0B704A5C6A09D0F8BBA074A4D_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 230));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 231));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 259));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 260));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 232));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 233));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 261));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 262));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___direction1;
 		float L_2 = ___maxDistance2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 235));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 264));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3;
 		L_3 = Physics_RaycastAll_m5103E7C60CC66BAFA6534D1736138A92EB1EF2B8(L_0, L_1, L_2, ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 235));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 264));
 		V_0 = L_3;
 		goto IL_000f;
 	}
 
 IL_000f:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 234));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 263));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_4 = V_0;
 		return L_4;
 	}
@@ -2550,24 +2802,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 	RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* V_0 = NULL;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastAll_m83F28CB671653C07995FB1BCDC561121DE3D9CA6_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 236));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 237));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 265));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 266));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 238));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 239));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 267));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 268));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___direction1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 241));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 270));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_2;
 		L_2 = Physics_RaycastAll_m5103E7C60CC66BAFA6534D1736138A92EB1EF2B8(L_0, L_1, (std::numeric_limits<float>::infinity()), ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 241));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 270));
 		V_0 = L_2;
 		goto IL_0013;
 	}
 
 IL_0013:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 240));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 269));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3 = V_0;
 		return L_3;
 	}
@@ -2585,33 +2837,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 	RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* V_0 = NULL;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___maxDistance1), (&___layerMask2), (&___queryTriggerInteraction3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastAll_m55EB4478198ED6EF838500257FA3BE1A871D3605_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 242));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 243));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 271));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 272));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 244));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 245));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 247));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 273));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 274));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 276));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0;
 		L_0 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 247));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 248));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 276));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 277));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 248));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 277));
 		float L_2 = ___maxDistance1;
 		int32_t L_3 = ___layerMask2;
 		int32_t L_4 = ___queryTriggerInteraction3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 249));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 278));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_5;
 		L_5 = Physics_RaycastAll_m5103E7C60CC66BAFA6534D1736138A92EB1EF2B8(L_0, L_1, L_2, L_3, L_4, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 249));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 278));
 		V_0 = L_5;
 		goto IL_001a;
 	}
 
 IL_001a:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 246));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 275));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_6 = V_0;
 		return L_6;
 	}
@@ -2629,32 +2881,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 	RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* V_0 = NULL;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___maxDistance1), (&___layerMask2));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastAll_mA24B9B922C98C5D18397FAE55C04AEAFDD47F029_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 250));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 251));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 279));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 280));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 252));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 253));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 255));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 281));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 282));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 284));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0;
 		L_0 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 255));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 256));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 284));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 285));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 256));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 285));
 		float L_2 = ___maxDistance1;
 		int32_t L_3 = ___layerMask2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 257));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 286));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_4;
 		L_4 = Physics_RaycastAll_m5103E7C60CC66BAFA6534D1736138A92EB1EF2B8(L_0, L_1, L_2, L_3, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 257));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 286));
 		V_0 = L_4;
 		goto IL_001a;
 	}
 
 IL_001a:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 254));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 283));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_5 = V_0;
 		return L_5;
 	}
@@ -2672,31 +2924,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 	RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* V_0 = NULL;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___maxDistance1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastAll_m72947571EFB0EFB34E48340AA2EC0C8030D27C50_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 258));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 259));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 287));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 288));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 260));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 261));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 263));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 289));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 290));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 292));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0;
 		L_0 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 263));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 264));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 292));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 293));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 264));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 293));
 		float L_2 = ___maxDistance1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 265));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 294));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3;
 		L_3 = Physics_RaycastAll_m5103E7C60CC66BAFA6534D1736138A92EB1EF2B8(L_0, L_1, L_2, ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 265));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 294));
 		V_0 = L_3;
 		goto IL_001b;
 	}
 
 IL_001b:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 262));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 291));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_4 = V_0;
 		return L_4;
 	}
@@ -2714,30 +2966,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RaycastHitU5BU5D_t6778DB95346906446AAD3A1A369
 	RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* V_0 = NULL;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastAll_m529EE59D6D03E4CFAECE4016C8CC4181BEC2D26D_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 266));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 267));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 295));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 296));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 268));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 269));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 271));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 297));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 298));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 300));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0;
 		L_0 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 271));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 272));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 300));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 301));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 272));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 273));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 301));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 302));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_2;
 		L_2 = Physics_RaycastAll_m5103E7C60CC66BAFA6534D1736138A92EB1EF2B8(L_0, L_1, (std::numeric_limits<float>::infinity()), ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 273));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 302));
 		V_0 = L_2;
 		goto IL_001f;
 	}
 
 IL_001f:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 270));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 299));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3 = V_0;
 		return L_3;
 	}
@@ -2758,39 +3010,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_RaycastNonAlloc_m7C81125AD7D5
 	int32_t V_1 = 0;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___results1), (&___maxDistance2), (&___layerMask3), (&___queryTriggerInteraction4));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastNonAlloc_m7C81125AD7D5891EBC3AB48C6DED7B60F53DF099_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 274));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 275));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 303));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 304));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 276));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 277));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 279));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 305));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 306));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 308));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 279));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 308));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 280));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 309));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 280));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 281));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 309));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 310));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 281));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 310));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3 = ___results1;
 		float L_4 = ___maxDistance2;
 		int32_t L_5 = ___layerMask3;
 		int32_t L_6 = ___queryTriggerInteraction4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 282));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 311));
 		int32_t L_7;
 		L_7 = PhysicsScene_Raycast_m95CAB68EB9165E3AB2A4D441F7DF9767AD4B7F73((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 282));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 311));
 		V_1 = L_7;
 		goto IL_0024;
 	}
 
 IL_0024:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 278));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 307));
 		int32_t L_8 = V_1;
 		return L_8;
 	}
@@ -2811,38 +3063,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_RaycastNonAlloc_m8F62EE5A33E8
 	int32_t V_1 = 0;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___results1), (&___maxDistance2), (&___layerMask3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastNonAlloc_m8F62EE5A33E81A02E4983A171023B7BC4AC700CA_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 283));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 284));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 312));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 313));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 285));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 286));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 288));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 314));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 315));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 317));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 288));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 317));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 289));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 318));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 289));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 290));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 318));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 319));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 290));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 319));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3 = ___results1;
 		float L_4 = ___maxDistance2;
 		int32_t L_5 = ___layerMask3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 291));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 320));
 		int32_t L_6;
 		L_6 = PhysicsScene_Raycast_m95CAB68EB9165E3AB2A4D441F7DF9767AD4B7F73((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, L_4, L_5, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 291));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 320));
 		V_1 = L_6;
 		goto IL_0023;
 	}
 
 IL_0023:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 287));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 316));
 		int32_t L_7 = V_1;
 		return L_7;
 	}
@@ -2863,37 +3115,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_RaycastNonAlloc_m41BB7BB8755B
 	int32_t V_1 = 0;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___results1), (&___maxDistance2));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastNonAlloc_m41BB7BB8755B09700C10F59A29C3541D45AB9CCD_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 292));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 293));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 321));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 322));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 294));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 295));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 297));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 323));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 324));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 326));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 297));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 326));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 298));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 327));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 298));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 299));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 327));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 328));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 299));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 328));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3 = ___results1;
 		float L_4 = ___maxDistance2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 300));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 329));
 		int32_t L_5;
 		L_5 = PhysicsScene_Raycast_m95CAB68EB9165E3AB2A4D441F7DF9767AD4B7F73((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, L_4, ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 300));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 329));
 		V_1 = L_5;
 		goto IL_0024;
 	}
 
 IL_0024:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 296));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 325));
 		int32_t L_6 = V_1;
 		return L_6;
 	}
@@ -2914,36 +3166,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_RaycastNonAlloc_mBC5BE514E55B
 	int32_t V_1 = 0;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ray0), (&___results1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastNonAlloc_mBC5BE514E55B8D98A8F4752DED6850E02EE8AD98_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 301));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 302));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 330));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 331));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 303));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 304));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 306));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 332));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 333));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 335));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 306));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 335));
 		V_0 = L_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 307));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 336));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1;
 		L_1 = Ray_get_origin_m0C1B2BFF99CDF5231AC29AC031C161F55B53C1D0((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 307));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 308));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 336));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 337));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2;
 		L_2 = Ray_get_direction_m2B31F86F19B64474A901B28D3808011AE7A13EFC((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&___ray0), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 308));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 337));
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3 = ___results1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 309));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 338));
 		int32_t L_4;
 		L_4 = PhysicsScene_Raycast_m95CAB68EB9165E3AB2A4D441F7DF9767AD4B7F73((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, (std::numeric_limits<float>::infinity()), ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 309));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 338));
 		V_1 = L_4;
 		goto IL_0028;
 	}
 
 IL_0028:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 305));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 334));
 		int32_t L_5 = V_1;
 		return L_5;
 	}
@@ -2964,15 +3216,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_RaycastNonAlloc_m2C90D14E472D
 	int32_t V_1 = 0;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___results2), (&___maxDistance3), (&___layerMask4), (&___queryTriggerInteraction5));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastNonAlloc_m2C90D14E472DE7929EFD54FDA7BC512D3FBDE4ED_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 310));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 311));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 339));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 340));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 312));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 313));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 315));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 341));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 342));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 344));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 315));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 344));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
@@ -2980,17 +3232,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_RaycastNonAlloc_m2C90D14E472D
 		float L_4 = ___maxDistance3;
 		int32_t L_5 = ___layerMask4;
 		int32_t L_6 = ___queryTriggerInteraction5;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 316));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 345));
 		int32_t L_7;
 		L_7 = PhysicsScene_Raycast_m95CAB68EB9165E3AB2A4D441F7DF9767AD4B7F73((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 316));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 345));
 		V_1 = L_7;
 		goto IL_0019;
 	}
 
 IL_0019:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 314));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 343));
 		int32_t L_8 = V_1;
 		return L_8;
 	}
@@ -3011,32 +3263,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_RaycastNonAlloc_m316F59706705
 	int32_t V_1 = 0;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___results2), (&___maxDistance3), (&___layerMask4));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastNonAlloc_m316F597067055C9F923F57CC68D68FF917C3B4D1_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 317));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 318));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 346));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 347));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 319));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 320));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 322));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 348));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 349));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 351));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 322));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 351));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3 = ___results2;
 		float L_4 = ___maxDistance3;
 		int32_t L_5 = ___layerMask4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 323));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 352));
 		int32_t L_6;
 		L_6 = PhysicsScene_Raycast_m95CAB68EB9165E3AB2A4D441F7DF9767AD4B7F73((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, L_4, L_5, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 323));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 352));
 		V_1 = L_6;
 		goto IL_0018;
 	}
 
 IL_0018:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 321));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 350));
 		int32_t L_7 = V_1;
 		return L_7;
 	}
@@ -3057,31 +3309,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_RaycastNonAlloc_m1B8F31BF41F7
 	int32_t V_1 = 0;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___results2), (&___maxDistance3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastNonAlloc_m1B8F31BF41F756F561F6AC3A2E0736F2BC9C4DB4_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 324));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 325));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 353));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 354));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 326));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 327));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 329));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 355));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 356));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 358));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 329));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 358));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3 = ___results2;
 		float L_4 = ___maxDistance3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 330));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 359));
 		int32_t L_5;
 		L_5 = PhysicsScene_Raycast_m95CAB68EB9165E3AB2A4D441F7DF9767AD4B7F73((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, L_4, ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 330));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 359));
 		V_1 = L_5;
 		goto IL_0018;
 	}
 
 IL_0018:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 328));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 357));
 		int32_t L_6 = V_1;
 		return L_6;
 	}
@@ -3102,30 +3354,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_RaycastNonAlloc_m9076DDE1A65F
 	int32_t V_1 = 0;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___results2));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_RaycastNonAlloc_m9076DDE1A65F87DB3D2824DAD4E5B8B534159F1F_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 331));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 332));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 360));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 361));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 333));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 334));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 336));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 362));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 363));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 365));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 336));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 365));
 		V_0 = L_0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___direction1;
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_3 = ___results2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 337));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 366));
 		int32_t L_4;
 		L_4 = PhysicsScene_Raycast_m95CAB68EB9165E3AB2A4D441F7DF9767AD4B7F73((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)(&V_0), L_1, L_2, L_3, (std::numeric_limits<float>::infinity()), ((int32_t)-5), 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 337));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 366));
 		V_1 = L_4;
 		goto IL_001c;
 	}
 
 IL_001c:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 335));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 364));
 		int32_t L_5 = V_1;
 		return L_5;
 	}
@@ -3163,31 +3415,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckCapsule_m687745C91D41BD789F
 	bool V_0 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___start0), (&___end1), (&___radius2), (&___layerMask3), (&___queryTriggerInteraction4));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_CheckCapsule_m687745C91D41BD789F08722EF13CA83DBFE1E52F_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 338));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 339));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 367));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 368));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 340));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 341));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 343));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 369));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 370));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 372));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_0;
 		L_0 = Physics_get_defaultPhysicsScene_mA6361488FBAC110DA8397E5E4CB473EBF4191010(/*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 343));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 372));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___start0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_2 = ___end1;
 		float L_3 = ___radius2;
 		int32_t L_4 = ___layerMask3;
 		int32_t L_5 = ___queryTriggerInteraction4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 344));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 373));
 		bool L_6;
 		L_6 = Physics_CheckCapsule_Internal_mAB26B9D651C6032FEC342C65ED96DC662278EF75(L_0, L_1, L_2, L_3, L_4, L_5, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 344));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 373));
 		V_0 = L_6;
 		goto IL_0014;
 	}
 
 IL_0014:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 342));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 371));
 		bool L_7 = V_0;
 		return L_7;
 	}
@@ -3205,26 +3457,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_CheckCapsule_mF321AB3030AFC18E66
 	bool V_0 = false;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___start0), (&___end1), (&___radius2), (&___layerMask3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Physics_CheckCapsule_mF321AB3030AFC18E66EADBCB688CC39D363C7221_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 345));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 346));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 374));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 375));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 347));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 348));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 376));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 377));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___start0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_1 = ___end1;
 		float L_2 = ___radius2;
 		int32_t L_3 = ___layerMask3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 350));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 379));
 		bool L_4;
 		L_4 = Physics_CheckCapsule_m687745C91D41BD789F08722EF13CA83DBFE1E52F(L_0, L_1, L_2, L_3, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 350));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 379));
 		V_0 = L_4;
 		goto IL_000e;
 	}
 
 IL_000e:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 349));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 378));
 		bool L_5 = V_0;
 		return L_5;
 	}
@@ -3283,11 +3535,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PhysicsScene_ToString_mBB6D0AC1E3E2
 	String_t* V_0 = NULL;
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, PhysicsScene_ToString_mBB6D0AC1E3E2EDC34CB4A7A34485B24B6271903F_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 6));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 7));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 35));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 36));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 8));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 9));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 37));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 38));
 		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_0 = (ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)SZArrayNew(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var, (uint32_t)1);
 		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_1 = L_0;
 		int32_t L_2 = __this->get_m_Handle_0();
@@ -3296,17 +3548,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PhysicsScene_ToString_mBB6D0AC1E3E2
 		NullCheck(L_1);
 		ArrayElementTypeCheck (L_1, L_4);
 		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_4);
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 11));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 40));
 		String_t* L_5;
 		L_5 = UnityString_Format_m7A07C068ED408DD06F634070770FB55F13AA4EC9(_stringLiteral21ACE806CE655297BC379B3AD17E97F0A68B6AEC, L_1, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 11));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 40));
 		V_0 = L_5;
 		goto IL_0022;
 	}
 
 IL_0022:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 10));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 39));
 		String_t* L_6 = V_0;
 		return L_6;
 	}
@@ -3334,11 +3586,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene_GetHashCode_m5344CC6CCCB
 	int32_t V_0 = 0;
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, PhysicsScene_GetHashCode_m5344CC6CCCB1CA6EBB149775EE028089DD74B8A2_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 12));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 13));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 41));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 42));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 14));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 15));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 43));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 44));
 		int32_t L_0 = __this->get_m_Handle_0();
 		V_0 = L_0;
 		goto IL_000a;
@@ -3346,7 +3598,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene_GetHashCode_m5344CC6CCCB
 
 IL_000a:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 16));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 45));
 		int32_t L_1 = V_0;
 		return L_1;
 	}
@@ -3380,14 +3632,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PhysicsScene_Equals_m2645ABB96C598F197F7
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___other0));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, PhysicsScene_Equals_m2645ABB96C598F197F734EB712494795928CBCEC_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 17));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 18));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 46));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 47));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 19));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 20));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 48));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 49));
 		RuntimeObject * L_0 = ___other0;
 		V_1 = (bool)((((int32_t)((!(((RuntimeObject*)(RuntimeObject *)((RuntimeObject *)IsInstSealed((RuntimeObject*)L_0, PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678_il2cpp_TypeInfo_var))) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 21));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 50));
 		bool L_1 = V_1;
 		if (!L_1)
 		{
@@ -3395,17 +3647,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PhysicsScene_Equals_m2645ABB96C598F197F7
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 22));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 51));
 		V_2 = (bool)0;
 		goto IL_002d;
 	}
 
 IL_0015:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 23));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 52));
 		RuntimeObject * L_2 = ___other0;
 		V_0 = ((*(PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)((PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)UnBox(L_2, PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678_il2cpp_TypeInfo_var))));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 24));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 53));
 		int32_t L_3 = __this->get_m_Handle_0();
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_4 = V_0;
 		int32_t L_5 = L_4.get_m_Handle_0();
@@ -3415,7 +3667,7 @@ IL_0015:
 
 IL_002d:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 25));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 54));
 		bool L_6 = V_2;
 		return L_6;
 	}
@@ -3444,11 +3696,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PhysicsScene_Equals_m8C948B86D105177D519
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___other0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, PhysicsScene_Equals_m8C948B86D105177D519A3608816CDC698C8686B8_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 26));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 27));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 55));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 56));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 28));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 29));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 57));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 58));
 		int32_t L_0 = __this->get_m_Handle_0();
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_1 = ___other0;
 		int32_t L_2 = L_1.get_m_Handle_0();
@@ -3458,7 +3710,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PhysicsScene_Equals_m8C948B86D105177D519
 
 IL_0012:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 30));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 59));
 		bool L_3 = V_0;
 		return L_3;
 	}
@@ -3497,20 +3749,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___maxDistance2), (&___layerMask3), (&___queryTriggerInteraction4));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_2), (&V_3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6FEB098D815062BEF821187_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 31));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 32));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 60));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 61));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 33));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 34));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 43));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 62));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 63));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 72));
 		float L_0;
 		L_0 = Vector3_get_magnitude_mDDD40612220D8104E77E993E18A101A69A944991((Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)(&___direction1), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 43));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 72));
 		V_0 = L_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 35));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 64));
 		float L_1 = V_0;
 		V_1 = (bool)((((float)L_1) > ((float)(1.40129846E-45f)))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 36));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 65));
 		bool L_2 = V_1;
 		if (!L_2)
 		{
@@ -3518,45 +3770,45 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PhysicsScene_Raycast_m8C3E61EB7C3DB8AAC6
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 37));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 38));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 66));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 67));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3 = ___direction1;
 		float L_4 = V_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 44));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 73));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_5;
 		L_5 = Vector3_op_Division_mE5ACBFB168FED529587457A83BA98B7DB32E2A05_inline(L_3, L_4, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 44));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 73));
 		V_2 = L_5;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 39));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 68));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7 = V_2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 45));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 74));
 		Ray__ctor_m75B1F651FF47EE6B887105101B7DA61CBF41F83C((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&V_3), L_6, L_7, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 45));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 40));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 74));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 69));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_8 = (*(PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)__this);
 		Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6  L_9 = V_3;
 		float L_10 = ___maxDistance2;
 		int32_t L_11 = ___layerMask3;
 		int32_t L_12 = ___queryTriggerInteraction4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 46));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 75));
 		bool L_13;
 		L_13 = PhysicsScene_Internal_RaycastTest_m6715CAD8D0330195269AA7FCCD91613BC564E3EB(L_8, L_9, L_10, L_11, L_12, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 46));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 75));
 		V_4 = L_13;
 		goto IL_0041;
 	}
 
 IL_003c:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 41));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 70));
 		V_4 = (bool)0;
 		goto IL_0041;
 	}
 
 IL_0041:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 42));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 71));
 		bool L_14 = V_4;
 		return L_14;
 	}
@@ -3615,23 +3867,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PhysicsScene_Raycast_mFC0D59C4439EE9DA6E
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___hitInfo2), (&___maxDistance3), (&___layerMask4), (&___queryTriggerInteraction5));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_2), (&V_3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, PhysicsScene_Raycast_mFC0D59C4439EE9DA6E8AA5F6891915132D587208_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 47));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 48));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 76));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 77));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 49));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 50));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 78));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 79));
 		RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 * L_0 = ___hitInfo2;
 		il2cpp_codegen_initobj(L_0, sizeof(RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 ));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 51));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 60));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 80));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 89));
 		float L_1;
 		L_1 = Vector3_get_magnitude_mDDD40612220D8104E77E993E18A101A69A944991((Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)(&___direction1), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 60));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 89));
 		V_0 = L_1;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 52));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 81));
 		float L_2 = V_0;
 		V_1 = (bool)((((float)L_2) > ((float)(1.40129846E-45f)))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 53));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 82));
 		bool L_3 = V_1;
 		if (!L_3)
 		{
@@ -3639,46 +3891,46 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PhysicsScene_Raycast_mFC0D59C4439EE9DA6E
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 54));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 55));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 83));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 84));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4 = ___direction1;
 		float L_5 = V_0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 61));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 90));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6;
 		L_6 = Vector3_op_Division_mE5ACBFB168FED529587457A83BA98B7DB32E2A05_inline(L_4, L_5, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 61));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 90));
 		V_2 = L_6;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 56));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 85));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_7 = ___origin0;
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_8 = V_2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 62));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 91));
 		Ray__ctor_m75B1F651FF47EE6B887105101B7DA61CBF41F83C((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&V_3), L_7, L_8, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 62));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 57));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 91));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 86));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_9 = (*(PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)__this);
 		Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6  L_10 = V_3;
 		float L_11 = ___maxDistance3;
 		RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 * L_12 = ___hitInfo2;
 		int32_t L_13 = ___layerMask4;
 		int32_t L_14 = ___queryTriggerInteraction5;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 63));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 92));
 		bool L_15;
 		L_15 = PhysicsScene_Internal_Raycast_m1E630AA11805114B090FC50741AEF64D677AF2C7(L_9, L_10, L_11, (RaycastHit_t59E5AEC8FE13BFA2ACBB6FFBDB7585FFB7288F89 *)L_12, L_13, L_14, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 63));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 92));
 		V_4 = L_15;
 		goto IL_004a;
 	}
 
 IL_0045:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 58));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 87));
 		V_4 = (bool)0;
 		goto IL_004a;
 	}
 
 IL_004a:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 59));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 88));
 		bool L_16 = V_4;
 		return L_16;
 	}
@@ -3736,20 +3988,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene_Raycast_m95CAB68EB9165E3
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___origin0), (&___direction1), (&___raycastHits2), (&___maxDistance3), (&___layerMask4), (&___queryTriggerInteraction5));
 	DECLARE_METHOD_LOCALS(methodExecutionContextLocals, (&V_0), (&V_2));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, PhysicsScene_Raycast_m95CAB68EB9165E3AB2A4D441F7DF9767AD4B7F73_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, methodExecutionContextLocals);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 64));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 65));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 93));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 94));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 66));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 67));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 75));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 95));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 96));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 104));
 		float L_0;
 		L_0 = Vector3_get_magnitude_mDDD40612220D8104E77E993E18A101A69A944991((Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)(&___direction1), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 75));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 104));
 		V_0 = L_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 68));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 97));
 		float L_1 = V_0;
 		V_1 = (bool)((((float)L_1) > ((float)(1.40129846E-45f)))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 69));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 98));
 		bool L_2 = V_1;
 		if (!L_2)
 		{
@@ -3757,41 +4009,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PhysicsScene_Raycast_m95CAB68EB9165E3
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 70));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 71));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 99));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 100));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3 = ___origin0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 76));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 105));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4;
 		L_4 = Vector3_get_normalized_m2FA6DF38F97BDA4CCBDAE12B9FE913A241DAC8D5((Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E *)(&___direction1), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 76));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 77));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 105));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 106));
 		Ray__ctor_m75B1F651FF47EE6B887105101B7DA61CBF41F83C((Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6 *)(&V_2), L_3, L_4, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 77));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 72));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 106));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 101));
 		PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678  L_5 = (*(PhysicsScene_tEDFCAA935450E8EBB7732353D9AA264A5F711678 *)__this);
 		Ray_t2E9E67CC8B03EE6ED2BBF3D2C9C96DDF70E1D5E6  L_6 = V_2;
 		RaycastHitU5BU5D_t6778DB95346906446AAD3A1A36904F1846435A09* L_7 = ___raycastHits2;
 		float L_8 = ___maxDistance3;
 		int32_t L_9 = ___layerMask4;
 		int32_t L_10 = ___queryTriggerInteraction5;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 78));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 107));
 		int32_t L_11;
 		L_11 = PhysicsScene_Internal_RaycastNonAlloc_mE7833EE5F1082431A4C2D29362F5DCDEFBF6D2BD(L_5, L_6, L_7, L_8, L_9, L_10, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 78));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 107));
 		V_3 = L_11;
 		goto IL_003f;
 	}
 
 IL_003b:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 73));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 102));
 		V_3 = 0;
 		goto IL_003f;
 	}
 
 IL_003f:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 74));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 103));
 		int32_t L_12 = V_3;
 		return L_12;
 	}
@@ -3946,16 +4198,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_mDFB0D57C25682B826999
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___force0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Rigidbody_AddForce_mDFB0D57C25682B826999B0074F5C0FD399C6401D_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 0));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 1));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 29));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 30));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 2));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 3));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 31));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 32));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___force0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 5));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 34));
 		Rigidbody_AddForce_m78B9D94F505E19F3C63461362AD6DE7EA0836700(__this, L_0, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 5));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 4));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 34));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_PhysicsModule + 33));
 		return;
 	}
 }
@@ -4010,11 +4262,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF
 	memset((&V_0), 0, sizeof(V_0));
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___a0), (&___d1));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Vector3_op_Division_mE5ACBFB168FED529587457A83BA98B7DB32E2A05_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2453));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2454));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2458));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2459));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2455));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2456));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2460));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2461));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_0 = ___a0;
 		float L_1 = L_0.get_x_2();
 		float L_2 = ___d1;
@@ -4024,18 +4276,18 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_6 = ___a0;
 		float L_7 = L_6.get_z_4();
 		float L_8 = ___d1;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2458));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2463));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_9;
 		memset((&L_9), 0, sizeof(L_9));
 		Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline((&L_9), ((float)((float)L_1/(float)L_2)), ((float)((float)L_4/(float)L_5)), ((float)((float)L_7/(float)L_8)), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2458));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2463));
 		V_0 = L_9;
 		goto IL_0021;
 	}
 
 IL_0021:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2457));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 2462));
 		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_10 = V_0;
 		return L_10;
 	}
