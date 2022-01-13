@@ -292,7 +292,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &91805321
@@ -411,6 +411,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec0fc9a08323f7040a458ea233435f42, type: 3}
       propertyPath: m_Name
       value: Ch20_nonPBR
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec0fc9a08323f7040a458ea233435f42, type: 3}
+      propertyPath: m_TagString
+      value: Player 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec0fc9a08323f7040a458ea233435f42, type: 3}
@@ -847,7 +851,6 @@ Transform:
   m_Children:
   - {fileID: 1328534681}
   - {fileID: 583344611}
-  - {fileID: 1805372177}
   m_Father: {fileID: 1553703248}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1005,7 +1008,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &183915860
@@ -1378,7 +1381,7 @@ GameObject:
   - component: {fileID: 317050503}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Player 1
+  m_TagString: Player 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1957,7 +1960,7 @@ GameObject:
   - component: {fileID: 389648877}
   m_Layer: 0
   m_Name: er
-  m_TagString: Player 1
+  m_TagString: Player 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2352,7 +2355,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &531429853
@@ -2635,6 +2638,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 594526584}
+  - component: {fileID: 594526586}
+  - component: {fileID: 594526585}
   m_Layer: 0
   m_Name: Activate TrapA
   m_TagString: TrapA
@@ -2657,6 +2662,36 @@ Transform:
   m_Father: {fileID: 1805372177}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &594526585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594526583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecf374f251a16f438c105eda6c253b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trapAnimA: {fileID: 1328534682}
+  _trapAnimB: {fileID: 583344612}
+  isTrapActivated: 0
+  canTrapBeActivated: 0
+  _rpList: []
+--- !u!65 &594526586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594526583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 8, z: 8}
+  m_Center: {x: 0, y: 3, z: 0}
 --- !u!1 &606677032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,6 +2970,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 688679790}
+  - component: {fileID: 688679792}
+  - component: {fileID: 688679791}
   m_Layer: 0
   m_Name: Activate TrapB
   m_TagString: TrapB
@@ -2957,6 +2994,36 @@ Transform:
   m_Father: {fileID: 1805372177}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &688679791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688679789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecf374f251a16f438c105eda6c253b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trapAnimA: {fileID: 1328534682}
+  _trapAnimB: {fileID: 583344612}
+  isTrapActivated: 0
+  canTrapBeActivated: 0
+  _rpList: []
+--- !u!65 &688679792
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688679789}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8, y: 8, z: 8}
+  m_Center: {x: 0, y: 3, z: 0}
 --- !u!1 &702223733
 GameObject:
   m_ObjectHideFlags: 0
@@ -3706,6 +3773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 987227602}
   - component: {fileID: 987227603}
+  - component: {fileID: 987227604}
   m_Layer: 0
   m_Name: Activate TrapC
   m_TagString: TrapC
@@ -3741,6 +3809,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 8, y: 8, z: 8}
   m_Center: {x: 0, y: 3, z: 0}
+--- !u!114 &987227604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987227601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecf374f251a16f438c105eda6c253b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trapAnimA: {fileID: 0}
+  _trapAnimB: {fileID: 0}
+  isTrapActivated: 0
+  canTrapBeActivated: 0
+  _rpList:
+  - {fileID: 63561436}
+  - {fileID: 183915858}
+  - {fileID: 531429851}
+  - {fileID: 91805319}
 --- !u!1 &990577221
 GameObject:
   m_ObjectHideFlags: 0
@@ -5052,7 +5141,7 @@ GameObject:
   - component: {fileID: 1517457625}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Player 1
+  m_TagString: Player 4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5183,6 +5272,7 @@ Transform:
   - {fileID: 2029084310}
   - {fileID: 411674862}
   - {fileID: 958824533}
+  - {fileID: 1805372177}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5912,7 +6002,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1805372177}
-  - component: {fileID: 1805372178}
   m_Layer: 0
   m_Name: ActivateTraps
   m_TagString: Untagged
@@ -5934,30 +6023,9 @@ Transform:
   - {fileID: 594526584}
   - {fileID: 688679790}
   - {fileID: 987227602}
-  m_Father: {fileID: 180743410}
-  m_RootOrder: 2
+  m_Father: {fileID: 1553703248}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1805372178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805372176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ecf374f251a16f438c105eda6c253b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TrapAAnim: {fileID: 1328534682}
-  TrapBAnim: {fileID: 583344612}
-  isTrapActivated: 0
-  canTrapBeActivated: 0
-  _rpList:
-  - {fileID: 63561436}
-  - {fileID: 183915858}
-  - {fileID: 531429851}
-  - {fileID: 91805319}
 --- !u!1 &1808946351
 GameObject:
   m_ObjectHideFlags: 0

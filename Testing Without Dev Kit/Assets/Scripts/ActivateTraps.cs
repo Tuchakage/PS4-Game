@@ -6,45 +6,61 @@ using UnityEngine;
 public class ActivateTraps : MonoBehaviour
 {
 
-    public Animator TrapAAnim;
-    public Animator TrapBAnim;
+    public Animator _trapAnimA;
+    public Animator _trapAnimB;
+    
 
     public bool isTrapActivated;
     public bool canTrapBeActivated;
+    
 
-    public List<RotatePlatform> _rpList;
+    public RotatePlatform[] _rpList;
+    
     
     private void Start()
     {
         isTrapActivated = false;
-        canTrapBeActivated = true;
     }
     
 
     private void OnTriggerEnter(Collider other)
     {
-        if (gameObject.CompareTag("Player 4") && !isTrapActivated)
+        if (!isTrapActivated)
         {
             canTrapBeActivated = true;
-            if (gameObject.CompareTag("TrapA"))
+            if (other.gameObject.CompareTag("Player 4"))
             {
-                TrapAAnim.SetTrigger("TrapADown");
-                isTrapActivated = true;
-            }
-
-            if (gameObject.CompareTag("TrapB"))
-            {
-                TrapBAnim.SetTrigger("TrapBDown");
-                isTrapActivated = true;
-            }
-
-            if (gameObject.CompareTag("TrapC"))
-            {
-                for (int i = 0; i < _rpList.Count; i++)
+                if (gameObject.CompareTag("TrapC"))
                 {
-                    _rpList[i].rotationSpeed = 50;
+                    isTrapActivated = true;
+                    ChangeRotateSpeed();
+                }
+                else if (gameObject.CompareTag("TrapA"))
+                {
+                    isTrapActivated = true;
+                    _trapAnimA.SetTrigger("TrapADown");
+                    _trapAnimB.enabled = false;
+                }
+                else if (gameObject.CompareTag("TrapB"))
+                {
+                    isTrapActivated = true;
+                    _trapAnimB.SetTrigger("TrapBDown");
+                    _trapAnimA.enabled = false;
                 }
             }
+        }
+        else
+        {
+            isTrapActivated = true;
+            canTrapBeActivated = false;
+        }
+    }
+
+    void ChangeRotateSpeed()
+    {
+        for (int i = 0; i < _rpList.Length; i++)
+        {
+            _rpList[i].rotationSpeed = 50f;
         }
     }
 }
