@@ -150,9 +150,16 @@ public class PlayerMovement : MonoBehaviour
 				launched = false;
 			}
 
+			if (flickedonce)
+			{
+				if (isGrounded())
+				{
+					PS4Input.PadSetVibration(playerId, 255, 255);
+				}
+			}
 
-            //Steering Controls
-            turnInput = -v.z;
+			//Steering Controls
+			turnInput = -v.z;
 
 			//Depending on how much the controller is turned 
 			if (turnInput < -0.1 || turnInput > 0.1 && isGrounded()) 

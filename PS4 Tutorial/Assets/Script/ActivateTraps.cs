@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.PS4;
 using UnityEngine;
 
 public class ActivateTraps : MonoBehaviour
@@ -15,39 +16,61 @@ public class ActivateTraps : MonoBehaviour
     
 
     public RotatePlatform[] _rpList;
-    
-    
+    public int playerId;
+    int controllerId; //To show the different controllers
+
     private void Start()
     {
         isTrapActivated = false;
+        controllerId = playerId + 1;
     }
     
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (!isTrapActivated)
         {
+
             canTrapBeActivated = true;
             if (other.gameObject.CompareTag("Player 4"))
             {
-                if (gameObject.CompareTag("TrapC"))
+
+                if (gameObject.CompareTag("TrapA"))
                 {
-                    isTrapActivated = true;
-                    ChangeRotateSpeed();
-                }
-                else if (gameObject.CompareTag("TrapA"))
-                {
-                    isTrapActivated = true;
-                    _trapAnimA.SetTrigger("TrapADown");
-                    _trapAnimB.enabled = false;
-                }
-                else if (gameObject.CompareTag("TrapB"))
-                {
-                    isTrapActivated = true;
-                    _trapAnimB.SetTrigger("TrapBDown");
-                    _trapAnimA.enabled = false;
+                    if (Math.Abs(Input.GetAxis("joystick1_left_trigger")) > 0.001f)
+                    {
+                        isTrapActivated = true;
+                        _trapAnimA.SetTrigger("TrapADown");
+                        _trapAnimB.enabled = false;
+                        Debug.Log("Trap A Activated");
+                    }
+
+                    if (Math.Abs(Input.GetAxis("joystick1_right_trigger")) > 0.001f)
+                    {
+                        Debug.Log("R2");
+                        isTrapActivated = true;
+                        _trapAnimB.SetTrigger("TrapBDown");
+                        _trapAnimA.enabled = false;
+                        Debug.Log("Trap B Activated");
+                    }
+
                 }
             }
+
+
+
+            //if (Input.GetKey(codeL2))
+            //{
+            //    Debug.Log("Pressed L2");
+            //    if (gameObject.CompareTag("TrapB"))
+            //    {
+            //        isTrapActivated = true;
+            //        _trapAnimB.SetTrigger("TrapBDown");
+            //        _trapAnimA.enabled = false;
+            //    }
+
+            //}
+
         }
         else
         {

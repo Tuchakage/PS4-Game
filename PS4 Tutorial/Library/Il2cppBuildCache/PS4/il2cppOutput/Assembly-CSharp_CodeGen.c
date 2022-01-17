@@ -14,8 +14,8 @@
 
 // 0x00000001 System.Void ActivateTraps::Start()
 extern void ActivateTraps_Start_mA2B2224DEB42A315B0FF5E76A33F6847F71DF6BB (void);
-// 0x00000002 System.Void ActivateTraps::OnTriggerEnter(UnityEngine.Collider)
-extern void ActivateTraps_OnTriggerEnter_m9E52B036F0ADD61E893F83D093C683B2FE1F6C0B (void);
+// 0x00000002 System.Void ActivateTraps::OnTriggerStay(UnityEngine.Collider)
+extern void ActivateTraps_OnTriggerStay_m9A355470D39E5583CC418E628B58CFC8E5822D12 (void);
 // 0x00000003 System.Void ActivateTraps::ChangeRotateSpeed()
 extern void ActivateTraps_ChangeRotateSpeed_mB7137CD352C31EFEA3648419C32B69949C1B44BD (void);
 // 0x00000004 System.Void ActivateTraps::.ctor()
@@ -87,7 +87,7 @@ extern void PS4GamePad__ctor_mD33C90EB172B295F9845FA89E230230537426EE0 (void);
 static Il2CppMethodPointer s_methodPointers[36] = 
 {
 	ActivateTraps_Start_mA2B2224DEB42A315B0FF5E76A33F6847F71DF6BB,
-	ActivateTraps_OnTriggerEnter_m9E52B036F0ADD61E893F83D093C683B2FE1F6C0B,
+	ActivateTraps_OnTriggerStay_m9A355470D39E5583CC418E628B58CFC8E5822D12,
 	ActivateTraps_ChangeRotateSpeed_mB7137CD352C31EFEA3648419C32B69949C1B44BD,
 	ActivateTraps__ctor_mD4B4D161DFE5739709CD7EEB8CE42E2E7181B3FC,
 	CameraFollow_Start_mC13DAB135378AADB3E72275F75CDEAF53343810D,
