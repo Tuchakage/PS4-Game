@@ -1462,6 +1462,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* ChannelServices_get_CrossContextChannel_m6E
 IL2CPP_EXTERN_C const RuntimeMethod* CharEnumerator_Clone_mEDA3A1900E804D16AAE0B9E27C99B46D3616C444_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CharEnumerator_Dispose_mC7F78D74670CE13054BDDCBCD624CBFD4659DFED_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CharEnumerator_MoveNext_m26EE32A48F3296F95321FB9FC405EF683D6D509E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CharEnumerator_Reset_m75A334B23292DDADDD4823E93D8292B690D19829_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CharEnumerator_System_Collections_IEnumerator_get_Current_mD136FC1D1A13D8EA87900A651E21BE1B08B100C7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CharEnumerator__ctor_m6E00AFC85D31B3783879F35EBED9CDD5DC2E80A7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CharEnumerator__ctor_mC88EF64AFC0D2C039B3265A76AC61A65BC3D2FED_RuntimeMethod_var;
@@ -39239,6 +39240,23 @@ IL_003c:
 	{
 		Il2CppChar L_8 = __this->get_currentElement_2();
 		return L_8;
+	}
+}
+// System.Void System.CharEnumerator::Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharEnumerator_Reset_m75A334B23292DDADDD4823E93D8292B690D19829 (CharEnumerator_t307E02F1AF2C2C98EE2FFEEE3045A790F2140D75 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharEnumerator_Reset_m75A334B23292DDADDD4823E93D8292B690D19829_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, CharEnumerator_Reset_m75A334B23292DDADDD4823E93D8292B690D19829_RuntimeMethod_var, NULL, NULL, NULL);
+	CHECK_PAUSE_POINT;
+	{
+		__this->set_currentElement_2(0);
+		__this->set_index_1((-1));
+		return;
 	}
 }
 // System.Void System.CharEnumerator::.ctor()

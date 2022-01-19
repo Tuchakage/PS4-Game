@@ -23,7 +23,7 @@ static const char* g_methodExecutionContextInfoStrings[1] = { NULL };
 static const char* g_methodExecutionContextInfoStrings[1] = { NULL };
 #endif
 #if IL2CPP_MONO_DEBUGGER
-static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoIndexes[31] = 
+static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoIndexes[32] = 
 {
 	{ 0, 0 } /* 0x06000001 System.Exception System.Linq.Error::ArgumentNull(System.String) */,
 	{ 0, 0 } /* 0x06000002 System.Exception System.Linq.Error::MoreThanOneMatch() */,
@@ -41,21 +41,22 @@ static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoI
 	{ 0, 0 } /* 0x0600000E System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable/Iterator`1::Where(System.Func`2<TSource,System.Boolean>) */,
 	{ 0, 0 } /* 0x0600000F System.Object System.Linq.Enumerable/Iterator`1::System.Collections.IEnumerator.get_Current() */,
 	{ 0, 0 } /* 0x06000010 System.Collections.IEnumerator System.Linq.Enumerable/Iterator`1::System.Collections.IEnumerable.GetEnumerator() */,
-	{ 0, 0 } /* 0x06000011 System.Void System.Linq.Enumerable/WhereEnumerableIterator`1::.ctor(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>) */,
-	{ 0, 0 } /* 0x06000012 System.Linq.Enumerable/Iterator`1<TSource> System.Linq.Enumerable/WhereEnumerableIterator`1::Clone() */,
-	{ 0, 0 } /* 0x06000013 System.Void System.Linq.Enumerable/WhereEnumerableIterator`1::Dispose() */,
-	{ 0, 0 } /* 0x06000014 System.Boolean System.Linq.Enumerable/WhereEnumerableIterator`1::MoveNext() */,
-	{ 0, 0 } /* 0x06000015 System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable/WhereEnumerableIterator`1::Where(System.Func`2<TSource,System.Boolean>) */,
-	{ 0, 0 } /* 0x06000016 System.Void System.Linq.Enumerable/WhereArrayIterator`1::.ctor(TSource[],System.Func`2<TSource,System.Boolean>) */,
-	{ 0, 0 } /* 0x06000017 System.Linq.Enumerable/Iterator`1<TSource> System.Linq.Enumerable/WhereArrayIterator`1::Clone() */,
-	{ 0, 0 } /* 0x06000018 System.Boolean System.Linq.Enumerable/WhereArrayIterator`1::MoveNext() */,
-	{ 0, 0 } /* 0x06000019 System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable/WhereArrayIterator`1::Where(System.Func`2<TSource,System.Boolean>) */,
-	{ 0, 0 } /* 0x0600001A System.Void System.Linq.Enumerable/WhereListIterator`1::.ctor(System.Collections.Generic.List`1<TSource>,System.Func`2<TSource,System.Boolean>) */,
-	{ 0, 0 } /* 0x0600001B System.Linq.Enumerable/Iterator`1<TSource> System.Linq.Enumerable/WhereListIterator`1::Clone() */,
-	{ 0, 0 } /* 0x0600001C System.Boolean System.Linq.Enumerable/WhereListIterator`1::MoveNext() */,
-	{ 0, 0 } /* 0x0600001D System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable/WhereListIterator`1::Where(System.Func`2<TSource,System.Boolean>) */,
-	{ 0, 0 } /* 0x0600001E System.Void System.Linq.Enumerable/<>c__DisplayClass6_0`1::.ctor() */,
-	{ 0, 0 } /* 0x0600001F System.Boolean System.Linq.Enumerable/<>c__DisplayClass6_0`1::<CombinePredicates>b__0(TSource) */,
+	{ 0, 0 } /* 0x06000011 System.Void System.Linq.Enumerable/Iterator`1::System.Collections.IEnumerator.Reset() */,
+	{ 0, 0 } /* 0x06000012 System.Void System.Linq.Enumerable/WhereEnumerableIterator`1::.ctor(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>) */,
+	{ 0, 0 } /* 0x06000013 System.Linq.Enumerable/Iterator`1<TSource> System.Linq.Enumerable/WhereEnumerableIterator`1::Clone() */,
+	{ 0, 0 } /* 0x06000014 System.Void System.Linq.Enumerable/WhereEnumerableIterator`1::Dispose() */,
+	{ 0, 0 } /* 0x06000015 System.Boolean System.Linq.Enumerable/WhereEnumerableIterator`1::MoveNext() */,
+	{ 0, 0 } /* 0x06000016 System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable/WhereEnumerableIterator`1::Where(System.Func`2<TSource,System.Boolean>) */,
+	{ 0, 0 } /* 0x06000017 System.Void System.Linq.Enumerable/WhereArrayIterator`1::.ctor(TSource[],System.Func`2<TSource,System.Boolean>) */,
+	{ 0, 0 } /* 0x06000018 System.Linq.Enumerable/Iterator`1<TSource> System.Linq.Enumerable/WhereArrayIterator`1::Clone() */,
+	{ 0, 0 } /* 0x06000019 System.Boolean System.Linq.Enumerable/WhereArrayIterator`1::MoveNext() */,
+	{ 0, 0 } /* 0x0600001A System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable/WhereArrayIterator`1::Where(System.Func`2<TSource,System.Boolean>) */,
+	{ 0, 0 } /* 0x0600001B System.Void System.Linq.Enumerable/WhereListIterator`1::.ctor(System.Collections.Generic.List`1<TSource>,System.Func`2<TSource,System.Boolean>) */,
+	{ 0, 0 } /* 0x0600001C System.Linq.Enumerable/Iterator`1<TSource> System.Linq.Enumerable/WhereListIterator`1::Clone() */,
+	{ 0, 0 } /* 0x0600001D System.Boolean System.Linq.Enumerable/WhereListIterator`1::MoveNext() */,
+	{ 0, 0 } /* 0x0600001E System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable/WhereListIterator`1::Where(System.Func`2<TSource,System.Boolean>) */,
+	{ 0, 0 } /* 0x0600001F System.Void System.Linq.Enumerable/<>c__DisplayClass6_0`1::.ctor() */,
+	{ 0, 0 } /* 0x06000020 System.Boolean System.Linq.Enumerable/<>c__DisplayClass6_0`1::<CombinePredicates>b__0(TSource) */,
 };
 #else
 static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoIndexes[1] = { { 0, 0} };
@@ -88,7 +89,7 @@ static const Il2CppMethodScope g_methodScopes[1] = { { 0, 0 } };
 static const Il2CppMethodScope g_methodScopes[1] = { { 0, 0 } };
 #endif
 #if IL2CPP_MONO_DEBUGGER
-static const Il2CppMethodHeaderInfo g_methodHeaderInfos[31] = 
+static const Il2CppMethodHeaderInfo g_methodHeaderInfos[32] = 
 {
 	{ 0, 0, 0 } /* System.Exception System.Linq.Error::ArgumentNull(System.String) */,
 	{ 0, 0, 0 } /* System.Exception System.Linq.Error::MoreThanOneMatch() */,
@@ -106,6 +107,7 @@ static const Il2CppMethodHeaderInfo g_methodHeaderInfos[31] =
 	{ 0, 0, 0 } /* System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable/Iterator`1::Where(System.Func`2<TSource,System.Boolean>) */,
 	{ 0, 0, 0 } /* System.Object System.Linq.Enumerable/Iterator`1::System.Collections.IEnumerator.get_Current() */,
 	{ 0, 0, 0 } /* System.Collections.IEnumerator System.Linq.Enumerable/Iterator`1::System.Collections.IEnumerable.GetEnumerator() */,
+	{ 0, 0, 0 } /* System.Void System.Linq.Enumerable/Iterator`1::System.Collections.IEnumerator.Reset() */,
 	{ 0, 0, 0 } /* System.Void System.Linq.Enumerable/WhereEnumerableIterator`1::.ctor(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>) */,
 	{ 0, 0, 0 } /* System.Linq.Enumerable/Iterator`1<TSource> System.Linq.Enumerable/WhereEnumerableIterator`1::Clone() */,
 	{ 0, 0, 0 } /* System.Void System.Linq.Enumerable/WhereEnumerableIterator`1::Dispose() */,

@@ -1013,6 +1013,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* OidCollection__ctor_m99E1CCEB955F4BB57DEAE0
 IL2CPP_EXTERN_C const RuntimeMethod* OidCollection_get_Count_m35D85FFEC009FD8195DA9E0EE0CD5B66290FA3C6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OidCollection_get_Item_mB8F51EB0825BDE39504BC7090B8AEEE13D0A9967_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OidEnumerator_MoveNext_m8CA45F7B39B4FEF9399379DAA1A6AAF4FFB8DCD8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* OidEnumerator_Reset_mBCBE7C78E389E7D9794F44111832013583FB1F4C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OidEnumerator_System_Collections_IEnumerator_get_Current_m21F1C975D9A97369DA0D3CEAADFA69D64214CEB3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OidEnumerator__ctor_m3BA079690E9B01B02B76FB694DCF279DAEC8E9D6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Oid__ctor_m74A51E6D07E4EF2AEC66B6CAC03CFF60D072D3FF_RuntimeMethod_var;
@@ -21641,6 +21642,22 @@ IL_0017:
 		int32_t L_3 = __this->get_m_current_1();
 		__this->set_m_current_1(((int32_t)il2cpp_codegen_add((int32_t)L_3, (int32_t)1)));
 		return (bool)1;
+	}
+}
+// System.Void System.Security.Cryptography.OidEnumerator::Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OidEnumerator_Reset_mBCBE7C78E389E7D9794F44111832013583FB1F4C (OidEnumerator_tE58DA51601EA18C96FE1557EAE220C331AC51884 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&OidEnumerator_Reset_mBCBE7C78E389E7D9794F44111832013583FB1F4C_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, OidEnumerator_Reset_mBCBE7C78E389E7D9794F44111832013583FB1F4C_RuntimeMethod_var, NULL, NULL, NULL);
+	CHECK_PAUSE_POINT;
+	{
+		__this->set_m_current_1((-1));
+		return;
 	}
 }
 #ifdef __clang__

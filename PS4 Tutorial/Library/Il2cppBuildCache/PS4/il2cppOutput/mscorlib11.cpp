@@ -825,6 +825,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mE7968540B33BF2AE49132F65916E7
 IL2CPP_EXTERN_C const RuntimeMethod* RealProxy_get_ObjectIdentity_m408FE9B22C1CE7E38F5C6FE49310C121900481A8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* RealProxy_set_ObjectIdentity_mD383787A6A08E98E893004DFF8C30180E20F1E74_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SerializationInfoEnumerator_MoveNext_m661034C94476113FEB5A3C98A5EA9456ACFA2E9F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* SerializationInfoEnumerator_Reset_m9FADEDE71FB54AFB9E0C782EF17C1BFCC22DFEE9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SerializationInfoEnumerator_System_Collections_IEnumerator_get_Current_m606616FDD695F205318B3AB2F4871679C3BB7EB2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SerializationInfoEnumerator__ctor_m9AF1928962436CAD758B039AD13669D4488C016C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SerializationInfoEnumerator_get_Current_mD46A02033DA35A55D982FB2B3DD56CE56FDFB314_RuntimeMethod_var;
@@ -12143,6 +12144,23 @@ IL_0018:
 		memset((&L_15), 0, sizeof(L_15));
 		SerializationEntry__ctor_mEB65E58DBA8F9BA3CC9E9D701F02CE67A1A8E68D((&L_15), L_6, L_10, L_14, /*hidden argument*/NULL);
 		return L_15;
+	}
+}
+// System.Void System.Runtime.Serialization.SerializationInfoEnumerator::Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationInfoEnumerator_Reset_m9FADEDE71FB54AFB9E0C782EF17C1BFCC22DFEE9 (SerializationInfoEnumerator_t0548359AF7DB5798EBA19FE6BFCC8CDB8E6B1AF6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializationInfoEnumerator_Reset_m9FADEDE71FB54AFB9E0C782EF17C1BFCC22DFEE9_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, SerializationInfoEnumerator_Reset_m9FADEDE71FB54AFB9E0C782EF17C1BFCC22DFEE9_RuntimeMethod_var, NULL, NULL, NULL);
+	CHECK_PAUSE_POINT;
+	{
+		__this->set_m_currItem_4((-1));
+		__this->set_m_current_5((bool)0);
+		return;
 	}
 }
 // System.String System.Runtime.Serialization.SerializationInfoEnumerator::get_Name()

@@ -23,11 +23,12 @@ public class PlayerMovement : MonoBehaviour
 	int controllerId; //To show the different controllers
 	bool flickedonce; //Makes it so that you can only flick once
 	bool launched; // Checks if the Player has been launched
-
+	public int checkpoints; //Indicates Which Checkpoint the player is at
 	Color m_LightbarColour;
 	// Use this for initialization
 	void Start () 
 	{
+		checkpoints = 1;
 		launched = false;
 		score = 0;
         PS4Input.PadResetOrientation(playerId);
@@ -148,14 +149,6 @@ public class PlayerMovement : MonoBehaviour
 				RevertRigidbody();
 				//Player has not been launched which means it can still be launched when in mid air
 				launched = false;
-			}
-
-			if (flickedonce)
-			{
-				if (isGrounded())
-				{
-					PS4Input.PadSetVibration(playerId, 255, 255);
-				}
 			}
 
 			//Steering Controls

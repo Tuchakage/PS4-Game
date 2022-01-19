@@ -1,5 +1,3 @@
 {"msg":"init","dagFile":"artifacts\\tundra.dag","targets":[]}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"all_tundra_nodes","enqueuedNodeIndex":0}
-{"msg":"enqueueNode","enqueuedNodeAnnotation":"Il2Cpp C:/Users/K1917661/Documents/PS4-Game/PS4 Tutorial/Library/Il2cppBuildCache/PS4/Native/Il2CppUserAssemblies.prx","enqueuedNodeIndex":1,"enqueueingNodeAnnotation":"all_tundra_nodes","enqueueingNodeIndex":0}
-{"msg":"inputSignatureChanged","annotation":"Il2Cpp C:/Users/K1917661/Documents/PS4-Game/PS4 Tutorial/Library/Il2cppBuildCache/PS4/Native/Il2CppUserAssemblies.prx","index":1,"changes":[{"key":"InputFileDigest","path":"C:\\Users\\K1917661\\Documents\\PS4-Game\\PS4 Tutorial\\Temp\\StagingArea\\Data\\Managed\\Assembly-CSharp.dll","dependency":"explicit"}]}
-{"msg":"noderesult","annotation":"Il2Cpp C:/Users/K1917661/Documents/PS4-Game/PS4 Tutorial/Library/Il2cppBuildCache/PS4/Native/Il2CppUserAssemblies.prx","index":1,"exitcode":0}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"Il2Cpp C:/Users/k1916419/Documents/PS4-Game/PS4 Tutorial/Library/Il2cppBuildCache/PS4/Native/Il2CppUserAssemblies.prx","enqueuedNodeIndex":1,"enqueueingNodeAnnotation":"all_tundra_nodes","enqueueingNodeIndex":0}

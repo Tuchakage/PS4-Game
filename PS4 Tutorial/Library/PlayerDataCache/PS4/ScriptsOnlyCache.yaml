@@ -2,9 +2,10 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ActivateTraps
+    - AttachPlatform
     - PlayerMovement
     - Respawn
-    - RotatePlatform
+    - SetCheckpoints
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.Graphs.dll:
@@ -64,13 +65,15 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2202}
+      Script: {instanceID: 2602}
     - Class: 114
-      Script: {instanceID: 2610}
+      Script: {instanceID: 5770}
     - Class: 114
-      Script: {instanceID: 5778}
+      Script: {instanceID: 7042}
     - Class: 114
-      Script: {instanceID: 7050}
+      Script: {instanceID: 84480}
+    - Class: 114
+      Script: {instanceID: 96632}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -230,7 +233,7 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
-      Hash: e1d189682882d60bb0e8be4ca0c72da0
+      Hash: 4bd44973319358d1e48b3546b985509f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Respawn
@@ -692,7 +695,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 4b93d17e91ddc38fda9d6a30fe7d0093
+      Hash: 0d9638d40f1bfb2a24299b8d541aaa17
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ActivateTraps
@@ -860,7 +863,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: d095cd0882cfcdef3dbc944cc0c26d1e
+      Hash: 84055645d9b1a830d0f9d8a390ec0f94
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -894,7 +897,19 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AttachPlatform
+  - hash:
+      serializedVersion: 2
+      Hash: 5f3a0e1e782d61fc3115d7816cf3949a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetCheckpoints
   platform: 31
   scenePathNames:
   - Assets/Scenes/Map 1.unity
-  playerPath: D:/PS4 Build
+  playerPath: C:/Users/k1916419/Documents/Build
