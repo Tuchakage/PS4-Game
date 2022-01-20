@@ -3,10 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.PS4;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ActivateTraps : MonoBehaviour
 {
-
+    public TextMeshProUGUI TrapABText;
+    public TextMeshProUGUI TrapCText;
+    
     public Animator _trapAnimA;
     public Animator _trapAnimB;
     public Animator _trapAnimCLeft;
@@ -29,6 +33,8 @@ public class ActivateTraps : MonoBehaviour
         isTrapActivated = false;
         isTrapCActivated = false;
         controllerId = playerId + 1;
+        TrapABText.enabled = false;
+        TrapCText.enabled = false;
     }
 
 
@@ -43,6 +49,7 @@ public class ActivateTraps : MonoBehaviour
 
                 if (gameObject.CompareTag("TrapA"))
                 {
+                    TrapABText.enabled = true;
                     if (Math.Abs(Input.GetAxis("joystick1_left_trigger")) > 0.001f)
                     {
                         isTrapActivated = true;
@@ -67,6 +74,7 @@ public class ActivateTraps : MonoBehaviour
                 canTrapCBeActivated = true;
                 if (gameObject.CompareTag("TrapC"))
                 {
+                    TrapCText.enabled = true;
                     DecreaseTimer();
 
                     if (timer <= 0)
@@ -148,5 +156,11 @@ public class ActivateTraps : MonoBehaviour
         {
             timer = 3f;
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        TrapABText.enabled = false;
+        TrapCText.enabled = false;
     }
 }

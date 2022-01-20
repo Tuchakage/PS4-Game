@@ -1,14 +1,12 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.PS4;
 using System;
 using System.Collections;
 using UnityEngine.UI;
 
-public class PlayerMovement : MonoBehaviour 
+public class CameraMovement : MonoBehaviour
 {
-	public Transform enemyTarget;
-
-	public Rigidbody Rb;
+    public Rigidbody Rb;
 	public LayerMask groundLayer; //So we know what the Ground is (Objects With the ground layer)
 	public SphereCollider col;
 	public float forwardAccel = 2f, reverseAccel, speed, turnStrength = 180, jumpForce = 7;
@@ -19,19 +17,17 @@ public class PlayerMovement : MonoBehaviour
 	public float sensH = 10;
 	public float sensV = 10;
 
-    public int playerId;
+	public int playerId;
 	int controllerId; //To show the different controllers
 	bool flickedonce; //Makes it so that you can only flick once
 	bool launched; // Checks if the Player has been launched
 	public int checkpoints; //Indicates Which Checkpoint the player is at
 	Color m_LightbarColour;
 	// Use this for initialization
-	void Start () 
+
+	void Start()
 	{
-		checkpoints = 1;
-		launched = false;
-		score = 0;
-        PS4Input.PadResetOrientation(playerId);
+		PS4Input.PadResetOrientation(playerId);
 		controllerId = playerId + 1;
 
 		Rb.transform.parent = null;
@@ -45,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
 		// If we are not pressing anything make the speed always 0
 		speedInput = 0;
 		turnInput = 0;
-		if (PS4Input.PadIsConnected(playerId)) 
+		if (PS4Input.PadIsConnected(playerId))
 		{
 			// When we press the X button then change the speed value 
 			KeyCode code2 = (KeyCode)Enum.Parse(typeof(KeyCode), "Joystick" + controllerId + "Button0", true);
@@ -59,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
 				SetControllerColour(ColourChangeDepsController(playerId));
 
 			}
-			else if (Input.GetKey(code3)) 
+			else if (Input.GetKey(code3))
 			{
 				speedInput = -1 * reverseAccel * speed;
 			}
@@ -72,12 +68,12 @@ public class PlayerMovement : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	void FixedUpdate () 
+	void FixedUpdate()
 	{
 
 
 		if (PS4Input.PadIsConnected(playerId))
-        {
+		{
 			//If the speedInput is not 0 (button has been pressed) then apply the movement
 			if (speedInput > 0)
 			{
@@ -90,20 +86,20 @@ public class PlayerMovement : MonoBehaviour
 				Rb.AddForce(transform.forward * speedInput);
 			}
 
-            // Option Key
-            KeyCode code = (KeyCode)Enum.Parse(typeof(KeyCode), "Joystick" + controllerId + "Button7", true);
-            if (Input.GetKey(code))
-            {
-                //Rb.transform.position = new Vector3(1.98430276f, 0.730000019f, 0.589999974f);
-                //Rb.transform.rotation = new Quaternion(0, 0, 0, 1);
+			// Option Key
+			KeyCode code = (KeyCode)Enum.Parse(typeof(KeyCode), "Joystick" + controllerId + "Button7", true);
+			if (Input.GetKey(code))
+			{
+				//Rb.transform.position = new Vector3(1.98430276f, 0.730000019f, 0.589999974f);
+				//Rb.transform.rotation = new Quaternion(0, 0, 0, 1);
 
-                PS4Input.PadResetOrientation(playerId);
-            }
+				PS4Input.PadResetOrientation(playerId);
+			}
 
 
 
-            //Get The motion Sensors
-            Vector4 v = PS4Input.PadGetLastOrientation(playerId);
+			//Get The motion Sensors
+			Vector4 v = PS4Input.PadGetLastOrientation(playerId);
 			Vector4 checkForFlick = new Vector4(0.3f, 0, 0, 0);
 			Vector4 checkForTilt = new Vector4(0, 0, 0.2f, 0);
 
@@ -144,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
 
 			}
 			//If the player is on the ground then make sure you revert rigidbody
-			if (isGrounded()) 
+			if (isGrounded())
 			{
 				RevertRigidbody();
 				//Player has not been launched which means it can still be launched when in mid air
@@ -155,33 +151,18 @@ public class PlayerMovement : MonoBehaviour
 			turnInput = -v.z;
 
 			//Depending on how much the controller is turned 
-			if (turnInput < -0.1 || turnInput > 0.1 && isGrounded()) 
+			if (turnInput < -0.1 || turnInput > 0.1 && isGrounded())
 			{
 				//Actually Steer the player
 				transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0, turnInput * turnStrength * Time.deltaTime, 0));
 			}
 
 		}
-    }
-	
-	//Revert The Rigidbody values once the Player is back on the ground
-	void RevertRigidbody() 
-	{
-		Rb.mass = 70;
-		Rb.drag = 3;
-		Rb.angularDrag = 4;
-		Rb.interpolation = RigidbodyInterpolation.None;
-		//Debug.Log("Reverting");
 	}
 
-	//Check if the Player is on the ground or not
-	private bool isGrounded() 
-	{
-		return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x, col.bounds.min.y, col.bounds.center.z), col.radius * 0.9f, groundLayer);
-	}
 
 	//Sets the Light Bar Colour To Controller
-	void SetControllerColour(Color controllerColour) 
+	void SetControllerColour(Color controllerColour)
 	{
 		//Sets the Colour
 		m_LightbarColour = controllerColour;
@@ -197,7 +178,7 @@ public class PlayerMovement : MonoBehaviour
 	Color ColourChangeDepsController(int colorId)
 	{
 		//Colour Of Light depends on the Player Id number
-		switch (colorId) 
+		switch (colorId)
 		{
 			case 0:
 				return Color.yellow;
@@ -209,10 +190,4 @@ public class PlayerMovement : MonoBehaviour
 
 	}
 
-	void playJumpSound() 
-	{
-		//Plays Jump Sound On Speaker
-		if (!GetComponent<AudioSource>().isPlaying)
-			GetComponent<AudioSource>().PlayOnGamepad(playerId);
-	}
 }
