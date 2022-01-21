@@ -3,6 +3,10 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ActivateTraps
     - AttachPlatform
+    - EndGoal
+    - EnemyCollisions
+    - FindEnemy
+    - Owner
     - PlayerMovement
     - Respawn
     - SetCheckpoints
@@ -56,6 +60,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -65,15 +71,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 2676}
     - Class: 114
-      Script: {instanceID: 5770}
+      Script: {instanceID: 4006}
     - Class: 114
-      Script: {instanceID: 7042}
+      Script: {instanceID: 5846}
     - Class: 114
-      Script: {instanceID: 84480}
+      Script: {instanceID: 6998}
     - Class: 114
-      Script: {instanceID: 96632}
+      Script: {instanceID: 7120}
+    - Class: 114
+      Script: {instanceID: 22890}
+    - Class: 114
+      Script: {instanceID: 22892}
+    - Class: 114
+      Script: {instanceID: 22894}
+    - Class: 114
+      Script: {instanceID: 111422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -81,6 +95,8 @@ ScriptsOnlyBuild:
     - Class: 135
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -479,6 +495,12 @@ ScriptsOnlyBuild:
     className: DictionaryAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AttachPlatform
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -839,6 +861,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseOverMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 5f3a0e1e782d61fc3115d7816cf3949a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetCheckpoints
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -899,17 +927,29 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 95dee0324e877d1ed2db10860b6ee162
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Owner
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: AttachPlatform
+    className: FindEnemy
   - hash:
       serializedVersion: 2
-      Hash: 5f3a0e1e782d61fc3115d7816cf3949a
+      Hash: b2b95a0ef62d60f0e472d72977efee04
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SetCheckpoints
+    className: EnemyCollisions
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndGoal
   platform: 31
   scenePathNames:
   - Assets/Scenes/Map 1.unity
-  playerPath: C:/Users/k1916419/Documents/Build
+  playerPath: C:/Users/K1917661/Documents/Build
