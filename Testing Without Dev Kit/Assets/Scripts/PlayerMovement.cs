@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    Animator anim;
     public Transform enemyTarget;
     public float forwardAccel = 2f, reverseAccel = 2, turnStrength = 180, jumpForce = 7;
     public SphereCollider col;
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         Rb.transform.parent = null;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,14 +32,22 @@ public class PlayerMovement : MonoBehaviour
     {
         // If we are not pressing anything make the speed always 0
         speedInput = 0;
+        anim.SetBool("isRunning", false);
         turnInput = 0;
         if (Input.GetKey(_moveFoward))
         {
             speedInput = 1 * forwardAccel * 500;
+            anim.SetBool("isRunning", true);
         }
         else if (Input.GetKey(KeyCode.S)) 
         {
             speedInput = -1 * reverseAccel * 500;
+            anim.SetBool("isRunning", true);
+        }
+
+        if (speedInput == 0) 
+        {
+            anim.SetBool("isRunning", false);
         }
 
         if (Input.GetKeyDown(_jump) && isGrounded())
@@ -55,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
         float distFromPlayer = Vector3.Distance(enemyTarget.position, Rb.gameObject.transform.position);
 
         //Homing Dash if the Player is in the air, there is a target and the player is within 5m of the target.
-        if (Input.GetKeyDown(KeyCode.K) && !isGrounded() && enemyTarget != null && distFromPlayer <= 5f) 
+        if (Input.GetKeyDown(KeyCode.K) && !isGrounded() && enemyTarget != null && distFromPlayer <= 10f) 
         {
             //Find the Direction to the Enemy
             Vector3 direction = enemyTarget.position - Rb.gameObject.transform.position;
