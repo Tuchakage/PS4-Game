@@ -12,6 +12,7 @@ TagManager:
   - TrapB
   - TrapA
   - TrapC
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Rb.transform.parent = null;
         anim = GetComponent<Animator>();
+        Rb.transform.parent = null;
     }
 
     // Update is called once per frame
@@ -61,11 +61,9 @@ public class PlayerMovement : MonoBehaviour
             //maincamera.transform.localPosition = new Vector3(-0.00999999046f, 1.00999999f, -2.32999992f);
         }
 
-        // Distance between enemy and player
-        float distFromPlayer = Vector3.Distance(enemyTarget.position, Rb.gameObject.transform.position);
 
         //Homing Dash if the Player is in the air, there is a target and the player is within 5m of the target.
-        if (Input.GetKeyDown(KeyCode.K) && !isGrounded() && enemyTarget != null && distFromPlayer <= 10f) 
+        if (Input.GetKeyDown(KeyCode.K) && !isGrounded() && enemyTarget != null) 
         {
             //Find the Direction to the Enemy
             Vector3 direction = enemyTarget.position - Rb.gameObject.transform.position;
@@ -127,6 +125,7 @@ public class PlayerMovement : MonoBehaviour
     {
         return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x, col.bounds.min.y, col.bounds.center.z), col.radius * 0.9f, groundLayer);
     }
+
 
     private void OnDrawGizmos()
     {

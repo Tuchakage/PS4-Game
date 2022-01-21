@@ -17,6 +17,12 @@ public class EnemyCollisions : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player 1")
         {
+            //Get the owner of the Rigidbody
+            GameObject player = playerRb.GetComponent<Owner>().owner;
+            PlayerMovement pm = player.GetComponent<PlayerMovement>();
+
+            //Makes sure the Player cannot detect this enemy again
+            pm.enemyTarget = null;
             playerRb = collision.collider.GetComponent<Rigidbody>();
             // Moves the enemy cube back when player collides with it.
             float newEnemyPos = transform.position.z + 5f;
@@ -24,15 +30,17 @@ public class EnemyCollisions : MonoBehaviour
             GetComponent<Rigidbody>().AddForce(transform.up * 500);
             GetComponent<Rigidbody>().AddForce(transform.forward * -500);
             transform.position = new Vector3(transform.position.x, transform.position.y, newEnemyPos);
+
+            playerRb.velocity = new Vector3(0, 0, 0);
+            
+
+            // Destroy cube after a set amount of time.
+            Destroy(gameObject, destroyDelay);
+
             //Shoot the Player upwards
             //playerRb.AddForce(playerRb.gameObject.transform.up * -1, ForceMode.Impulse);
             //playerRb.AddForce(playerRb.gameObject.transform.forward * -1, ForceMode.Impulse);
             // Set player velocity to 0 when it collides with cube.
-            playerRb.velocity = new Vector3(0, 0, 0);
-
-
-            // Destroy cube after a set amount of time.
-            Destroy(gameObject, destroyDelay);
         }
         //if (collision.gameObject.tag == "Player 2")
         //{
