@@ -9,22 +9,13 @@ public class Respawn : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player 1"))
-        {
-            other.transform.position = _respawnPoints[0].position;
-            print("BOZO");
-        }
         if (other.gameObject.CompareTag("Player 2"))
         {
-            other.transform.position = _respawnPoints[1].position;
+            other.transform.position = _respawnPoints[0].position;
+            //Player loses a Life
+            other.GetComponent<Owner>().owner.GetComponent<Lives>().LoseALife();
         }
-        if (other.gameObject.CompareTag("Player 3"))
-        {
-            other.transform.position = _respawnPoints[2].position;
-        }
-        if (other.gameObject.CompareTag("Player 4"))
-        {
-            other.transform.position = _respawnPoints[3].position;
-        }
+
+
     }
 }

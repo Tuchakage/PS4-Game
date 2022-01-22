@@ -8,10 +8,13 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
     public Transform enemyTarget;
     public float forwardAccel = 2f, reverseAccel = 2, turnStrength = 180, jumpForce = 7;
+    private float speedInput, turnInput;
+    private float timeTillNextLaunch;
     public SphereCollider col;
     public LayerMask groundLayer; //So we know what the Ground is (Objects With the ground layer)
-    private float speedInput, turnInput;
+
     [SerializeField] Rigidbody Rb;
+    public bool launched;
     
     //Controls
     [Header("Controls")] 
@@ -25,11 +28,21 @@ public class PlayerMovement : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         Rb.transform.parent = null;
+        launched = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (timeTillNextLaunch > 0)
+        {
+            timeTillNextLaunch-= Time.deltaTime;
+        }
+        else 
+        {
+            //Player can launch again after timer runs out
+            launched = false;
+        }
         // If we are not pressing anything make the speed always 0
         speedInput = 0;
         anim.SetBool("isRunning", false);
@@ -63,18 +76,22 @@ public class PlayerMovement : MonoBehaviour
 
 
         //Homing Dash if the Player is in the air, there is a target and the player is within 5m of the target.
-        if (Input.GetKeyDown(KeyCode.K) && !isGrounded() && enemyTarget != null) 
+        if (Input.GetKeyDown(KeyCode.K) && !isGrounded() && enemyTarget != null && !launched) 
         {
+            launched = true;
             //Find the Direction to the Enemy
             Vector3 direction = enemyTarget.position - Rb.gameObject.transform.position;
             //Launch the Player towards the Enemy
             Rb.AddForce(direction * 50000f);
+            //Delay the time till Player can use Homing Dash again
+            timeTillNextLaunch = 1.0f;
+            
 
         }
         //If the player is on the ground then make sure you revert rigidbody
         if (isGrounded())
-        {
-            RevertRigidbody();
+        {           
+            RevertRigidbody();         
         }
         //Player model will follow the Rigid Body Of The Sphere
         transform.position = Rb.transform.position;

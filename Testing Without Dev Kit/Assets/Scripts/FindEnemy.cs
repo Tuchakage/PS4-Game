@@ -8,6 +8,7 @@ public class FindEnemy : MonoBehaviour
     {
         if (col.gameObject.tag == "Enemy")
         {
+            //Debug.Log("Found Enemy " + col.gameObject.name);
             //If the trigger touches an enemy tell the owner of this trigger (Most likely Player 1) to set it as Enemy target so the player can attack it
             PlayerMovement pm = this.gameObject.GetComponent<Owner>().owner.GetComponent<PlayerMovement>();
             pm.enemyTarget = col.gameObject.transform;
