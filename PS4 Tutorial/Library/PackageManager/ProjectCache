@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637782206860000000
-    m_Hash: 2978344057
+      ticks: 637784579759694705
+    m_Hash: 2399787332
   m_LockFileStatus:
     m_FilePath: C:/Users/K1917661/Documents/PS4-Game/PS4 Tutorial/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637782206860000000
-    m_Hash: 2886125064
+      ticks: 637784579759727551
+    m_Hash: 1917356388
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

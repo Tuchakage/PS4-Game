@@ -11,6 +11,17 @@
 #include <stdint.h>
 
 
+template <typename T1, typename T2, typename T3>
+struct VirtualActionInvoker3
+{
+	typedef void (*Action)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
+	}
+};
 template <typename R, typename T1, typename T2>
 struct VirtualFuncInvoker2
 {
@@ -31,6 +42,18 @@ struct VirtualFuncInvoker4
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
 		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
+	}
+};
+template <typename T1, typename T2, typename T3>
+struct GenericVirtualActionInvoker3
+{
+	typedef void (*Action)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_virtual_invoke_data(method, obj, &invokeData);
+		((Action)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
 	}
 };
 template <typename R, typename T1, typename T2>
@@ -57,6 +80,28 @@ struct GenericVirtualFuncInvoker4
 		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
 	}
 };
+template <typename T1, typename T2, typename T3>
+struct InterfaceActionInvoker3
+{
+	typedef void (*Action)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
+	}
+};
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
 template <typename R, typename T1, typename T2>
 struct InterfaceFuncInvoker2
 {
@@ -77,6 +122,18 @@ struct InterfaceFuncInvoker4
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
 		return ((Func)invokeData.methodPtr)(obj, p1, p2, p3, p4, invokeData.method);
+	}
+};
+template <typename T1, typename T2, typename T3>
+struct GenericInterfaceActionInvoker3
+{
+	typedef void (*Action)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline void Invoke (const RuntimeMethod* method, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		VirtualInvokeData invokeData;
+		il2cpp_codegen_get_generic_interface_invoke_data(method, obj, &invokeData);
+		((Action)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
 	}
 };
 template <typename R, typename T1, typename T2>
@@ -112,14 +169,26 @@ struct Action_1_tF542A16B67D2A30E5C824E6EF0DD0ED4A065680B;
 struct Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914;
 // System.Action`1<System.Object>
 struct Action_1_tD9663D9715FAA4E62035CFCF1AD4D094EE7872DC;
+// System.Collections.Generic.IEnumerable`1<System.Object>
+struct IEnumerable_1_t52B1AC8D9E5E1ED28DF6C46A37C9A1B00B394F9D;
+// System.Collections.Generic.IEnumerable`1<UnityEngine.Yoga.YogaNode>
+struct IEnumerable_1_t2D7047B39A20CA3C020E30F2F8E888F56D9FBD61;
+// System.Collections.Generic.IEnumerator`1<UnityEngine.Yoga.YogaNode>
+struct IEnumerator_1_t9E261FB0B46CAF38E2418ACF956B7E8CC71F488E;
+// System.Collections.Generic.List`1<UnityEngine.Yoga.YogaNode>
+struct List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8;
 // System.Char[]
 struct CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34;
 // System.Delegate[]
 struct DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8;
 // System.IntPtr[]
 struct IntPtrU5BU5D_t27FC72B0409D75AAF33EC42498E8094E95FEE9A6;
+// System.Object[]
+struct ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t4AD999C288CB6D1F38A299D12B1598D606588971;
+// UnityEngine.Yoga.YogaNode[]
+struct YogaNodeU5BU5D_t60B6071B5E9D9765238F08B5673D6A48273769E1;
 // System.Action
 struct Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6;
 // UnityEngine.Yoga.BaselineFunction
@@ -132,8 +201,12 @@ struct Delegate_t;
 struct DelegateData_t17DD30660E330C49381DAA99F934BE75CB11F288;
 // System.Collections.IDictionary
 struct IDictionary_t99871C56B8EC2452AC5C4CF3831695E617B89D3A;
+// System.Collections.IEnumerator
+struct IEnumerator_t5956F3AFB7ECF1117E3BC5890E7FC7B7F7A04105;
 // System.InvalidOperationException
 struct InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB;
+// UnityEngine.Yoga.Logger
+struct Logger_t4B20A24F23C7E3ACC57738D5E2C325474762C5D2;
 // UnityEngine.Yoga.MeasureFunction
 struct MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6;
 // System.Reflection.MethodInfo
@@ -144,6 +217,10 @@ struct SafeSerializationManager_tDE44F029589A028F8A3053C5C06153FAB4AAE29F;
 struct String_t;
 // System.Void
 struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
+// System.WeakReference
+struct WeakReference_tB8558D16C98417FD98C920C42C0CC5C9FF825C76;
+// UnityEngine.Yoga.YogaConfig
+struct YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7;
 // UnityEngine.Yoga.YogaNode
 struct YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6;
 // UnityEngine.Camera/CameraCallback
@@ -151,15 +228,21 @@ struct CameraCallback_tD9E7B69E561CE2EFDEEDB0E7F1406AC52247160D;
 
 IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnityEngine_CoreModule[];
 IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnityEngine_UIElementsNativeModule[];
+IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_t2D7047B39A20CA3C020E30F2F8E888F56D9FBD61_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IntPtr_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UIElementsRuntimeUtilityNative_tD46E29AA27E608332B332CC105C50AF116363578_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral2EB7EACAE6B3BFBFD70862A8840592343396CF46;
 IL2CPP_EXTERN_C String_t* _stringLiteral3E4595538801AB36CCD7E4EFDA9DD0272DEA19EF;
+IL2CPP_EXTERN_C String_t* _stringLiteral52BC61F0345FADE03AB730C8F5BC70C5256D169E;
 IL2CPP_EXTERN_C String_t* _stringLiteral807D31E7D618CFE25644A0B838EBD88C978E78F1;
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1_Invoke_m59CB18B3BB980449BBE1A62B13D9E2311797B7A4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1_Invoke_m94B1D693386EA0BD3C636939BDCE375EDEF91A04_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1_Invoke_mA1473A0EBE34FDCC8201BF644ED2BDB079F459A4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Empty_TisYogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_m4F15DD4CAFCA8FF9A4E1D34CFF87AE44C72D6186_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Native_YGConfigFree_mB97AD40C5DBEDC120FE9904BDCDFF7D2E0DD84A3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Native_YGNodeBaselineInvoke_mA30BA255CCB39372EE7EE1E6AD67A6AAE6CC4E79_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Native_YGNodeMeasureInvoke_mDF9008D55FE16A426B971C97E6B257357747BECF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ProfilerMarker__ctor_mCE8D10CF2D2B2C4E51BF1BB66D75FDDE5BDA4A41_RuntimeMethod_var;
@@ -173,11 +256,27 @@ IL2CPP_EXTERN_C const RuntimeMethod* Utility_RaiseRenderNodeAdd_m23A5CF90F2D9B39
 IL2CPP_EXTERN_C const RuntimeMethod* Utility_RaiseRenderNodeCleanup_mBA3A9A383F4EB05533AB855CC9EF611CBEFFF49B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Utility_RaiseRenderNodeExecute_m8C280A8AA3CD4785DB575A75725081C713F364BA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Utility__cctor_m3A3377BE2146E8A477AE1D3DF019A72C0212CFAA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaConfig_Finalize_m319E9A885EC01FC2093731EF33F22CEACE04ACD2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaConfig__cctor_mDFD4190A3DCBC10165B10108B86918A71D6128F3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaConfig__ctor_mF223298368491BAAD47A029E58078455A4D17985_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaConfig_get_Handle_mD2EF807A42DE91ECAA72358BF057EC8014E0DAAA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaConfig_set_PointScaleFactor_m43DD8922EDE04A68410F8FC8D709D10F6D035DA2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* YogaNode_BaselineInternal_m0C45C415286A4FEA8E9C38A57B45B431FC6104BF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaNode_GetEnumerator_m5F93328C6F34A2D6B2719B86FD3DC97E5C0544F3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* YogaNode_MeasureInternal_mBB3AB5E64B70DD0BAFE665CEB264316F960E0BE8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaNode_System_Collections_IEnumerable_GetEnumerator_m7537F71E66B2BB24889E2F37350166112D609A5E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaNode_get_LayoutHeight_m8FA46A982DC3DC46539CC4D861A3D16DAC74B741_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaNode_get_LayoutWidth_m344A4C1DFC2F74B4224A79E3F24F4907E8D223FE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaNode_get_LayoutX_m1A4606447374A029635A1DDEE27024E726CA5D3E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* YogaNode_get_LayoutY_mFFED1F0E16A3F05BF0A9F3B3167C1FA990B9919B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* IEnumerator_1_t9E261FB0B46CAF38E2418ACF956B7E8CC71F488E_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* IEnumerator_t5956F3AFB7ECF1117E3BC5890E7FC7B7F7A04105_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* IntPtr_t_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* ProfilerMarker_tAE86534C80C5D67768DB3B244D8D139A2E6495E1_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Single_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* YogaSize_tC805BF63DE9A9E4B9984B964AB0A1CFA04ADC1FD_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
@@ -185,6 +284,7 @@ struct Exception_t_marshaled_com;
 struct Exception_t_marshaled_pinvoke;
 
 struct DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8;
+struct ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE;
 
 IL2CPP_EXTERN_C_BEGIN
 IL2CPP_EXTERN_C_END
@@ -205,6 +305,99 @@ public:
 
 
 // System.Object
+
+
+// System.Linq.EmptyEnumerable`1<System.Object>
+struct EmptyEnumerable_1_tB6A330001520792410A46A172F103A91B1608883  : public RuntimeObject
+{
+public:
+
+public:
+};
+
+struct EmptyEnumerable_1_tB6A330001520792410A46A172F103A91B1608883_StaticFields
+{
+public:
+	// TElement[] System.Linq.EmptyEnumerable`1::Instance
+	ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___Instance_0;
+
+public:
+	inline static int32_t get_offset_of_Instance_0() { return static_cast<int32_t>(offsetof(EmptyEnumerable_1_tB6A330001520792410A46A172F103A91B1608883_StaticFields, ___Instance_0)); }
+	inline ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* get_Instance_0() const { return ___Instance_0; }
+	inline ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE** get_address_of_Instance_0() { return &___Instance_0; }
+	inline void set_Instance_0(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* value)
+	{
+		___Instance_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Instance_0), (void*)value);
+	}
+};
+
+
+// System.Collections.Generic.List`1<UnityEngine.Yoga.YogaNode>
+struct List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8  : public RuntimeObject
+{
+public:
+	// T[] System.Collections.Generic.List`1::_items
+	YogaNodeU5BU5D_t60B6071B5E9D9765238F08B5673D6A48273769E1* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject * ____syncRoot_4;
+
+public:
+	inline static int32_t get_offset_of__items_1() { return static_cast<int32_t>(offsetof(List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8, ____items_1)); }
+	inline YogaNodeU5BU5D_t60B6071B5E9D9765238F08B5673D6A48273769E1* get__items_1() const { return ____items_1; }
+	inline YogaNodeU5BU5D_t60B6071B5E9D9765238F08B5673D6A48273769E1** get_address_of__items_1() { return &____items_1; }
+	inline void set__items_1(YogaNodeU5BU5D_t60B6071B5E9D9765238F08B5673D6A48273769E1* value)
+	{
+		____items_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____items_1), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__size_2() { return static_cast<int32_t>(offsetof(List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8, ____size_2)); }
+	inline int32_t get__size_2() const { return ____size_2; }
+	inline int32_t* get_address_of__size_2() { return &____size_2; }
+	inline void set__size_2(int32_t value)
+	{
+		____size_2 = value;
+	}
+
+	inline static int32_t get_offset_of__version_3() { return static_cast<int32_t>(offsetof(List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8, ____version_3)); }
+	inline int32_t get__version_3() const { return ____version_3; }
+	inline int32_t* get_address_of__version_3() { return &____version_3; }
+	inline void set__version_3(int32_t value)
+	{
+		____version_3 = value;
+	}
+
+	inline static int32_t get_offset_of__syncRoot_4() { return static_cast<int32_t>(offsetof(List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8, ____syncRoot_4)); }
+	inline RuntimeObject * get__syncRoot_4() const { return ____syncRoot_4; }
+	inline RuntimeObject ** get_address_of__syncRoot_4() { return &____syncRoot_4; }
+	inline void set__syncRoot_4(RuntimeObject * value)
+	{
+		____syncRoot_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____syncRoot_4), (void*)value);
+	}
+};
+
+struct List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8_StaticFields
+{
+public:
+	// T[] System.Collections.Generic.List`1::_emptyArray
+	YogaNodeU5BU5D_t60B6071B5E9D9765238F08B5673D6A48273769E1* ____emptyArray_5;
+
+public:
+	inline static int32_t get_offset_of__emptyArray_5() { return static_cast<int32_t>(offsetof(List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8_StaticFields, ____emptyArray_5)); }
+	inline YogaNodeU5BU5D_t60B6071B5E9D9765238F08B5673D6A48273769E1* get__emptyArray_5() const { return ____emptyArray_5; }
+	inline YogaNodeU5BU5D_t60B6071B5E9D9765238F08B5673D6A48273769E1** get_address_of__emptyArray_5() { return &____emptyArray_5; }
+	inline void set__emptyArray_5(YogaNodeU5BU5D_t60B6071B5E9D9765238F08B5673D6A48273769E1* value)
+	{
+		____emptyArray_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____emptyArray_5), (void*)value);
+	}
+};
 
 struct Il2CppArrayBounds;
 
@@ -483,6 +676,40 @@ public:
 	inline void set_m_value_0(uint16_t value)
 	{
 		___m_value_0 = value;
+	}
+};
+
+
+// System.UIntPtr
+struct UIntPtr_t 
+{
+public:
+	// System.Void* System.UIntPtr::_pointer
+	void* ____pointer_1;
+
+public:
+	inline static int32_t get_offset_of__pointer_1() { return static_cast<int32_t>(offsetof(UIntPtr_t, ____pointer_1)); }
+	inline void* get__pointer_1() const { return ____pointer_1; }
+	inline void** get_address_of__pointer_1() { return &____pointer_1; }
+	inline void set__pointer_1(void* value)
+	{
+		____pointer_1 = value;
+	}
+};
+
+struct UIntPtr_t_StaticFields
+{
+public:
+	// System.UIntPtr System.UIntPtr::Zero
+	uintptr_t ___Zero_0;
+
+public:
+	inline static int32_t get_offset_of_Zero_0() { return static_cast<int32_t>(offsetof(UIntPtr_t_StaticFields, ___Zero_0)); }
+	inline uintptr_t get_Zero_0() const { return ___Zero_0; }
+	inline uintptr_t* get_address_of_Zero_0() { return &___Zero_0; }
+	inline void set_Zero_0(uintptr_t value)
+	{
+		___Zero_0 = value;
 	}
 };
 
@@ -909,6 +1136,44 @@ struct Exception_t_marshaled_com
 	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
 };
 
+// UnityEngine.UIElements.UIR.GfxUpdateBufferRange
+struct GfxUpdateBufferRange_t11F569267024B2295C7F30C6E951754053C03D66 
+{
+public:
+	// System.UInt32 UnityEngine.UIElements.UIR.GfxUpdateBufferRange::offsetFromWriteStart
+	uint32_t ___offsetFromWriteStart_0;
+	// System.UInt32 UnityEngine.UIElements.UIR.GfxUpdateBufferRange::size
+	uint32_t ___size_1;
+	// System.UIntPtr UnityEngine.UIElements.UIR.GfxUpdateBufferRange::source
+	uintptr_t ___source_2;
+
+public:
+	inline static int32_t get_offset_of_offsetFromWriteStart_0() { return static_cast<int32_t>(offsetof(GfxUpdateBufferRange_t11F569267024B2295C7F30C6E951754053C03D66, ___offsetFromWriteStart_0)); }
+	inline uint32_t get_offsetFromWriteStart_0() const { return ___offsetFromWriteStart_0; }
+	inline uint32_t* get_address_of_offsetFromWriteStart_0() { return &___offsetFromWriteStart_0; }
+	inline void set_offsetFromWriteStart_0(uint32_t value)
+	{
+		___offsetFromWriteStart_0 = value;
+	}
+
+	inline static int32_t get_offset_of_size_1() { return static_cast<int32_t>(offsetof(GfxUpdateBufferRange_t11F569267024B2295C7F30C6E951754053C03D66, ___size_1)); }
+	inline uint32_t get_size_1() const { return ___size_1; }
+	inline uint32_t* get_address_of_size_1() { return &___size_1; }
+	inline void set_size_1(uint32_t value)
+	{
+		___size_1 = value;
+	}
+
+	inline static int32_t get_offset_of_source_2() { return static_cast<int32_t>(offsetof(GfxUpdateBufferRange_t11F569267024B2295C7F30C6E951754053C03D66, ___source_2)); }
+	inline uintptr_t get_source_2() const { return ___source_2; }
+	inline uintptr_t* get_address_of_source_2() { return &___source_2; }
+	inline void set_source_2(uintptr_t value)
+	{
+		___source_2 = value;
+	}
+};
+
+
 // Unity.Profiling.LowLevel.MarkerFlags
 struct MarkerFlags_t4A8B5185BAD24803CE9A57187867CB93451AA9E8 
 {
@@ -989,6 +1254,70 @@ public:
 };
 
 
+// UnityEngine.Yoga.YogaConfig
+struct YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7  : public RuntimeObject
+{
+public:
+	// System.IntPtr UnityEngine.Yoga.YogaConfig::_ygConfig
+	intptr_t ____ygConfig_1;
+	// UnityEngine.Yoga.Logger UnityEngine.Yoga.YogaConfig::_logger
+	Logger_t4B20A24F23C7E3ACC57738D5E2C325474762C5D2 * ____logger_2;
+
+public:
+	inline static int32_t get_offset_of__ygConfig_1() { return static_cast<int32_t>(offsetof(YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7, ____ygConfig_1)); }
+	inline intptr_t get__ygConfig_1() const { return ____ygConfig_1; }
+	inline intptr_t* get_address_of__ygConfig_1() { return &____ygConfig_1; }
+	inline void set__ygConfig_1(intptr_t value)
+	{
+		____ygConfig_1 = value;
+	}
+
+	inline static int32_t get_offset_of__logger_2() { return static_cast<int32_t>(offsetof(YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7, ____logger_2)); }
+	inline Logger_t4B20A24F23C7E3ACC57738D5E2C325474762C5D2 * get__logger_2() const { return ____logger_2; }
+	inline Logger_t4B20A24F23C7E3ACC57738D5E2C325474762C5D2 ** get_address_of__logger_2() { return &____logger_2; }
+	inline void set__logger_2(Logger_t4B20A24F23C7E3ACC57738D5E2C325474762C5D2 * value)
+	{
+		____logger_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____logger_2), (void*)value);
+	}
+};
+
+struct YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_StaticFields
+{
+public:
+	// UnityEngine.Yoga.YogaConfig UnityEngine.Yoga.YogaConfig::Default
+	YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * ___Default_0;
+
+public:
+	inline static int32_t get_offset_of_Default_0() { return static_cast<int32_t>(offsetof(YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_StaticFields, ___Default_0)); }
+	inline YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * get_Default_0() const { return ___Default_0; }
+	inline YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 ** get_address_of_Default_0() { return &___Default_0; }
+	inline void set_Default_0(YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * value)
+	{
+		___Default_0 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___Default_0), (void*)value);
+	}
+};
+
+
+// UnityEngine.Yoga.YogaLogLevel
+struct YogaLogLevel_t06C7639E4D3A1CF30522D78A3E65C09C4FBF66E7 
+{
+public:
+	// System.Int32 UnityEngine.Yoga.YogaLogLevel::value__
+	int32_t ___value___2;
+
+public:
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(YogaLogLevel_t06C7639E4D3A1CF30522D78A3E65C09C4FBF66E7, ___value___2)); }
+	inline int32_t get_value___2() const { return ___value___2; }
+	inline int32_t* get_address_of_value___2() { return &___value___2; }
+	inline void set_value___2(int32_t value)
+	{
+		___value___2 = value;
+	}
+};
+
+
 // UnityEngine.Yoga.YogaMeasureMode
 struct YogaMeasureMode_tC1410798E2727CAFC5099EC884C7649A5B4D8DC8 
 {
@@ -1013,10 +1342,18 @@ struct YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6  : public RuntimeObjec
 public:
 	// System.IntPtr UnityEngine.Yoga.YogaNode::_ygNode
 	intptr_t ____ygNode_0;
+	// UnityEngine.Yoga.YogaConfig UnityEngine.Yoga.YogaNode::_config
+	YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * ____config_1;
+	// System.WeakReference UnityEngine.Yoga.YogaNode::_parent
+	WeakReference_tB8558D16C98417FD98C920C42C0CC5C9FF825C76 * ____parent_2;
+	// System.Collections.Generic.List`1<UnityEngine.Yoga.YogaNode> UnityEngine.Yoga.YogaNode::_children
+	List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8 * ____children_3;
 	// UnityEngine.Yoga.MeasureFunction UnityEngine.Yoga.YogaNode::_measureFunction
-	MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * ____measureFunction_1;
+	MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * ____measureFunction_4;
 	// UnityEngine.Yoga.BaselineFunction UnityEngine.Yoga.YogaNode::_baselineFunction
-	BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * ____baselineFunction_2;
+	BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * ____baselineFunction_5;
+	// System.Object UnityEngine.Yoga.YogaNode::_data
+	RuntimeObject * ____data_6;
 
 public:
 	inline static int32_t get_offset_of__ygNode_0() { return static_cast<int32_t>(offsetof(YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6, ____ygNode_0)); }
@@ -1027,22 +1364,58 @@ public:
 		____ygNode_0 = value;
 	}
 
-	inline static int32_t get_offset_of__measureFunction_1() { return static_cast<int32_t>(offsetof(YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6, ____measureFunction_1)); }
-	inline MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * get__measureFunction_1() const { return ____measureFunction_1; }
-	inline MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 ** get_address_of__measureFunction_1() { return &____measureFunction_1; }
-	inline void set__measureFunction_1(MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * value)
+	inline static int32_t get_offset_of__config_1() { return static_cast<int32_t>(offsetof(YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6, ____config_1)); }
+	inline YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * get__config_1() const { return ____config_1; }
+	inline YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 ** get_address_of__config_1() { return &____config_1; }
+	inline void set__config_1(YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * value)
 	{
-		____measureFunction_1 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____measureFunction_1), (void*)value);
+		____config_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____config_1), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__baselineFunction_2() { return static_cast<int32_t>(offsetof(YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6, ____baselineFunction_2)); }
-	inline BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * get__baselineFunction_2() const { return ____baselineFunction_2; }
-	inline BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A ** get_address_of__baselineFunction_2() { return &____baselineFunction_2; }
-	inline void set__baselineFunction_2(BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * value)
+	inline static int32_t get_offset_of__parent_2() { return static_cast<int32_t>(offsetof(YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6, ____parent_2)); }
+	inline WeakReference_tB8558D16C98417FD98C920C42C0CC5C9FF825C76 * get__parent_2() const { return ____parent_2; }
+	inline WeakReference_tB8558D16C98417FD98C920C42C0CC5C9FF825C76 ** get_address_of__parent_2() { return &____parent_2; }
+	inline void set__parent_2(WeakReference_tB8558D16C98417FD98C920C42C0CC5C9FF825C76 * value)
 	{
-		____baselineFunction_2 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____baselineFunction_2), (void*)value);
+		____parent_2 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____parent_2), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__children_3() { return static_cast<int32_t>(offsetof(YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6, ____children_3)); }
+	inline List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8 * get__children_3() const { return ____children_3; }
+	inline List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8 ** get_address_of__children_3() { return &____children_3; }
+	inline void set__children_3(List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8 * value)
+	{
+		____children_3 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____children_3), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__measureFunction_4() { return static_cast<int32_t>(offsetof(YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6, ____measureFunction_4)); }
+	inline MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * get__measureFunction_4() const { return ____measureFunction_4; }
+	inline MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 ** get_address_of__measureFunction_4() { return &____measureFunction_4; }
+	inline void set__measureFunction_4(MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * value)
+	{
+		____measureFunction_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____measureFunction_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__baselineFunction_5() { return static_cast<int32_t>(offsetof(YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6, ____baselineFunction_5)); }
+	inline BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * get__baselineFunction_5() const { return ____baselineFunction_5; }
+	inline BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A ** get_address_of__baselineFunction_5() { return &____baselineFunction_5; }
+	inline void set__baselineFunction_5(BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * value)
+	{
+		____baselineFunction_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____baselineFunction_5), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__data_6() { return static_cast<int32_t>(offsetof(YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6, ____data_6)); }
+	inline RuntimeObject * get__data_6() const { return ____data_6; }
+	inline RuntimeObject ** get_address_of__data_6() { return &____data_6; }
+	inline void set__data_6(RuntimeObject * value)
+	{
+		____data_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____data_6), (void*)value);
 	}
 };
 
@@ -1259,6 +1632,15 @@ public:
 };
 
 
+// UnityEngine.Yoga.Logger
+struct Logger_t4B20A24F23C7E3ACC57738D5E2C325474762C5D2  : public MulticastDelegate_t
+{
+public:
+
+public:
+};
+
+
 // UnityEngine.Yoga.MeasureFunction
 struct MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6  : public MulticastDelegate_t
 {
@@ -1355,6 +1737,43 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
+// System.Object[]
+struct ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE  : public RuntimeArray
+{
+public:
+	ALIGN_FIELD (8) RuntimeObject * m_Items[1];
+
+public:
+	inline RuntimeObject * GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject ** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject * value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject * GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject ** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject * value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 
 
 // System.Void System.Action`1<System.Boolean>::Invoke(!0)
@@ -1363,7 +1782,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m94B1D693386EA0BD3C63693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_mAAE01A16F138CEC8E1965D322EFB6A7045FE76F2_gshared (Action_1_tD9663D9715FAA4E62035CFCF1AD4D094EE7872DC * __this, RuntimeObject * ___obj0, const RuntimeMethod* method);
 // System.Void System.Action`1<System.IntPtr>::Invoke(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m59CB18B3BB980449BBE1A62B13D9E2311797B7A4_gshared (Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * __this, intptr_t ___obj0, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerable`1<!!0> System.Linq.Enumerable::Empty<System.Object>()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Empty_TisRuntimeObject_m118DE54A7EF06BAF42E1F551D3342732563120D5_gshared_inline (const RuntimeMethod* method);
 
+// System.Boolean System.IntPtr::op_Equality(System.IntPtr,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_op_Equality_mD94F3FE43A65684EFF984A7B95E70D2520C0AC73 (intptr_t ___value10, intptr_t ___value21, const RuntimeMethod* method);
+// System.Void UnityEngine.Yoga.Native::YGConfigFreeInternal(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGConfigFreeInternal_mD200B88033A535BB1A5ED1219B1E561DA6ED49A4 (intptr_t ___config0, const RuntimeMethod* method);
 // System.Void* System.IntPtr::op_Explicit(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* IntPtr_op_Explicit_mE8B472FDC632CBD121F7ADF4F94546D6610BACDD (intptr_t ___value0, const RuntimeMethod* method);
 // UnityEngine.Yoga.YogaSize UnityEngine.Yoga.YogaNode::MeasureInternal(UnityEngine.Yoga.YogaNode,System.Single,UnityEngine.Yoga.YogaMeasureMode,System.Single,UnityEngine.Yoga.YogaMeasureMode)
@@ -1389,12 +1814,41 @@ inline void Action_1_Invoke_m59CB18B3BB980449BBE1A62B13D9E2311797B7A4 (Action_1_
 }
 // System.Void Unity.Profiling.ProfilerMarker::.ctor(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker__ctor_mCE8D10CF2D2B2C4E51BF1BB66D75FDDE5BDA4A41_inline (ProfilerMarker_tAE86534C80C5D67768DB3B244D8D139A2E6495E1 * __this, String_t* ___name0, const RuntimeMethod* method);
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Void System.InvalidOperationException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvalidOperationException__ctor_mC012CE552988309733C896F3FEA8249171E4402E (InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB * __this, String_t* ___message0, const RuntimeMethod* method);
+// System.IntPtr UnityEngine.Yoga.YogaConfig::get_Handle()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t YogaConfig_get_Handle_mD2EF807A42DE91ECAA72358BF057EC8014E0DAAA (YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * __this, const RuntimeMethod* method);
+// System.Boolean System.IntPtr::op_Inequality(System.IntPtr,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_op_Inequality_m212AF0E66AA81FEDC982B1C8A44ADDA24B995EB8 (intptr_t ___value10, intptr_t ___value21, const RuntimeMethod* method);
+// System.Void UnityEngine.Yoga.Native::YGConfigFree(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGConfigFree_mB97AD40C5DBEDC120FE9904BDCDFF7D2E0DD84A3 (intptr_t ___config0, const RuntimeMethod* method);
+// System.Void System.Object::Finalize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Finalize_mC59C83CF4F7707E425FFA6362931C25D4C36676A (RuntimeObject * __this, const RuntimeMethod* method);
+// System.Void UnityEngine.Yoga.Native::YGConfigSetPointScaleFactor(System.IntPtr,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGConfigSetPointScaleFactor_m25EC3A3C7ADA6B7ED8AAA11D620E1175E4353455 (intptr_t ___config0, float ___pixelsInPoint1, const RuntimeMethod* method);
+// System.IntPtr UnityEngine.Yoga.Native::YGConfigGetDefault()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Native_YGConfigGetDefault_m7D26F4A06C4A4FC51A3E18F6ADD22F51A5E0BCF3 (const RuntimeMethod* method);
+// System.Void UnityEngine.Yoga.YogaConfig::.ctor(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YogaConfig__ctor_mF223298368491BAAD47A029E58078455A4D17985 (YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * __this, intptr_t ___ygConfig0, const RuntimeMethod* method);
+// System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetLeft(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_YGNodeLayoutGetLeft_m9C2544E2F70884B9D872E4F732710E1900588140 (intptr_t ___node0, const RuntimeMethod* method);
+// System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetTop(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_YGNodeLayoutGetTop_m0FFD848971C8B63B4261274C5CD4F910680CB700 (intptr_t ___node0, const RuntimeMethod* method);
+// System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetWidth(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_YGNodeLayoutGetWidth_m4C28192C45D735E29919D50925ECEDF5E9ED28C9 (intptr_t ___node0, const RuntimeMethod* method);
+// System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetHeight(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_YGNodeLayoutGetHeight_mB69A179FF0D0A1FD3C0246E5C3D9050B9A0DC9E9 (intptr_t ___node0, const RuntimeMethod* method);
 // UnityEngine.Yoga.YogaSize UnityEngine.Yoga.MeasureFunction::Invoke(UnityEngine.Yoga.YogaNode,System.Single,UnityEngine.Yoga.YogaMeasureMode,System.Single,UnityEngine.Yoga.YogaMeasureMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR YogaSize_tC805BF63DE9A9E4B9984B964AB0A1CFA04ADC1FD  MeasureFunction_Invoke_mEAAC465A891BDA61A7E1804BF40929FE9C34CB58 (MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * __this, YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * ___node0, float ___width1, int32_t ___widthMode2, float ___height3, int32_t ___heightMode4, const RuntimeMethod* method);
 // System.Single UnityEngine.Yoga.BaselineFunction::Invoke(UnityEngine.Yoga.YogaNode,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float BaselineFunction_Invoke_mAEC462B19D69EAC84C6F4D13058EF3DA25BBE647 (BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * __this, YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * ___node0, float ___width1, float ___height2, const RuntimeMethod* method);
+// System.Collections.Generic.IEnumerable`1<!!0> System.Linq.Enumerable::Empty<UnityEngine.Yoga.YogaNode>()
+inline RuntimeObject* Enumerable_Empty_TisYogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_m4F15DD4CAFCA8FF9A4E1D34CFF87AE44C72D6186_inline (const RuntimeMethod* method)
+{
+	return ((  RuntimeObject* (*) (const RuntimeMethod*))Enumerable_Empty_TisRuntimeObject_m118DE54A7EF06BAF42E1F551D3342732563120D5_gshared_inline)(method);
+}
 // System.IntPtr Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::CreateMarker(System.String,System.UInt16,Unity.Profiling.LowLevel.MarkerFlags,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t ProfilerUnsafeUtility_CreateMarker_m419027084C68545B765B9345949D8BFCB96C51AD (String_t* ___name0, uint16_t ___categoryId1, uint16_t ___flags2, int32_t ___metadataCount3, const RuntimeMethod* method);
 #ifdef __clang__
@@ -1513,6 +1967,115 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float BaselineFunction_Invoke_mAEC462B19D69EA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Yoga.Logger::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger__ctor_m75E09744F8FD0FC6CD49FD63AD61ECB9A0F9AB47 (Logger_t4B20A24F23C7E3ACC57738D5E2C325474762C5D2 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
+{
+	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
+	__this->set_method_3(___method1);
+	__this->set_m_target_2(___object0);
+}
+// System.Void UnityEngine.Yoga.Logger::Invoke(UnityEngine.Yoga.YogaConfig,UnityEngine.Yoga.YogaNode,UnityEngine.Yoga.YogaLogLevel,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger_Invoke_m1470015C583899C7B2CB515036CD47C7F0F5C664 (Logger_t4B20A24F23C7E3ACC57738D5E2C325474762C5D2 * __this, YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * ___config0, YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * ___node1, int32_t ___level2, String_t* ___message3, const RuntimeMethod* method)
+{
+	DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8* delegateArrayToInvoke = __this->get_delegates_11();
+	Delegate_t** delegatesToInvoke;
+	il2cpp_array_size_t length;
+	if (delegateArrayToInvoke != NULL)
+	{
+		length = delegateArrayToInvoke->max_length;
+		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
+	}
+	else
+	{
+		length = 1;
+		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
+	}
+
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Delegate_t* currentDelegate = delegatesToInvoke[i];
+		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
+		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
+		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
+		if (!currentDelegate->get_method_is_virtual_10())
+		{
+			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
+		}
+		bool ___methodIsStatic = MethodIsStatic(targetMethod);
+		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
+		if (___methodIsStatic)
+		{
+			if (___parameterCount == 4)
+			{
+				// open
+				typedef void (*FunctionPointerType) (YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 *, YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 *, int32_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(___config0, ___node1, ___level2, ___message3, targetMethod);
+			}
+			else
+			{
+				// closed
+				typedef void (*FunctionPointerType) (void*, YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 *, YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 *, int32_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(targetThis, ___config0, ___node1, ___level2, ___message3, targetMethod);
+			}
+		}
+		else if (___parameterCount != 4)
+		{
+			// open
+			if (currentDelegate->get_method_is_virtual_10())
+			{
+				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
+				{
+					if (il2cpp_codegen_method_is_interface_method(targetMethod))
+						GenericInterfaceActionInvoker3< YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 *, int32_t, String_t* >::Invoke(targetMethod, ___config0, ___node1, ___level2, ___message3);
+					else
+						GenericVirtualActionInvoker3< YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 *, int32_t, String_t* >::Invoke(targetMethod, ___config0, ___node1, ___level2, ___message3);
+				}
+				else
+				{
+					if (il2cpp_codegen_method_is_interface_method(targetMethod))
+						InterfaceActionInvoker3< YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 *, int32_t, String_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), ___config0, ___node1, ___level2, ___message3);
+					else
+						VirtualActionInvoker3< YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 *, int32_t, String_t* >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), ___config0, ___node1, ___level2, ___message3);
+				}
+			}
+			else
+			{
+				typedef void (*FunctionPointerType) (YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 *, YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 *, int32_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(___config0, ___node1, ___level2, ___message3, targetMethod);
+			}
+		}
+		else
+		{
+			// closed
+			if (targetThis == NULL)
+			{
+				typedef void (*FunctionPointerType) (YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 *, YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 *, int32_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(___config0, ___node1, ___level2, ___message3, targetMethod);
+			}
+			else
+			{
+				typedef void (*FunctionPointerType) (void*, YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 *, YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 *, int32_t, String_t*, const RuntimeMethod*);
+				((FunctionPointerType)targetMethodPointer)(targetThis, ___config0, ___node1, ___level2, ___message3, targetMethod);
+			}
+		}
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void UnityEngine.Yoga.MeasureFunction::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeasureFunction__ctor_m7038E9D4841CB6E3D7FDF401F6FF179B9F2B35C4 (MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
@@ -1617,6 +2180,86 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR YogaSize_tC805BF63DE9A9E4B9984B964AB0A1CFA04A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.IntPtr UnityEngine.Yoga.Native::YGConfigGetDefault()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t Native_YGConfigGetDefault_m7D26F4A06C4A4FC51A3E18F6ADD22F51A5E0BCF3 (const RuntimeMethod* method)
+{
+	typedef intptr_t (*Native_YGConfigGetDefault_m7D26F4A06C4A4FC51A3E18F6ADD22F51A5E0BCF3_ftn) ();
+	static Native_YGConfigGetDefault_m7D26F4A06C4A4FC51A3E18F6ADD22F51A5E0BCF3_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Native_YGConfigGetDefault_m7D26F4A06C4A4FC51A3E18F6ADD22F51A5E0BCF3_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Yoga.Native::YGConfigGetDefault()");
+	intptr_t icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
+// System.Void UnityEngine.Yoga.Native::YGConfigFree(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGConfigFree_mB97AD40C5DBEDC120FE9904BDCDFF7D2E0DD84A3 (intptr_t ___config0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IntPtr_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Native_YGConfigFree_mB97AD40C5DBEDC120FE9904BDCDFF7D2E0DD84A3_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___config0));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Native_YGConfigFree_mB97AD40C5DBEDC120FE9904BDCDFF7D2E0DD84A3_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 47));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 48));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 49));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 50));
+		intptr_t L_0 = ___config0;
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 55));
+		bool L_1;
+		L_1 = IntPtr_op_Equality_mD94F3FE43A65684EFF984A7B95E70D2520C0AC73((intptr_t)L_0, (intptr_t)(0), /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 55));
+		V_0 = L_1;
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 51));
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 52));
+		goto IL_0019;
+	}
+
+IL_0012:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 53));
+		intptr_t L_3 = ___config0;
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 56));
+		Native_YGConfigFreeInternal_mD200B88033A535BB1A5ED1219B1E561DA6ED49A4((intptr_t)L_3, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 56));
+	}
+
+IL_0019:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 54));
+		return;
+	}
+}
+// System.Void UnityEngine.Yoga.Native::YGConfigFreeInternal(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGConfigFreeInternal_mD200B88033A535BB1A5ED1219B1E561DA6ED49A4 (intptr_t ___config0, const RuntimeMethod* method)
+{
+	typedef void (*Native_YGConfigFreeInternal_mD200B88033A535BB1A5ED1219B1E561DA6ED49A4_ftn) (intptr_t);
+	static Native_YGConfigFreeInternal_mD200B88033A535BB1A5ED1219B1E561DA6ED49A4_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Native_YGConfigFreeInternal_mD200B88033A535BB1A5ED1219B1E561DA6ED49A4_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Yoga.Native::YGConfigFreeInternal(System.IntPtr)");
+	_il2cpp_icall_func(___config0);
+}
+// System.Void UnityEngine.Yoga.Native::YGConfigSetPointScaleFactor(System.IntPtr,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGConfigSetPointScaleFactor_m25EC3A3C7ADA6B7ED8AAA11D620E1175E4353455 (intptr_t ___config0, float ___pixelsInPoint1, const RuntimeMethod* method)
+{
+	typedef void (*Native_YGConfigSetPointScaleFactor_m25EC3A3C7ADA6B7ED8AAA11D620E1175E4353455_ftn) (intptr_t, float);
+	static Native_YGConfigSetPointScaleFactor_m25EC3A3C7ADA6B7ED8AAA11D620E1175E4353455_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Native_YGConfigSetPointScaleFactor_m25EC3A3C7ADA6B7ED8AAA11D620E1175E4353455_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Yoga.Native::YGConfigSetPointScaleFactor(System.IntPtr,System.Single)");
+	_il2cpp_icall_func(___config0, ___pixelsInPoint1);
+}
 // System.Void UnityEngine.Yoga.Native::YGNodeMeasureInvoke(UnityEngine.Yoga.YogaNode,System.Single,UnityEngine.Yoga.YogaMeasureMode,System.Single,UnityEngine.Yoga.YogaMeasureMode,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGNodeMeasureInvoke_mDF9008D55FE16A426B971C97E6B257357747BECF (YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * ___node0, float ___width1, int32_t ___widthMode2, float ___height3, int32_t ___heightMode4, intptr_t ___returnValueAddress5, const RuntimeMethod* method)
 {
@@ -1628,27 +2271,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGNodeMeasureInvoke_mDF9008D55FE1
 	}
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___node0), (&___width1), (&___widthMode2), (&___height3), (&___heightMode4), (&___returnValueAddress5));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Native_YGNodeMeasureInvoke_mDF9008D55FE16A426B971C97E6B257357747BECF_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 0));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 1));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 57));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 58));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 2));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 3));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 59));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 60));
 		intptr_t L_0 = ___returnValueAddress5;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 5));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 62));
 		void* L_1;
 		L_1 = IntPtr_op_Explicit_mE8B472FDC632CBD121F7ADF4F94546D6610BACDD((intptr_t)L_0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 5));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 62));
 		YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * L_2 = ___node0;
 		float L_3 = ___width1;
 		int32_t L_4 = ___widthMode2;
 		float L_5 = ___height3;
 		int32_t L_6 = ___heightMode4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 6));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 63));
 		YogaSize_tC805BF63DE9A9E4B9984B964AB0A1CFA04ADC1FD  L_7;
 		L_7 = YogaNode_MeasureInternal_mBB3AB5E64B70DD0BAFE665CEB264316F960E0BE8(L_2, L_3, L_4, L_5, L_6, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 6));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 63));
 		*(YogaSize_tC805BF63DE9A9E4B9984B964AB0A1CFA04ADC1FD *)L_1 = L_7;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 4));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 61));
 		return;
 	}
 }
@@ -1663,27 +2306,67 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGNodeBaselineInvoke_mA30BA255CCB
 	}
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___node0), (&___width1), (&___height2), (&___returnValueAddress3));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Native_YGNodeBaselineInvoke_mA30BA255CCB39372EE7EE1E6AD67A6AAE6CC4E79_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 7));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 8));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 64));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 65));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 9));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 10));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 66));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 67));
 		intptr_t L_0 = ___returnValueAddress3;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 12));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 69));
 		void* L_1;
 		L_1 = IntPtr_op_Explicit_mE8B472FDC632CBD121F7ADF4F94546D6610BACDD((intptr_t)L_0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 12));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 69));
 		YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * L_2 = ___node0;
 		float L_3 = ___width1;
 		float L_4 = ___height2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 13));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 70));
 		float L_5;
 		L_5 = YogaNode_BaselineInternal_m0C45C415286A4FEA8E9C38A57B45B431FC6104BF(L_2, L_3, L_4, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 13));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 70));
 		*((float*)L_1) = (float)L_5;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 11));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 68));
 		return;
 	}
+}
+// System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetLeft(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_YGNodeLayoutGetLeft_m9C2544E2F70884B9D872E4F732710E1900588140 (intptr_t ___node0, const RuntimeMethod* method)
+{
+	typedef float (*Native_YGNodeLayoutGetLeft_m9C2544E2F70884B9D872E4F732710E1900588140_ftn) (intptr_t);
+	static Native_YGNodeLayoutGetLeft_m9C2544E2F70884B9D872E4F732710E1900588140_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Native_YGNodeLayoutGetLeft_m9C2544E2F70884B9D872E4F732710E1900588140_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Yoga.Native::YGNodeLayoutGetLeft(System.IntPtr)");
+	float icallRetVal = _il2cpp_icall_func(___node0);
+	return icallRetVal;
+}
+// System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetTop(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_YGNodeLayoutGetTop_m0FFD848971C8B63B4261274C5CD4F910680CB700 (intptr_t ___node0, const RuntimeMethod* method)
+{
+	typedef float (*Native_YGNodeLayoutGetTop_m0FFD848971C8B63B4261274C5CD4F910680CB700_ftn) (intptr_t);
+	static Native_YGNodeLayoutGetTop_m0FFD848971C8B63B4261274C5CD4F910680CB700_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Native_YGNodeLayoutGetTop_m0FFD848971C8B63B4261274C5CD4F910680CB700_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Yoga.Native::YGNodeLayoutGetTop(System.IntPtr)");
+	float icallRetVal = _il2cpp_icall_func(___node0);
+	return icallRetVal;
+}
+// System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetWidth(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_YGNodeLayoutGetWidth_m4C28192C45D735E29919D50925ECEDF5E9ED28C9 (intptr_t ___node0, const RuntimeMethod* method)
+{
+	typedef float (*Native_YGNodeLayoutGetWidth_m4C28192C45D735E29919D50925ECEDF5E9ED28C9_ftn) (intptr_t);
+	static Native_YGNodeLayoutGetWidth_m4C28192C45D735E29919D50925ECEDF5E9ED28C9_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Native_YGNodeLayoutGetWidth_m4C28192C45D735E29919D50925ECEDF5E9ED28C9_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Yoga.Native::YGNodeLayoutGetWidth(System.IntPtr)");
+	float icallRetVal = _il2cpp_icall_func(___node0);
+	return icallRetVal;
+}
+// System.Single UnityEngine.Yoga.Native::YGNodeLayoutGetHeight(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Native_YGNodeLayoutGetHeight_mB69A179FF0D0A1FD3C0246E5C3D9050B9A0DC9E9 (intptr_t ___node0, const RuntimeMethod* method)
+{
+	typedef float (*Native_YGNodeLayoutGetHeight_mB69A179FF0D0A1FD3C0246E5C3D9050B9A0DC9E9_ftn) (intptr_t);
+	static Native_YGNodeLayoutGetHeight_mB69A179FF0D0A1FD3C0246E5C3D9050B9A0DC9E9_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Native_YGNodeLayoutGetHeight_mB69A179FF0D0A1FD3C0246E5C3D9050B9A0DC9E9_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Yoga.Native::YGNodeLayoutGetHeight(System.IntPtr)");
+	float icallRetVal = _il2cpp_icall_func(___node0);
+	return icallRetVal;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -1704,13 +2387,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIElementsRuntimeUtilityNative_RepaintOv
 		s_Il2CppMethodInitialized = true;
 	}
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, UIElementsRuntimeUtilityNative_RepaintOverlayPanels_mB7B050FAB713DC4C1F0DFDC334A406B105633430_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 36));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 37));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 133));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 134));
 	Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * G_B2_0 = NULL;
 	Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * G_B1_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 38));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 39));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 135));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 136));
 		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_0 = ((UIElementsRuntimeUtilityNative_tD46E29AA27E608332B332CC105C50AF116363578_StaticFields*)il2cpp_codegen_static_fields_for(UIElementsRuntimeUtilityNative_tD46E29AA27E608332B332CC105C50AF116363578_il2cpp_TypeInfo_var))->get_RepaintOverlayPanelsCallback_0();
 		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_1 = L_0;
 		G_B1_0 = L_1;
@@ -1726,15 +2409,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIElementsRuntimeUtilityNative_RepaintOv
 
 IL_000c:
 	{
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 41));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 138));
 		NullCheck(G_B2_0);
 		Action_Invoke_m3FFA5BE3D64F0FF8E1E1CB6F953913FADB5EB89E(G_B2_0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 41));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 138));
 	}
 
 IL_0012:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 40));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 137));
 		return;
 	}
 }
@@ -1749,13 +2432,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIElementsRuntimeUtilityNative_UpdateRun
 		s_Il2CppMethodInitialized = true;
 	}
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, UIElementsRuntimeUtilityNative_UpdateRuntimePanels_m440951CB8CB88C12BA3FCCB6DE957FC1282651F3_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 42));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 43));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 139));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 140));
 	Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * G_B2_0 = NULL;
 	Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * G_B1_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 44));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 45));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 141));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 142));
 		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_0 = ((UIElementsRuntimeUtilityNative_tD46E29AA27E608332B332CC105C50AF116363578_StaticFields*)il2cpp_codegen_static_fields_for(UIElementsRuntimeUtilityNative_tD46E29AA27E608332B332CC105C50AF116363578_il2cpp_TypeInfo_var))->get_UpdateRuntimePanelsCallback_1();
 		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_1 = L_0;
 		G_B1_0 = L_1;
@@ -1771,15 +2454,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIElementsRuntimeUtilityNative_UpdateRun
 
 IL_000c:
 	{
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 47));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 144));
 		NullCheck(G_B2_0);
 		Action_Invoke_m3FFA5BE3D64F0FF8E1E1CB6F953913FADB5EB89E(G_B2_0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 47));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 144));
 	}
 
 IL_0012:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 46));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 143));
 		return;
 	}
 }
@@ -1804,13 +2487,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseGraphicsResourcesRecreate_m
 	}
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___recreate0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Utility_RaiseGraphicsResourcesRecreate_m90D9F79323894598B8C514E3AF751AD17109AC39_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 48));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 49));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 145));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 146));
 	Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * G_B2_0 = NULL;
 	Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * G_B1_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 50));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 51));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 147));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 148));
 		IL2CPP_RUNTIME_CLASS_INIT(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var);
 		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_0 = ((Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_StaticFields*)il2cpp_codegen_static_fields_for(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var))->get_GraphicsResourcesRecreate_0();
 		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_1 = L_0;
@@ -1828,15 +2511,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseGraphicsResourcesRecreate_m
 IL_000c:
 	{
 		bool L_2 = ___recreate0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 53));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 150));
 		NullCheck(G_B2_0);
 		Action_1_Invoke_m94B1D693386EA0BD3C636939BDCE375EDEF91A04(G_B2_0, L_2, /*hidden argument*/Action_1_Invoke_m94B1D693386EA0BD3C636939BDCE375EDEF91A04_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 53));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 150));
 	}
 
 IL_0013:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 52));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 149));
 		return;
 	}
 }
@@ -1853,15 +2536,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseEngineUpdate_m191BF62A25105
 	}
 	bool V_0 = false;
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Utility_RaiseEngineUpdate_m191BF62A251055F88508B6238C0258165D166A3D_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 54));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 55));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 151));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 152));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 56));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 57));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 153));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 154));
 		IL2CPP_RUNTIME_CLASS_INIT(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var);
 		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_0 = ((Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_StaticFields*)il2cpp_codegen_static_fields_for(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var))->get_EngineUpdate_1();
 		V_0 = (bool)((!(((RuntimeObject*)(Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 *)L_0) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 58));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 155));
 		bool L_1 = V_0;
 		if (!L_1)
 		{
@@ -1869,20 +2552,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseEngineUpdate_m191BF62A25105
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 59));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 60));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 156));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 157));
 		IL2CPP_RUNTIME_CLASS_INIT(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var);
 		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_2 = ((Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_StaticFields*)il2cpp_codegen_static_fields_for(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var))->get_EngineUpdate_1();
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 63));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 160));
 		NullCheck(L_2);
 		Action_Invoke_m3FFA5BE3D64F0FF8E1E1CB6F953913FADB5EB89E(L_2, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 63));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 61));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 160));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 158));
 	}
 
 IL_001a:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 62));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 159));
 		return;
 	}
 }
@@ -1897,13 +2580,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseFlushPendingResources_m9A1E
 		s_Il2CppMethodInitialized = true;
 	}
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Utility_RaiseFlushPendingResources_m9A1E1BC67215C90EE8F34A3ADFB1A13D88D26C8C_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 64));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 65));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 161));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 162));
 	Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * G_B2_0 = NULL;
 	Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * G_B1_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 66));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 67));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 163));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 164));
 		IL2CPP_RUNTIME_CLASS_INIT(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var);
 		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_0 = ((Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_StaticFields*)il2cpp_codegen_static_fields_for(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var))->get_FlushPendingResources_2();
 		Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * L_1 = L_0;
@@ -1920,15 +2603,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseFlushPendingResources_m9A1E
 
 IL_000c:
 	{
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 69));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 166));
 		NullCheck(G_B2_0);
 		Action_Invoke_m3FFA5BE3D64F0FF8E1E1CB6F953913FADB5EB89E(G_B2_0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 69));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 166));
 	}
 
 IL_0012:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 68));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 165));
 		return;
 	}
 }
@@ -1945,13 +2628,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRegisterIntermediateRendere
 	}
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___camera0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Utility_RaiseRegisterIntermediateRenderers_m8598BA1C8CD6EEB98E80246AE0822536E415E2A8_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 70));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 71));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 167));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 168));
 	Action_1_tF542A16B67D2A30E5C824E6EF0DD0ED4A065680B * G_B2_0 = NULL;
 	Action_1_tF542A16B67D2A30E5C824E6EF0DD0ED4A065680B * G_B1_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 72));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 73));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 169));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 170));
 		IL2CPP_RUNTIME_CLASS_INIT(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var);
 		Action_1_tF542A16B67D2A30E5C824E6EF0DD0ED4A065680B * L_0 = ((Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_StaticFields*)il2cpp_codegen_static_fields_for(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var))->get_RegisterIntermediateRenderers_3();
 		Action_1_tF542A16B67D2A30E5C824E6EF0DD0ED4A065680B * L_1 = L_0;
@@ -1969,15 +2652,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRegisterIntermediateRendere
 IL_000c:
 	{
 		Camera_tC44E094BAB53AFC8A014C6F9CFCE11F4FC38006C * L_2 = ___camera0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 75));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 172));
 		NullCheck(G_B2_0);
 		Action_1_Invoke_mA1473A0EBE34FDCC8201BF644ED2BDB079F459A4(G_B2_0, L_2, /*hidden argument*/Action_1_Invoke_mA1473A0EBE34FDCC8201BF644ED2BDB079F459A4_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 75));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 172));
 	}
 
 IL_0013:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 74));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 171));
 		return;
 	}
 }
@@ -1994,13 +2677,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRenderNodeAdd_m23A5CF90F2D9
 	}
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___userData0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Utility_RaiseRenderNodeAdd_m23A5CF90F2D9B393F320CDB08AAB6968A835B9BF_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 76));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 77));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 173));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 174));
 	Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * G_B2_0 = NULL;
 	Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * G_B1_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 78));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 79));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 175));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 176));
 		IL2CPP_RUNTIME_CLASS_INIT(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var);
 		Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * L_0 = ((Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_StaticFields*)il2cpp_codegen_static_fields_for(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var))->get_RenderNodeAdd_4();
 		Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * L_1 = L_0;
@@ -2018,15 +2701,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRenderNodeAdd_m23A5CF90F2D9
 IL_000c:
 	{
 		intptr_t L_2 = ___userData0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 81));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 178));
 		NullCheck(G_B2_0);
 		Action_1_Invoke_m59CB18B3BB980449BBE1A62B13D9E2311797B7A4(G_B2_0, (intptr_t)L_2, /*hidden argument*/Action_1_Invoke_m59CB18B3BB980449BBE1A62B13D9E2311797B7A4_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 81));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 178));
 	}
 
 IL_0013:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 80));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 177));
 		return;
 	}
 }
@@ -2043,13 +2726,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRenderNodeExecute_m8C280A8A
 	}
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___userData0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Utility_RaiseRenderNodeExecute_m8C280A8AA3CD4785DB575A75725081C713F364BA_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 82));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 83));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 179));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 180));
 	Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * G_B2_0 = NULL;
 	Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * G_B1_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 84));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 85));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 181));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 182));
 		IL2CPP_RUNTIME_CLASS_INIT(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var);
 		Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * L_0 = ((Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_StaticFields*)il2cpp_codegen_static_fields_for(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var))->get_RenderNodeExecute_5();
 		Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * L_1 = L_0;
@@ -2067,15 +2750,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRenderNodeExecute_m8C280A8A
 IL_000c:
 	{
 		intptr_t L_2 = ___userData0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 87));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 184));
 		NullCheck(G_B2_0);
 		Action_1_Invoke_m59CB18B3BB980449BBE1A62B13D9E2311797B7A4(G_B2_0, (intptr_t)L_2, /*hidden argument*/Action_1_Invoke_m59CB18B3BB980449BBE1A62B13D9E2311797B7A4_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 87));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 184));
 	}
 
 IL_0013:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 86));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 183));
 		return;
 	}
 }
@@ -2092,13 +2775,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRenderNodeCleanup_mBA3A9A38
 	}
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___userData0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Utility_RaiseRenderNodeCleanup_mBA3A9A383F4EB05533AB855CC9EF611CBEFFF49B_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 88));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 89));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 185));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 186));
 	Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * G_B2_0 = NULL;
 	Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * G_B1_0 = NULL;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 90));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 91));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 187));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 188));
 		IL2CPP_RUNTIME_CLASS_INIT(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var);
 		Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * L_0 = ((Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_StaticFields*)il2cpp_codegen_static_fields_for(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var))->get_RenderNodeCleanup_6();
 		Action_1_t35A46FAEE6B0A26D311444DF75B6EAFC59EBD914 * L_1 = L_0;
@@ -2116,15 +2799,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRenderNodeCleanup_mBA3A9A38
 IL_000c:
 	{
 		intptr_t L_2 = ___userData0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 93));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 190));
 		NullCheck(G_B2_0);
 		Action_1_Invoke_m59CB18B3BB980449BBE1A62B13D9E2311797B7A4(G_B2_0, (intptr_t)L_2, /*hidden argument*/Action_1_Invoke_m59CB18B3BB980449BBE1A62B13D9E2311797B7A4_RuntimeMethod_var);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 93));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 190));
 	}
 
 IL_0013:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 92));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 189));
 		return;
 	}
 }
@@ -2140,16 +2823,268 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility__cctor_m3A3377BE2146E8A477AE1D3D
 		s_Il2CppMethodInitialized = true;
 	}
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, Utility__cctor_m3A3377BE2146E8A477AE1D3DF019A72C0212CFAA_RuntimeMethod_var, NULL, NULL, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 94));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 95));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 191));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 192));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 96));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 97));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 193));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 194));
 		ProfilerMarker_tAE86534C80C5D67768DB3B244D8D139A2E6495E1  L_0;
 		memset((&L_0), 0, sizeof(L_0));
 		ProfilerMarker__ctor_mCE8D10CF2D2B2C4E51BF1BB66D75FDDE5BDA4A41_inline((&L_0), _stringLiteral3E4595538801AB36CCD7E4EFDA9DD0272DEA19EF, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 97));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 194));
 		((Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_StaticFields*)il2cpp_codegen_static_fields_for(Utility_t6BB300FC47C7086829155B2BFB07A6EA848C621D_il2cpp_TypeInfo_var))->set_s_MarkerRaiseEngineUpdate_7(L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.Yoga.YogaConfig::.ctor(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YogaConfig__ctor_mF223298368491BAAD47A029E58078455A4D17985 (YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * __this, intptr_t ___ygConfig0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IntPtr_t_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig__ctor_mF223298368491BAAD47A029E58078455A4D17985_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___ygConfig0));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaConfig__ctor_mF223298368491BAAD47A029E58078455A4D17985_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 0));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 1));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 2));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 10));
+		Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405(__this, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 10));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 3));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 4));
+		intptr_t L_0 = ___ygConfig0;
+		__this->set__ygConfig_1((intptr_t)L_0);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 5));
+		intptr_t L_1 = __this->get__ygConfig_1();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 11));
+		bool L_2;
+		L_2 = IntPtr_op_Equality_mD94F3FE43A65684EFF984A7B95E70D2520C0AC73((intptr_t)L_1, (intptr_t)(0), /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 11));
+		V_0 = L_2;
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 6));
+		bool L_3 = V_0;
+		if (!L_3)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 7));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 8));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 12));
+		InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB * L_4 = (InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB_il2cpp_TypeInfo_var)));
+		InvalidOperationException__ctor_mC012CE552988309733C896F3FEA8249171E4402E(L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral52BC61F0345FADE03AB730C8F5BC70C5256D169E)), /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 12));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&YogaConfig__ctor_mF223298368491BAAD47A029E58078455A4D17985_RuntimeMethod_var)));
+	}
+
+IL_002f:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 9));
+		return;
+	}
+}
+// System.Void UnityEngine.Yoga.YogaConfig::Finalize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YogaConfig_Finalize_m319E9A885EC01FC2093731EF33F22CEACE04ACD2 (YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig_Finalize_m319E9A885EC01FC2093731EF33F22CEACE04ACD2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaConfig_Finalize_m319E9A885EC01FC2093731EF33F22CEACE04ACD2_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 13));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 14));
+	Exception_t * __last_unhandled_exception = 0;
+	il2cpp::utils::ExceptionSupportStack<int32_t, 1> __leave_targets;
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 15));
+	}
+
+IL_0001:
+	try
+	{// begin try (depth: 1)
+		STORE_TRY_ID(methodExecutionContext, 0);
+		{
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 16));
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 17));
+			STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 25));
+			intptr_t L_0;
+			L_0 = YogaConfig_get_Handle_mD2EF807A42DE91ECAA72358BF057EC8014E0DAAA(__this, /*hidden argument*/NULL);
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 25));
+			IL2CPP_RUNTIME_CLASS_INIT(YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_il2cpp_TypeInfo_var);
+			YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * L_1 = ((YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_StaticFields*)il2cpp_codegen_static_fields_for(YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_il2cpp_TypeInfo_var))->get_Default_0();
+			STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 26));
+			NullCheck(L_1);
+			intptr_t L_2;
+			L_2 = YogaConfig_get_Handle_mD2EF807A42DE91ECAA72358BF057EC8014E0DAAA(L_1, /*hidden argument*/NULL);
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 26));
+			STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 27));
+			bool L_3;
+			L_3 = IntPtr_op_Inequality_m212AF0E66AA81FEDC982B1C8A44ADDA24B995EB8((intptr_t)L_0, (intptr_t)L_2, /*hidden argument*/NULL);
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 27));
+			V_0 = L_3;
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 18));
+			bool L_4 = V_0;
+			if (!L_4)
+			{
+				goto IL_0029;
+			}
+		}
+
+IL_001b:
+		{
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 19));
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 20));
+			STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 28));
+			intptr_t L_5;
+			L_5 = YogaConfig_get_Handle_mD2EF807A42DE91ECAA72358BF057EC8014E0DAAA(__this, /*hidden argument*/NULL);
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 28));
+			STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 29));
+			Native_YGConfigFree_mB97AD40C5DBEDC120FE9904BDCDFF7D2E0DD84A3((intptr_t)L_5, /*hidden argument*/NULL);
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 29));
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 21));
+		}
+
+IL_0029:
+		{
+			CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 22));
+			IL2CPP_LEAVE(0x33, FINALLY_002b);
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		__last_unhandled_exception = (Exception_t *)e.ex;
+		goto FINALLY_002b;
+	}
+
+FINALLY_002b:
+	{// begin finally (depth: 1)
+		STORE_TRY_ID(methodExecutionContext, -1);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 23));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 30));
+		Object_Finalize_mC59C83CF4F7707E425FFA6362931C25D4C36676A(__this, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 30));
+		IL2CPP_END_FINALLY(43)
+	}// end finally (depth: 1)
+	IL2CPP_CLEANUP(43)
+	{
+		IL2CPP_RETHROW_IF_UNHANDLED(Exception_t *)
+		IL2CPP_JUMP_TBL(0x33, IL_0033)
+	}
+
+IL_0033:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 24));
+		return;
+	}
+}
+// System.IntPtr UnityEngine.Yoga.YogaConfig::get_Handle()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t YogaConfig_get_Handle_mD2EF807A42DE91ECAA72358BF057EC8014E0DAAA (YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IntPtr_t_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig_get_Handle_mD2EF807A42DE91ECAA72358BF057EC8014E0DAAA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaConfig_get_Handle_mD2EF807A42DE91ECAA72358BF057EC8014E0DAAA_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 31));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 32));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 33));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 34));
+		intptr_t L_0 = __this->get__ygConfig_1();
+		V_0 = (intptr_t)L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 35));
+		intptr_t L_1 = V_0;
+		return (intptr_t)L_1;
+	}
+}
+// System.Void UnityEngine.Yoga.YogaConfig::set_PointScaleFactor(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YogaConfig_set_PointScaleFactor_m43DD8922EDE04A68410F8FC8D709D10F6D035DA2 (YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * __this, float ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig_set_PointScaleFactor_m43DD8922EDE04A68410F8FC8D709D10F6D035DA2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___value0));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaConfig_set_PointScaleFactor_m43DD8922EDE04A68410F8FC8D709D10F6D035DA2_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 36));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 37));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 38));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 39));
+		intptr_t L_0 = __this->get__ygConfig_1();
+		float L_1 = ___value0;
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 41));
+		Native_YGConfigSetPointScaleFactor_m25EC3A3C7ADA6B7ED8AAA11D620E1175E4353455((intptr_t)L_0, L_1, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 41));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 40));
+		return;
+	}
+}
+// System.Void UnityEngine.Yoga.YogaConfig::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YogaConfig__cctor_mDFD4190A3DCBC10165B10108B86918A71D6128F3 (const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig__cctor_mDFD4190A3DCBC10165B10108B86918A71D6128F3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaConfig__cctor_mDFD4190A3DCBC10165B10108B86918A71D6128F3_RuntimeMethod_var, NULL, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 42));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 43));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 44));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 45));
+		intptr_t L_0;
+		L_0 = Native_YGConfigGetDefault_m7D26F4A06C4A4FC51A3E18F6ADD22F51A5E0BCF3(/*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 45));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 46));
+		YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 * L_1 = (YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7 *)il2cpp_codegen_object_new(YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_il2cpp_TypeInfo_var);
+		YogaConfig__ctor_mF223298368491BAAD47A029E58078455A4D17985(L_1, (intptr_t)L_0, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 46));
+		((YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_StaticFields*)il2cpp_codegen_static_fields_for(YogaConfig_tA06BDF520DE54384107CF42E1E9909DB1C28A7E7_il2cpp_TypeInfo_var))->set_Default_0(L_1);
 		return;
 	}
 }
@@ -2169,6 +3104,154 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility__cctor_m3A3377BE2146E8A477AE1D3D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Single UnityEngine.Yoga.YogaNode::get_LayoutX()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float YogaNode_get_LayoutX_m1A4606447374A029635A1DDEE27024E726CA5D3E (YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_get_LayoutX_m1A4606447374A029635A1DDEE27024E726CA5D3E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaNode_get_LayoutX_m1A4606447374A029635A1DDEE27024E726CA5D3E_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 71));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 72));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 73));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 74));
+		intptr_t L_0 = __this->get__ygNode_0();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 76));
+		float L_1;
+		L_1 = Native_YGNodeLayoutGetLeft_m9C2544E2F70884B9D872E4F732710E1900588140((intptr_t)L_0, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 76));
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 75));
+		float L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Single UnityEngine.Yoga.YogaNode::get_LayoutY()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float YogaNode_get_LayoutY_mFFED1F0E16A3F05BF0A9F3B3167C1FA990B9919B (YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_get_LayoutY_mFFED1F0E16A3F05BF0A9F3B3167C1FA990B9919B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaNode_get_LayoutY_mFFED1F0E16A3F05BF0A9F3B3167C1FA990B9919B_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 77));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 78));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 79));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 80));
+		intptr_t L_0 = __this->get__ygNode_0();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 82));
+		float L_1;
+		L_1 = Native_YGNodeLayoutGetTop_m0FFD848971C8B63B4261274C5CD4F910680CB700((intptr_t)L_0, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 82));
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 81));
+		float L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Single UnityEngine.Yoga.YogaNode::get_LayoutWidth()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float YogaNode_get_LayoutWidth_m344A4C1DFC2F74B4224A79E3F24F4907E8D223FE (YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_get_LayoutWidth_m344A4C1DFC2F74B4224A79E3F24F4907E8D223FE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaNode_get_LayoutWidth_m344A4C1DFC2F74B4224A79E3F24F4907E8D223FE_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 83));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 84));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 85));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 86));
+		intptr_t L_0 = __this->get__ygNode_0();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 88));
+		float L_1;
+		L_1 = Native_YGNodeLayoutGetWidth_m4C28192C45D735E29919D50925ECEDF5E9ED28C9((intptr_t)L_0, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 88));
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 87));
+		float L_2 = V_0;
+		return L_2;
+	}
+}
+// System.Single UnityEngine.Yoga.YogaNode::get_LayoutHeight()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float YogaNode_get_LayoutHeight_m8FA46A982DC3DC46539CC4D861A3D16DAC74B741 (YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_tE07797BA3C98D4CA9B5A19413C19A76688AB899E_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_get_LayoutHeight_m8FA46A982DC3DC46539CC4D861A3D16DAC74B741_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaNode_get_LayoutHeight_m8FA46A982DC3DC46539CC4D861A3D16DAC74B741_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 89));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 90));
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 91));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 92));
+		intptr_t L_0 = __this->get__ygNode_0();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 94));
+		float L_1;
+		L_1 = Native_YGNodeLayoutGetHeight_mB69A179FF0D0A1FD3C0246E5C3D9050B9A0DC9E9((intptr_t)L_0, /*hidden argument*/NULL);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 94));
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 93));
+		float L_2 = V_0;
+		return L_2;
+	}
+}
 // UnityEngine.Yoga.YogaSize UnityEngine.Yoga.YogaNode::MeasureInternal(UnityEngine.Yoga.YogaNode,System.Single,UnityEngine.Yoga.YogaMeasureMode,System.Single,UnityEngine.Yoga.YogaMeasureMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR YogaSize_tC805BF63DE9A9E4B9984B964AB0A1CFA04ADC1FD  YogaNode_MeasureInternal_mBB3AB5E64B70DD0BAFE665CEB264316F960E0BE8 (YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * ___node0, float ___width1, int32_t ___widthMode2, float ___height3, int32_t ___heightMode4, const RuntimeMethod* method)
 {
@@ -2185,12 +3268,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR YogaSize_tC805BF63DE9A9E4B9984B964AB0A1CFA04A
 	memset((&V_1), 0, sizeof(V_1));
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___node0), (&___width1), (&___widthMode2), (&___height3), (&___heightMode4));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaNode_MeasureInternal_mBB3AB5E64B70DD0BAFE665CEB264316F960E0BE8_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 14));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 15));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 95));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 96));
 	int32_t G_B3_0 = 0;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 16));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 17));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 97));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 98));
 		YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * L_0 = ___node0;
 		if (!L_0)
 		{
@@ -2200,7 +3283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR YogaSize_tC805BF63DE9A9E4B9984B964AB0A1CFA04A
 	{
 		YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * L_1 = ___node0;
 		NullCheck(L_1);
-		MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * L_2 = L_1->get__measureFunction_1();
+		MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * L_2 = L_1->get__measureFunction_4();
 		G_B3_0 = ((((RuntimeObject*)(MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 *)L_2) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
 		goto IL_0010;
 	}
@@ -2213,7 +3296,7 @@ IL_000f:
 IL_0010:
 	{
 		V_0 = (bool)G_B3_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 18));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 99));
 		bool L_3 = V_0;
 		if (!L_3)
 		{
@@ -2221,38 +3304,38 @@ IL_0010:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 19));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 20));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 23));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 100));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 101));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 104));
 		InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB * L_4 = (InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB_il2cpp_TypeInfo_var)));
 		InvalidOperationException__ctor_mC012CE552988309733C896F3FEA8249171E4402E(L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral807D31E7D618CFE25644A0B838EBD88C978E78F1)), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 23));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 104));
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&YogaNode_MeasureInternal_mBB3AB5E64B70DD0BAFE665CEB264316F960E0BE8_RuntimeMethod_var)));
 	}
 
 IL_0020:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 21));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 102));
 		YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * L_5 = ___node0;
 		NullCheck(L_5);
-		MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * L_6 = L_5->get__measureFunction_1();
+		MeasureFunction_tBD19E8A44621B4D553785068ECCF0439CD9666C6 * L_6 = L_5->get__measureFunction_4();
 		YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * L_7 = ___node0;
 		float L_8 = ___width1;
 		int32_t L_9 = ___widthMode2;
 		float L_10 = ___height3;
 		int32_t L_11 = ___heightMode4;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 24));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 105));
 		NullCheck(L_6);
 		YogaSize_tC805BF63DE9A9E4B9984B964AB0A1CFA04ADC1FD  L_12;
 		L_12 = MeasureFunction_Invoke_mEAAC465A891BDA61A7E1804BF40929FE9C34CB58(L_6, L_7, L_8, L_9, L_10, L_11, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 24));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 105));
 		V_1 = L_12;
 		goto IL_0034;
 	}
 
 IL_0034:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 22));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 103));
 		YogaSize_tC805BF63DE9A9E4B9984B964AB0A1CFA04ADC1FD  L_13 = V_1;
 		return L_13;
 	}
@@ -2272,12 +3355,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float YogaNode_BaselineInternal_m0C45C415286A
 	float V_1 = 0.0f;
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___node0), (&___width1), (&___height2));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaNode_BaselineInternal_m0C45C415286A4FEA8E9C38A57B45B431FC6104BF_RuntimeMethod_var, NULL, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 25));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 26));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 106));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 107));
 	int32_t G_B3_0 = 0;
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 27));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 28));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 108));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 109));
 		YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * L_0 = ___node0;
 		if (!L_0)
 		{
@@ -2287,7 +3370,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float YogaNode_BaselineInternal_m0C45C415286A
 	{
 		YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * L_1 = ___node0;
 		NullCheck(L_1);
-		BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * L_2 = L_1->get__baselineFunction_2();
+		BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * L_2 = L_1->get__baselineFunction_5();
 		G_B3_0 = ((((RuntimeObject*)(BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A *)L_2) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
 		goto IL_0010;
 	}
@@ -2300,7 +3383,7 @@ IL_000f:
 IL_0010:
 	{
 		V_0 = (bool)G_B3_0;
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 29));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 110));
 		bool L_3 = V_0;
 		if (!L_3)
 		{
@@ -2308,38 +3391,170 @@ IL_0010:
 		}
 	}
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 30));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 31));
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 34));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 111));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 112));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 115));
 		InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB * L_4 = (InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB *)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t10D3EE59AD28EC641ACEE05BCA4271A527E5ECAB_il2cpp_TypeInfo_var)));
 		InvalidOperationException__ctor_mC012CE552988309733C896F3FEA8249171E4402E(L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral2EB7EACAE6B3BFBFD70862A8840592343396CF46)), /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 34));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 115));
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&YogaNode_BaselineInternal_m0C45C415286A4FEA8E9C38A57B45B431FC6104BF_RuntimeMethod_var)));
 	}
 
 IL_0020:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 32));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 113));
 		YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * L_5 = ___node0;
 		NullCheck(L_5);
-		BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * L_6 = L_5->get__baselineFunction_2();
+		BaselineFunction_t7C180BD26F5C8850EEDDBEC2471D9A466EF0D24A * L_6 = L_5->get__baselineFunction_5();
 		YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * L_7 = ___node0;
 		float L_8 = ___width1;
 		float L_9 = ___height2;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 35));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 116));
 		NullCheck(L_6);
 		float L_10;
 		L_10 = BaselineFunction_Invoke_mAEC462B19D69EAC84C6F4D13058EF3DA25BBE647(L_6, L_7, L_8, L_9, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 35));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 116));
 		V_1 = L_10;
 		goto IL_0031;
 	}
 
 IL_0031:
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 33));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 114));
 		float L_11 = V_1;
 		return L_11;
+	}
+}
+// System.Collections.Generic.IEnumerator`1<UnityEngine.Yoga.YogaNode> UnityEngine.Yoga.YogaNode::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* YogaNode_GetEnumerator_m5F93328C6F34A2D6B2719B86FD3DC97E5C0544F3 (YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Empty_TisYogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_m4F15DD4CAFCA8FF9A4E1D34CFF87AE44C72D6186_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t2D7047B39A20CA3C020E30F2F8E888F56D9FBD61_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_t9E261FB0B46CAF38E2418ACF956B7E8CC71F488E_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_GetEnumerator_m5F93328C6F34A2D6B2719B86FD3DC97E5C0544F3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaNode_GetEnumerator_m5F93328C6F34A2D6B2719B86FD3DC97E5C0544F3_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 117));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 118));
+	RuntimeObject* G_B3_0 = NULL;
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 119));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 120));
+		List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8 * L_0 = __this->get__children_3();
+		if (L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 122));
+		RuntimeObject* L_1;
+		L_1 = Enumerable_Empty_TisYogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_m4F15DD4CAFCA8FF9A4E1D34CFF87AE44C72D6186_inline(/*hidden argument*/Enumerable_Empty_TisYogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_m4F15DD4CAFCA8FF9A4E1D34CFF87AE44C72D6186_RuntimeMethod_var);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 122));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 123));
+		NullCheck(L_1);
+		RuntimeObject* L_2;
+		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<UnityEngine.Yoga.YogaNode>::GetEnumerator() */, IEnumerable_1_t2D7047B39A20CA3C020E30F2F8E888F56D9FBD61_il2cpp_TypeInfo_var, L_1);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 123));
+		G_B3_0 = L_2;
+		goto IL_0020;
+	}
+
+IL_0015:
+	{
+		List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8 * L_3 = __this->get__children_3();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 124));
+		NullCheck(L_3);
+		RuntimeObject* L_4;
+		L_4 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<UnityEngine.Yoga.YogaNode>::GetEnumerator() */, IEnumerable_1_t2D7047B39A20CA3C020E30F2F8E888F56D9FBD61_il2cpp_TypeInfo_var, L_3);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 124));
+		G_B3_0 = L_4;
+	}
+
+IL_0020:
+	{
+		V_0 = G_B3_0;
+		goto IL_0023;
+	}
+
+IL_0023:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 121));
+		RuntimeObject* L_5 = V_0;
+		return L_5;
+	}
+}
+// System.Collections.IEnumerator UnityEngine.Yoga.YogaNode::System.Collections.IEnumerable.GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* YogaNode_System_Collections_IEnumerable_GetEnumerator_m7537F71E66B2BB24889E2F37350166112D609A5E (YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_Empty_TisYogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_m4F15DD4CAFCA8FF9A4E1D34CFF87AE44C72D6186_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t2D7047B39A20CA3C020E30F2F8E888F56D9FBD61_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t5956F3AFB7ECF1117E3BC5890E7FC7B7F7A04105_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_System_Collections_IEnumerable_GetEnumerator_m7537F71E66B2BB24889E2F37350166112D609A5E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&YogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_0_0_0_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, YogaNode_System_Collections_IEnumerable_GetEnumerator_m7537F71E66B2BB24889E2F37350166112D609A5E_RuntimeMethod_var, methodExecutionContextThis, NULL, NULL);
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 125));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 126));
+	RuntimeObject* G_B3_0 = NULL;
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 127));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 128));
+		List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8 * L_0 = __this->get__children_3();
+		if (L_0)
+		{
+			goto IL_0015;
+		}
+	}
+	{
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 130));
+		RuntimeObject* L_1;
+		L_1 = Enumerable_Empty_TisYogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_m4F15DD4CAFCA8FF9A4E1D34CFF87AE44C72D6186_inline(/*hidden argument*/Enumerable_Empty_TisYogaNode_tD3DA875FF65A4C50F0F6F05A9F8D114FF5A9D9A6_m4F15DD4CAFCA8FF9A4E1D34CFF87AE44C72D6186_RuntimeMethod_var);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 130));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 131));
+		NullCheck(L_1);
+		RuntimeObject* L_2;
+		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<UnityEngine.Yoga.YogaNode>::GetEnumerator() */, IEnumerable_1_t2D7047B39A20CA3C020E30F2F8E888F56D9FBD61_il2cpp_TypeInfo_var, L_1);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 131));
+		G_B3_0 = L_2;
+		goto IL_0020;
+	}
+
+IL_0015:
+	{
+		List_1_t5FEBCBE5E15CEDF8B8CBA2B1C4F123E01DDE02C8 * L_3 = __this->get__children_3();
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 132));
+		NullCheck(L_3);
+		RuntimeObject* L_4;
+		L_4 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<!0> System.Collections.Generic.IEnumerable`1<UnityEngine.Yoga.YogaNode>::GetEnumerator() */, IEnumerable_1_t2D7047B39A20CA3C020E30F2F8E888F56D9FBD61_il2cpp_TypeInfo_var, L_3);
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 132));
+		G_B3_0 = L_4;
+	}
+
+IL_0020:
+	{
+		V_0 = G_B3_0;
+		goto IL_0023;
+	}
+
+IL_0023:
+	{
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_UIElementsNativeModule + 129));
+		RuntimeObject* L_5 = V_0;
+		return L_5;
 	}
 }
 #ifdef __clang__
@@ -2365,18 +3580,28 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker__ctor_mCE8D10
 	DECLARE_METHOD_THIS(methodExecutionContextThis, (&__this));
 	DECLARE_METHOD_PARAMS(methodExecutionContextParameters, (&___name0));
 	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, ProfilerMarker__ctor_mCE8D10CF2D2B2C4E51BF1BB66D75FDDE5BDA4A41_RuntimeMethod_var, methodExecutionContextThis, methodExecutionContextParameters, NULL);
-	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 5));
-	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 6));
+	CHECK_METHOD_ENTRY_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 24));
+	CHECK_METHOD_EXIT_SEQ_POINT(methodExitChecker, methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 25));
 	{
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 7));
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 8));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 26));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 27));
 		String_t* L_0 = ___name0;
-		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 10));
+		STORE_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 29));
 		intptr_t L_1;
 		L_1 = ProfilerUnsafeUtility_CreateMarker_m419027084C68545B765B9345949D8BFCB96C51AD(L_0, (uint16_t)1, 0, 0, /*hidden argument*/NULL);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 10));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 29));
 		__this->set_m_Ptr_0((intptr_t)L_1);
-		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 9));
+		CHECK_SEQ_POINT(methodExecutionContext, (g_sequencePointsUnityEngine_CoreModule + 28));
 		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Empty_TisRuntimeObject_m118DE54A7EF06BAF42E1F551D3342732563120D5_gshared_inline (const RuntimeMethod* method)
+{
+	DECLARE_METHOD_EXEC_CTX(methodExecutionContext, method, NULL, NULL, NULL);
+	CHECK_PAUSE_POINT;
+	{
+		IL2CPP_RUNTIME_CLASS_INIT(IL2CPP_RGCTX_DATA(method->rgctx_data, 0));
+		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_0 = ((EmptyEnumerable_1_tB6A330001520792410A46A172F103A91B1608883_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(method->rgctx_data, 0)))->get_Instance_0();
+		return (RuntimeObject*)L_0;
 	}
 }

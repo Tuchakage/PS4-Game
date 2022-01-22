@@ -25,6 +25,7 @@ public class Respawn : MonoBehaviour
             //Check which checkpoint the player is at
             int checkpoint = pm.checkpoints;
             RespawnAtCheckPoint(checkpoint, other);
+            other.GetComponent<Owner>().owner.GetComponent<Lives>().LoseALife();
         }
         
 

@@ -23,11 +23,14 @@ static const char* g_methodExecutionContextInfoStrings[1] = { NULL };
 static const char* g_methodExecutionContextInfoStrings[1] = { NULL };
 #endif
 #if IL2CPP_MONO_DEBUGGER
-static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoIndexes[3] = 
+static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoIndexes[6] = 
 {
-	{ 0, 0 } /* 0x06000001 System.Void UnityEngine.AI.NavMesh::Internal_CallOnNavMeshPreUpdate() */,
-	{ 0, 0 } /* 0x06000002 System.Void UnityEngine.AI.NavMesh/OnNavMeshPreUpdate::.ctor(System.Object,System.IntPtr) */,
-	{ 0, 0 } /* 0x06000003 System.Void UnityEngine.AI.NavMesh/OnNavMeshPreUpdate::Invoke() */,
+	{ 0, 0 } /* 0x06000001 System.Boolean UnityEngine.AI.NavMeshAgent::SetDestination(UnityEngine.Vector3) */,
+	{ 0, 0 } /* 0x06000002 System.Void UnityEngine.AI.NavMeshAgent::set_isStopped(System.Boolean) */,
+	{ 0, 0 } /* 0x06000003 System.Boolean UnityEngine.AI.NavMeshAgent::SetDestination_Injected(UnityEngine.Vector3&) */,
+	{ 0, 0 } /* 0x06000004 System.Void UnityEngine.AI.NavMesh::Internal_CallOnNavMeshPreUpdate() */,
+	{ 0, 0 } /* 0x06000005 System.Void UnityEngine.AI.NavMesh/OnNavMeshPreUpdate::.ctor(System.Object,System.IntPtr) */,
+	{ 0, 0 } /* 0x06000006 System.Void UnityEngine.AI.NavMesh/OnNavMeshPreUpdate::Invoke() */,
 };
 #else
 static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoIndexes[1] = { { 0, 0} };
@@ -36,14 +39,14 @@ static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoI
 IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnityEngine_AIModule[];
 Il2CppSequencePoint g_sequencePointsUnityEngine_AIModule[8] = 
 {
-	{ 11103, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 0 } /* seqPointIndex: 0 */,
-	{ 11103, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 1 } /* seqPointIndex: 1 */,
-	{ 11103, 1, 191, 191, 9, 10, 0, kSequencePointKind_Normal, 0, 2 } /* seqPointIndex: 2 */,
-	{ 11103, 1, 192, 192, 13, 37, 1, kSequencePointKind_Normal, 0, 3 } /* seqPointIndex: 3 */,
-	{ 11103, 1, 192, 192, 0, 0, 10, kSequencePointKind_Normal, 0, 4 } /* seqPointIndex: 4 */,
-	{ 11103, 1, 193, 193, 17, 31, 13, kSequencePointKind_Normal, 0, 5 } /* seqPointIndex: 5 */,
-	{ 11103, 1, 194, 194, 9, 10, 24, kSequencePointKind_Normal, 0, 6 } /* seqPointIndex: 6 */,
-	{ 11103, 1, 193, 193, 17, 31, 18, kSequencePointKind_StepOut, 0, 7 } /* seqPointIndex: 7 */,
+	{ 11959, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 0 } /* seqPointIndex: 0 */,
+	{ 11959, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 1 } /* seqPointIndex: 1 */,
+	{ 11959, 1, 191, 191, 9, 10, 0, kSequencePointKind_Normal, 0, 2 } /* seqPointIndex: 2 */,
+	{ 11959, 1, 192, 192, 13, 37, 1, kSequencePointKind_Normal, 0, 3 } /* seqPointIndex: 3 */,
+	{ 11959, 1, 192, 192, 0, 0, 10, kSequencePointKind_Normal, 0, 4 } /* seqPointIndex: 4 */,
+	{ 11959, 1, 193, 193, 17, 31, 13, kSequencePointKind_Normal, 0, 5 } /* seqPointIndex: 5 */,
+	{ 11959, 1, 194, 194, 9, 10, 24, kSequencePointKind_Normal, 0, 6 } /* seqPointIndex: 6 */,
+	{ 11959, 1, 193, 193, 17, 31, 18, kSequencePointKind_StepOut, 0, 7 } /* seqPointIndex: 7 */,
 };
 #else
 extern Il2CppSequencePoint g_sequencePointsUnityEngine_AIModule[];
@@ -65,7 +68,7 @@ static const Il2CppSequencePointSourceFile g_sequencePointSourceFiles[1] = { NUL
 #if IL2CPP_MONO_DEBUGGER
 static const Il2CppTypeSourceFilePair g_typeSourceFiles[1] = 
 {
-	{ 2036, 1 },
+	{ 2155, 1 },
 };
 #else
 static const Il2CppTypeSourceFilePair g_typeSourceFiles[1] = { { 0, 0 } };
@@ -79,8 +82,11 @@ static const Il2CppMethodScope g_methodScopes[1] =
 static const Il2CppMethodScope g_methodScopes[1] = { { 0, 0 } };
 #endif
 #if IL2CPP_MONO_DEBUGGER
-static const Il2CppMethodHeaderInfo g_methodHeaderInfos[3] = 
+static const Il2CppMethodHeaderInfo g_methodHeaderInfos[6] = 
 {
+	{ 0, 0, 0 } /* System.Boolean UnityEngine.AI.NavMeshAgent::SetDestination(UnityEngine.Vector3) */,
+	{ 0, 0, 0 } /* System.Void UnityEngine.AI.NavMeshAgent::set_isStopped(System.Boolean) */,
+	{ 0, 0, 0 } /* System.Boolean UnityEngine.AI.NavMeshAgent::SetDestination_Injected(UnityEngine.Vector3&) */,
 	{ 25, 0, 1 } /* System.Void UnityEngine.AI.NavMesh::Internal_CallOnNavMeshPreUpdate() */,
 	{ 0, 0, 0 } /* System.Void UnityEngine.AI.NavMesh/OnNavMeshPreUpdate::.ctor(System.Object,System.IntPtr) */,
 	{ 0, 0, 0 } /* System.Void UnityEngine.AI.NavMesh/OnNavMeshPreUpdate::Invoke() */,

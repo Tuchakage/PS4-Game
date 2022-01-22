@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 	public SphereCollider col;
 	public float forwardAccel = 2f, reverseAccel, speed, turnStrength = 180, jumpForce = 7;
 	private float speedInput, turnInput;
-
+	private float timeTillNextLaunch;
 	private int score;
 
 	public float sensH = 10;
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public int playerId;
 	int controllerId; //To show the different controllers
 	bool flickedonce; //Makes it so that you can only flick once
-	bool launched; // Checks if the Player has been launched
+	public bool launched; // Checks if the Player has been launched
 	public int checkpoints; //Indicates Which Checkpoint the player is at
 	Color m_LightbarColour;
 	// Use this for initialization
@@ -44,6 +44,14 @@ public class PlayerMovement : MonoBehaviour
 
 	void Update()
 	{
+		if (timeTillNextLaunch > 0)
+		{
+			timeTillNextLaunch -= Time.deltaTime;
+		}
+		else 
+		{
+			launched = false;
+		}
 		// If we are not pressing anything make the speed always 0
 		speedInput = 0;
 		turnInput = 0;
@@ -151,22 +159,21 @@ public class PlayerMovement : MonoBehaviour
 				}
 
 				//Homing Dash if the Player is in the air and there is a target
-				if (v.x < -0.4f && !isGrounded() && enemyTarget != null && !launched)
+				if (v.x < -0.1f && !isGrounded() && enemyTarget != null && !launched)
 				{
-					//Debug.Log("works");
 					//Find the Direction to the Enemy
 					Vector3 direction = enemyTarget.position - Rb.gameObject.transform.position;
 					//Launch the Player towards the Enemy
 					Rb.AddForce(direction * 50000f);
 					launched = true;
+					//Delay the time till player can use Homing Dash again
+					timeTillNextLaunch = 1f;
 
 				}
 				//If the player is on the ground then make sure you revert rigidbody
 				if (isGrounded())
 				{
 					RevertRigidbody();
-					//Player has not been launched which means it can still be launched when in mid air
-					launched = false;
 				}
 
 				//Steering Controls

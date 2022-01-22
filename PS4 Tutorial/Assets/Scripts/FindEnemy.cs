@@ -14,4 +14,10 @@ public class FindEnemy : MonoBehaviour
 
         }
     }
+
+    private void OnTriggerExit(Collider col)
+    {
+        PlayerMovement pm = this.gameObject.GetComponent<Owner>().owner.GetComponent<PlayerMovement>();
+        pm.enemyTarget = null;
+    }
 }
