@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.PS4;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ActivateTraps : MonoBehaviour
 {
@@ -24,11 +25,16 @@ public class ActivateTraps : MonoBehaviour
 
     float timer;
 
+    public Image image1;
+    public Image image2;
+
     private void Start()
     {
         isTrapActivated = false;
         isTrapCActivated = false;
         controllerId = playerId + 1;
+        image1.enabled = false;
+        image2.enabled = false;
     }
 
 
@@ -40,9 +46,11 @@ public class ActivateTraps : MonoBehaviour
             canTrapBeActivated = true;
             if (other.gameObject.CompareTag("Player 1"))
             {
-
                 if (gameObject.CompareTag("TrapA"))
                 {
+                    image1.enabled = true;
+                    image2.enabled = false;
+
                     if (Math.Abs(Input.GetAxis("joystick1_left_trigger")) > 0.001f)
                     {
                         isTrapActivated = true;
@@ -85,6 +93,8 @@ public class ActivateTraps : MonoBehaviour
 
                 if (gameObject.CompareTag("TrapC"))
                 {
+                    image1.enabled = false;
+                    image2.enabled = true;
                     DecreaseTimer();
 
                     if (timer <= 0)
@@ -122,14 +132,21 @@ public class ActivateTraps : MonoBehaviour
                 canTrapCBeActivated = false;
             }
         }
+    }
 
-        void ChangeRotateSpeed()
+        private void OnTriggerExit(Collider other)
         {
+            image1.enabled = false;
+            image2.enabled = false;
+        }
+
+    void ChangeRotateSpeed()
+    {
             for (int i = 0; i < _rpList.Length; i++)
             {
                 _rpList[i].rotationSpeed = 50f;
             }
-        }
+    }
 
         IEnumerator StartVibration()
         {
@@ -148,5 +165,5 @@ public class ActivateTraps : MonoBehaviour
         {
             timer = 3f;
         }
-    }
+    
 }
